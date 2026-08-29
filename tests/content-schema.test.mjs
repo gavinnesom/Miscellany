@@ -41,6 +41,7 @@ test("every entry uses canonical topic metadata and no obsolete section metadata
     const markdown = await readFile(file, "utf8");
     assert.ok(frontMatterValue(markdown, "topic"), `${file} is missing canonical topic metadata`);
     assert.doesNotMatch(markdown, /^section:\s*/m, `${file} uses obsolete section metadata`);
+    assert.doesNotMatch(markdown, /^related:\s*/m, `${file} uses obsolete top-level related metadata`);
   }
 });
 

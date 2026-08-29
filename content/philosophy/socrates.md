@@ -12,10 +12,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - plato
-related:
-  - plato
 sources:
   - label: "Stanford Encyclopedia of Philosophy — Socrates"
     url: "https://plato.stanford.edu/entries/socrates/"

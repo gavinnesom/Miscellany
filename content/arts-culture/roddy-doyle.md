@@ -14,7 +14,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "Booker Prizes — Roddy Doyle author page"
     url: "https://thebookerprizes.com/the-booker-library/authors/roddy-doyle"

@@ -10,13 +10,11 @@ tags:
 date_added: "2026-08-11"
 date_updated: "2026-08-14"
 relationships:
-  parent: 
+  parent:
     - geological-time-overview
   deeper: []
-  related: 
+  related:
     - great-dying
-related:
-  - great-dying
 sources:
   - label: "NASA/JPL PIA03379 — Shaded Relief with Height as Color, Yucatan Peninsula, Mexico"
     url: "https://science.nasa.gov/resource/shaded-relief-with-height-as-color-yucatan-peninsula-mexico/"

@@ -225,7 +225,6 @@ function fakeEntry(slug, quiz) {
     topic: "logic-formal-reasoning",
     tags: [],
     date_added: "2026-08-16",
-    related: [],
     relationships: { parent: [], deeper: [], related: [] },
     sources: [],
     books: [],

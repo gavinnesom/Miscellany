@@ -17,7 +17,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "Publisher/PBS orientation to Diamond's thesis"
     url: "https://www.pbs.org/gunsgermssteel/"

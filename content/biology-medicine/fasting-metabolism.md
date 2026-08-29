@@ -16,10 +16,7 @@ relationships:
   related:
     - metabolic-fuel-use
     - blood-glucose-regulation
-related:
-  - ketones
-  - metabolic-fuel-use
-  - blood-glucose-regulation
+    - ketones
 sources:
   - label: NCBI Bookshelf, Fasting
     url: https://www.ncbi.nlm.nih.gov/books/NBK534877/

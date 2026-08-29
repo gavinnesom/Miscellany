@@ -18,10 +18,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - recursion
-related:
-  - recursion
 sources:
   - label: "Hachette/Basic Books — official book description"
     url: "https://www.hachettebookgroup.com/titles/douglas-r-hofstadter/g%C3%B6del-escher-bach/9780465026562/"

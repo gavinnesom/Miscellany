@@ -22,7 +22,6 @@ relationships:
   related:
     - blood-glucose-regulation
     - ketones
-related: []
 sources:
   - label: "21 CFR 101.9 - General food energy factors"
     url: "https://www.law.cornell.edu/cfr/text/21/101.9"

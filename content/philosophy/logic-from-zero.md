@@ -14,7 +14,6 @@ relationships:
   deeper:
     - propositional-logic
   related: []
-related: []
 sources:
   - label: "forall x - An Introduction to Formal Logic"
     url: "https://forallx.openlogicproject.org/"

@@ -11,7 +11,6 @@ date_added: 2026-08-11
 date_updated: 2026-08-14
 relationships:
   related: []
-related: []
 sources:
   - label: Banks et al. 2015, Why do animal eyes have pupils of different shapes?
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4643806/

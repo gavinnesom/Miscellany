@@ -12,8 +12,6 @@ date_updated: 2026-08-12
 relationships:
   related:
     - california-yarrow
-related:
-  - california-yarrow
 sources:
   - label: UC Statewide IPM, Puncturevine
     url: https://ipm.ucanr.edu/home-and-landscape/puncturevine/

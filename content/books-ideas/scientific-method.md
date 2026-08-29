@@ -12,12 +12,9 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - survivorship-bias
     - feynman-explanation
-related:
-  - survivorship-bias
-  - feynman-explanation
 sources:
   - label: "National Academies, *Reference Manual on Scientific Evidence* — explicitly discusses the myth of one scientific method"
     url: "https://www.nationalacademies.org/read/26919/chapter/3"

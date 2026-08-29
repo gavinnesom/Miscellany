@@ -6,6 +6,9 @@
   --foreground: #1d252d;
   --muted: #596774;
   --rule: #d6e0e8;
+  --control-border: 1px solid var(--rule);
+  --control-radius: 6px;
+  --control-padding: 7px 10px;
   --ink: #1d252d;
   --paper: #ffffff;
   --sage: #247a8a;
@@ -146,22 +149,16 @@ main {
 .quiz-actions button,
 .quiz-actions a {
   background: var(--paper);
-  border: 1px solid var(--rule);
-  border-radius: 6px;
+  border: var(--control-border);
+  border-radius: var(--control-radius);
   color: var(--ink);
-  padding: 7px 10px;
+  padding: var(--control-padding);
   text-decoration: none;
 }
 
 .header-action {
   text-align: center;
   white-space: nowrap;
-}
-
-.nav-actions > button,
-.quiz-actions button:first-child {
-  background: var(--paper);
-  color: var(--ink);
 }
 
 .header-action:hover,
@@ -200,8 +197,8 @@ main {
 
 .auth-popover input {
   background: var(--paper);
-  border: 1px solid var(--rule);
-  border-radius: 6px;
+  border: var(--control-border);
+  border-radius: var(--control-radius);
   color: var(--ink);
   font-size: 0.78rem;
   padding: 7px 8px;
@@ -212,10 +209,10 @@ main {
 .auth-popover button,
 .memory-ready-button {
   background: var(--paper);
-  border: 1px solid var(--rule);
-  border-radius: 6px;
+  border: var(--control-border);
+  border-radius: var(--control-radius);
   color: var(--ink);
-  padding: 7px 10px;
+  padding: var(--control-padding);
 }
 
 .auth-control button {

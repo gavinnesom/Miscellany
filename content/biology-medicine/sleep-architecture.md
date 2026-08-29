@@ -13,9 +13,6 @@ relationships:
   related:
     - sleep-memory-consolidation
     - sleep-apnea
-related:
-  - sleep-memory-consolidation
-  - sleep-apnea
 sources:
   - label: NCBI Bookshelf, Sleep Physiology
     url: https://www.ncbi.nlm.nih.gov/books/NBK19956/

@@ -14,7 +14,6 @@ relationships:
   deeper: []
   related:
     - four-stroke-engine
-related: []
 sources:
   - label: "College Board — AP Physics 1 Course and Exam Description"
     url: "https://apcentral.collegeboard.org/media/pdf/ap-physics-1-course-and-exam-description.pdf"

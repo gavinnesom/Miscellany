@@ -43,10 +43,9 @@ function isTypingTarget(target: EventTarget | null) {
   ));
 }
 
-function slugFromLocation() {
+function entrySlugFromPathname() {
   const entryMatch = window.location.pathname.match(/^\/entry\/([^/]+)\/?$/);
   if (entryMatch) return decodeURIComponent(entryMatch[1]);
-  if (window.location.hash.length > 1) return decodeURIComponent(window.location.hash.slice(1));
   return "";
 }
 
@@ -158,7 +157,7 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
     const bySlug = new Map(entries.map((entry) => [entry.slug, entry]));
 
     function syncFromLocation() {
-      const locationSlug = slugFromLocation();
+      const locationSlug = entrySlugFromPathname();
       if (slugs.has(locationSlug)) {
         resetReviewPanel();
         setMemoryStatus("");
@@ -167,19 +166,14 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
         if (entry) {
           setExpandedTopics((current) => new Set([...current, entry.topic]));
         }
-        if (window.location.hash === `#${locationSlug}`) {
-          window.history.replaceState(null, "", entryPath(locationSlug));
-        }
       }
     }
 
     syncFromLocation();
     window.addEventListener("popstate", syncFromLocation);
-    window.addEventListener("hashchange", syncFromLocation);
 
     return () => {
       window.removeEventListener("popstate", syncFromLocation);
-      window.removeEventListener("hashchange", syncFromLocation);
     };
   }, [entries, resetReviewPanel]);
 

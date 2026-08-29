@@ -14,7 +14,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "Terry Pratchett official — Discworld novels"
     url: "https://terrypratchett.com/book-categories/discworld/"

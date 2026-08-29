@@ -12,10 +12,8 @@ date_updated: "2026-08-14"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - earth-age
-related:
-  - earth-age
 sources:
   - label: "NASA — What is the Universe?"
     url: "https://science.nasa.gov/universe/overview/"

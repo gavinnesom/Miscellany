@@ -17,10 +17,7 @@ relationships:
   related:
     - ketones
     - fasting-metabolism
-related:
-  - blood-glucose-regulation
-  - ketones
-  - fasting-metabolism
+    - blood-glucose-regulation
 sources:
   - label: The history of the islets of Langerhans
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4530402/

@@ -15,7 +15,6 @@ relationships:
   related:
     - new-minor-forcing
     - vulnerability-sacrifice-scoring
-related: []
 sources:
   - label: "World Bridge Federation — Brief History of Bridge"
     url: "https://www.worldbridge.org/wp-content/uploads/2025/11/Rona-Brief-History-of-Bridge-Gianarrigo-Rona.pdf"

@@ -10,13 +10,11 @@ tags:
 date_added: "2026-08-11"
 date_updated: "2026-08-22"
 relationships:
-  parent: 
+  parent:
     - llm-predictions
   deeper: []
-  related: 
+  related:
     - transformer-attention
-related:
-  - transformer-attention
 sources:
   - label: "OpenAI Tokenizer"
     url: "https://platform.openai.com/tokenizer"

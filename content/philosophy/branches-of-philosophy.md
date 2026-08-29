@@ -12,10 +12,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - philosophy-timeline
-related:
-  - philosophy-timeline
 sources:
   - label: "Stanford Encyclopedia of Philosophy — Metaphysics"
     url: "https://plato.stanford.edu/entries/metaphysics/"

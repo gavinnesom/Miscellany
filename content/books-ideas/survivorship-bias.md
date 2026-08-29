@@ -12,10 +12,8 @@ date_updated: "2026-08-14"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - scientific-method
-related:
-  - scientific-method
 sources:
   - label: "Wikimedia Commons — Survivorship-bias.svg"
     url: "https://commons.wikimedia.org/wiki/File:Survivorship-bias.svg"

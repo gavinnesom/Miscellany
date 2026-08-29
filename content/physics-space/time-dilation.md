@@ -14,7 +14,6 @@ relationships:
     - special-relativity
   deeper: []
   related: []
-related: []
 sources:
   - label: "OpenStax University Physics — Time Dilation"
     url: "https://openstax.org/books/university-physics-volume-3/pages/5-3-time-dilation"

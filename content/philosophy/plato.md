@@ -12,12 +12,9 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - socrates
     - aristotle
-related:
-  - socrates
-  - aristotle
 sources:
   - label: "Stanford Encyclopedia of Philosophy — Plato"
     url: "https://plato.stanford.edu/entries/plato/"

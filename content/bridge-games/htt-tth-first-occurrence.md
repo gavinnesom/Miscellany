@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "Stanford/standard probability treatment of Penney's game; Wikipedia is acceptable for orientation"
     url: "https://en.wikipedia.org/wiki/Penney%27s_game"

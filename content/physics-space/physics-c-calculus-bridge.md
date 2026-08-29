@@ -14,7 +14,6 @@ relationships:
   deeper: []
   related:
     - classical-mechanics-map
-related: []
 sources:
   - label: "College Board — AP Physics C: Mechanics"
     url: "https://apcentral.collegeboard.org/courses/ap-physics-c-mechanics"

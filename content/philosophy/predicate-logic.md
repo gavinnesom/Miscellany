@@ -14,7 +14,6 @@ relationships:
     - propositional-logic
   deeper: []
   related: []
-related: []
 sources:
   - label: "forall x - Quantifiers and Predicate Logic"
     url: "https://forallx.openlogicproject.org/html/A1.html"

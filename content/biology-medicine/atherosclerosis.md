@@ -16,7 +16,6 @@ relationships:
     - myocardial-infarction-heart-attack
     - stroke-ischemic-hemorrhagic
   related: []
-related: []
 sources:
   - label: "NHLBI — Atherosclerosis"
     url: "https://www.nhlbi.nih.gov/health/atherosclerosis"

@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "ACBL — Commonly Used Conventions / New Minor Forcing"
     url: "https://web2.acbl.org/documentLibrary/play/commonlyusedconventions.pdf"

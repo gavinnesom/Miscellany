@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "FIDE Museum"
     url: "https://museum.fide.com/"

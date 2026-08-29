@@ -15,7 +15,6 @@ relationships:
   related:
     - hypertension-vascular-damage
     - atherosclerosis
-related: []
 sources:
   - label: "2025 ACC/AHA High Blood Pressure Guideline Hub"
     url: "https://www.acc.org/Guidelines/Hubs/High-Blood-Pressure"

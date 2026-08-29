@@ -12,8 +12,6 @@ date_updated: 2026-08-12
 relationships:
   related:
     - mitosis-vs-meiosis
-related:
-  - mitosis-vs-meiosis
 sources:
   - label: NHGRI, RNA Fact Sheet
     url: https://www.genome.gov/about-genomics/educational-resources/fact-sheets/ribonucleic-acid-fact-sheet

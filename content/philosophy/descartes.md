@@ -12,12 +12,9 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - hume
     - kant
-related:
-  - hume
-  - kant
 sources:
   - label: "Stanford Encyclopedia of Philosophy — Descartes"
     url: "https://plato.stanford.edu/entries/descartes/"

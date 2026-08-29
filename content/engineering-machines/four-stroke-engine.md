@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "U.S. Department of Energy — Internal Combustion Engine Basics"
     url: "https://www.energy.gov/eere/vehicles/articles/internal-combustion-engine-basics"

@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "*Journal of Glaciology* — Revisiting the mechanics of ice friction"
     url: "https://www.cambridge.org/core/journals/journal-of-glaciology/article/revisiting-the-mechanics-of-ice-friction-from-experiments-at-a-skating-rink-to-a-unified-hypothesis/7BBE2F8FCD97C1A429D55F4E9A5553C4"

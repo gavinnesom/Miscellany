@@ -15,7 +15,6 @@ relationships:
   deeper:
     - predicate-logic
   related: []
-related: []
 sources:
   - label: "forall x - Propositional Logic"
     url: "https://forallx.openlogicproject.org/bookml/Ch4.html"

@@ -14,7 +14,6 @@ relationships:
   deeper:
     - double-pendulum
   related: []
-related: []
 sources:
   - label: "OpenStax — Complexity and Chaos"
     url: "https://openstax.org/books/college-physics-ap-courses-2e/pages/34-5-complexity-and-chaos"

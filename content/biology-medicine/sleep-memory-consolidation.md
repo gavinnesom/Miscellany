@@ -13,9 +13,6 @@ relationships:
   related:
     - sleep-architecture
     - sleep-apnea
-related:
-  - sleep-architecture
-  - sleep-apnea
 sources:
   - label: The evolving view of replay and its functions in wake and sleep
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7898724/

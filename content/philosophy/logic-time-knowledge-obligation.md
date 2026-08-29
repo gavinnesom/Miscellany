@@ -15,7 +15,6 @@ relationships:
     - modal-logic-kripke-worlds
   deeper: []
   related: []
-related: []
 sources:
   - label: "Arthur N. Prior - Time and Modality"
     url: "https://openlibrary.org/works/OL17980708W/Time_and_modality"

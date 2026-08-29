@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "Eaton — Differential basics / locking and limited-slip orientation"
     url: "https://www.eaton.com/us/en-us/products/differentials-traction-control.html"

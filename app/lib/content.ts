@@ -47,7 +47,6 @@ export type Entry = {
   tags: string[];
   date_added: string;
   date_updated?: string;
-  related: string[];
   relationships: EntryRelationships;
   sources: Source[];
   books: string[];
@@ -288,7 +287,6 @@ export const entries: Entry[] = Object.entries(files)
     const slug = asString(meta.slug, path.split("/").pop()?.replace(/\.md$/, "") ?? title.toLowerCase());
     const category = asString(meta.category, "uncategorized");
     const tags = asStringArray(meta.tags);
-    const related = asStringArray(meta.related);
     const relationships = asRelationships(meta.relationships);
     const sources = Array.isArray(meta.sources) ? (meta.sources as Source[]) : [];
     const books = asStringArray(meta.books);
@@ -311,7 +309,6 @@ export const entries: Entry[] = Object.entries(files)
       tags,
       date_added: asString(meta.date_added),
       date_updated: asString(meta.date_updated) || undefined,
-      related,
       relationships,
       sources,
       books,
@@ -388,7 +385,6 @@ export const quizItems = entries.flatMap((entry) =>
 export const brokenRelatedSlugs = entries.flatMap((entry) =>
   {
     const declared = [
-      ...entry.related.map((slug) => ["related", slug] as const),
       ...entry.relationships.parent.map((slug) => ["relationships.parent", slug] as const),
       ...entry.relationships.deeper.map((slug) => ["relationships.deeper", slug] as const),
       ...entry.relationships.related.map((slug) => ["relationships.related", slug] as const),

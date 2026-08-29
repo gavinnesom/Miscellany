@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "HBO / official episode information where available"
   - label: "David Chase interview coverage discussing the ending; a reputable interview/publication is preferable to fan theories."

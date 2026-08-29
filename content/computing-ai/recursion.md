@@ -12,10 +12,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - godel-escher-bach
-related:
-  - godel-escher-bach
 sources:
   - label: "MIT OpenCourseWare — recursion / introductory algorithms material"
     url: "https://ocw.mit.edu/"

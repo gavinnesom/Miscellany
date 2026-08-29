@@ -14,7 +14,6 @@ relationships:
   deeper: []
   related:
     - fluids-pressure-buoyancy-flow
-related: []
 sources:
   - label: "Western Washington University Physics — Galileo’s thermometer"
     url: "https://physics.wwu.edu/galileos-thermometer"

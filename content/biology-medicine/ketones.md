@@ -16,9 +16,7 @@ relationships:
     - nutritional-ketosis-vs-dka
   related:
     - metabolic-fuel-use
-related:
-  - fasting-metabolism
-  - metabolic-fuel-use
+    - fasting-metabolism
 sources:
   - label: NCBI Bookshelf, Ketogenesis
     url: https://www.ncbi.nlm.nih.gov/books/NBK493179/

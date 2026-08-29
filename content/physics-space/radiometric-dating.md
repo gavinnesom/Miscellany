@@ -10,13 +10,11 @@ tags:
 date_added: "2026-08-11"
 date_updated: "2026-08-12"
 relationships:
-  parent: 
+  parent:
     - earth-age
   deeper: []
-  related: 
+  related:
     - geological-time-overview
-related:
-  - geological-time-overview
 sources:
   - label: "USGS — Radiometric Time Scale"
     url: "https://pubs.usgs.gov/gip/geotime/radiometric.html"

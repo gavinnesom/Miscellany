@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "Stanford Encyclopedia of Philosophy — Friedrich Nietzsche"
     url: "https://plato.stanford.edu/entries/nietzsche/"

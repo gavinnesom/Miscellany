@@ -13,9 +13,6 @@ relationships:
   related:
     - sleep-architecture
     - sleep-memory-consolidation
-related:
-  - sleep-architecture
-  - sleep-memory-consolidation
 sources:
   - label: NHLBI, Sleep Apnea
     url: https://www.nhlbi.nih.gov/health/sleep-apnea

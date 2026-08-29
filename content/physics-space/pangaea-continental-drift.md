@@ -14,7 +14,6 @@ relationships:
     - geological-time-overview
   deeper: []
   related: []
-related: []
 sources:
   - label: "USGS — Historical Perspective on Plate Tectonics"
     url: "https://pubs.usgs.gov/gip/dynamic/historical.html"

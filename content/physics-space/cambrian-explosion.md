@@ -10,13 +10,11 @@ tags:
 date_added: "2026-08-11"
 date_updated: "2026-08-12"
 relationships:
-  parent: 
+  parent:
     - geological-time-overview
   deeper: []
-  related: 
+  related:
     - great-oxidation-event
-related:
-  - great-oxidation-event
 sources:
   - label: "International Commission on Stratigraphy — current International Chronostratigraphic Chart"
     url: "https://stratigraphy.org/chart"

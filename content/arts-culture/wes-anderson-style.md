@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "American Cinematographer — Robert Yeoman / Wes Anderson visual approach"
     url: "https://theasc.com/article/yeoman-asc-awards-honoree/"

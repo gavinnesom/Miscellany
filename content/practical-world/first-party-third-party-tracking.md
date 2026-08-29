@@ -12,10 +12,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - vpns-privacy
-related:
-  - vpns-privacy
 sources:
   - label: "MDN — Third-party cookies"
     url: "https://developer.mozilla.org/en-US/docs/Web/Privacy/Guides/Third-party_cookies"

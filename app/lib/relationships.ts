@@ -17,7 +17,7 @@ export function relatedEntrySlugs(entries: Entry[], selected: Entry) {
     .filter((entry) => entry.relationships.deeper.includes(selected.slug))
     .map((entry) => entry.slug);
   const inverseRelated = entries
-    .filter((entry) => entry.relationships.related.includes(selected.slug) || entry.related.includes(selected.slug))
+    .filter((entry) => entry.relationships.related.includes(selected.slug))
     .map((entry) => entry.slug);
 
   return uniqueSlugs([
@@ -25,7 +25,6 @@ export function relatedEntrySlugs(entries: Entry[], selected: Entry) {
     ...selected.relationships.parent,
     ...selected.relationships.deeper,
     ...selected.relationships.related,
-    ...selected.related,
     ...inverseParents,
     ...inverseDeeper,
     ...inverseRelated,
@@ -41,14 +40,14 @@ export function relationshipSections(entries: Entry[], selected: Entry): Relatio
     .filter((entry) => entry.relationships.deeper.includes(selected.slug))
     .map((entry) => entry.slug);
   const inverseConnected = entries
-    .filter((entry) => entry.relationships.related.includes(selected.slug) || entry.related.includes(selected.slug))
+    .filter((entry) => entry.relationships.related.includes(selected.slug))
     .map((entry) => entry.slug);
 
   const parents = uniqueSlugs([...selected.relationships.parent, ...inverseDeeperParents])
     .filter((slug) => slug !== selected.slug);
   const deeper = uniqueSlugs([...selected.relationships.deeper, ...inverseParents])
     .filter((slug) => slug !== selected.slug);
-  const connected = uniqueSlugs([...selected.relationships.related, ...selected.related, ...inverseConnected])
+  const connected = uniqueSlugs([...selected.relationships.related, ...inverseConnected])
     .filter((slug) => slug !== selected.slug && !parents.includes(slug) && !deeper.includes(slug));
 
   return [

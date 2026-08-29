@@ -12,14 +12,10 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - kant
     - scientific-method
     - descartes
-related:
-  - kant
-  - scientific-method
-  - descartes
 sources:
   - label: "Stanford Encyclopedia of Philosophy — David Hume"
     url: "https://plato.stanford.edu/entries/hume/"

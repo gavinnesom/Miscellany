@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "OpenStax University Physics — Entropy and the Second Law"
     url: "https://openstax.org/books/university-physics-volume-2/pages/4-7-entropy-on-a-microscopic-scale"

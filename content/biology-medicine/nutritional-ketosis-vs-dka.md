@@ -15,10 +15,7 @@ relationships:
   related:
     - diabetes-types
     - fasting-metabolism
-related:
-  - ketones
-  - diabetes-types
-  - fasting-metabolism
+    - ketones
 sources:
   - label: ADA Standards of Care 2026, DKA diagnostic criteria
     url: https://diabetesjournals.org/care/article/49/Supplement_1/S339/163925/16-Diabetes-Care-in-the-Hospital-Standards-of-Care

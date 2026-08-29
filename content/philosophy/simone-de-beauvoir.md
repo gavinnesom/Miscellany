@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "Stanford Encyclopedia of Philosophy — Simone de Beauvoir"
     url: "https://plato.stanford.edu/entries/beauvoir/"

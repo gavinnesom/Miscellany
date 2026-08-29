@@ -14,7 +14,6 @@ relationships:
   deeper:
     - hypertension-vascular-damage
   related: []
-related: []
 sources:
   - label: "American Heart Association — Understanding Blood Pressure Readings"
     url: "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"

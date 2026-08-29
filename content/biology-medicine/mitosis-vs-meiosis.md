@@ -12,8 +12,6 @@ date_updated: 2026-08-12
 relationships:
   related:
     - dna-vs-rna
-related:
-  - dna-vs-rna
 sources:
   - label: NHGRI, Mitosis
     url: https://www.genome.gov/genetics-glossary/Mitosis

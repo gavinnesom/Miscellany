@@ -15,7 +15,6 @@ relationships:
   related:
     - chaos-sensitive-dependence
     - oscillations-simple-harmonic-motion
-related: []
 sources:
   - label: "OpenStax — Complexity and Chaos"
     url: "https://openstax.org/books/college-physics-ap-courses-2e/pages/34-5-complexity-and-chaos"

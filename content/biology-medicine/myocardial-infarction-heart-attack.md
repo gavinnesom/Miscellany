@@ -15,7 +15,6 @@ relationships:
   related:
     - food-to-atp
     - atp-to-muscle-force
-related: []
 sources:
   - label: "2025 ACC/AHA Acute Coronary Syndromes Guideline press release"
     url: "https://www.acc.org/about-acc/press-releases/2025/02/28/17/51/acc-aha-issue-new-acute-coronary-syndromes-guideline"

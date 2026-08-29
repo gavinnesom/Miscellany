@@ -9,7 +9,6 @@ tags:
   - survival
 date_added: 2026-08-11
 date_updated: 2026-08-14
-related: []
 sources:
   - label: Tardigrade anhydrobiosis review
     url: https://pubmed.ncbi.nlm.nih.gov/21440551/

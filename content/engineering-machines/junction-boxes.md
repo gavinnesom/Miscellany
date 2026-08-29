@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "OSHA 1910.305 — wiring methods / junction-box covers"
     url: "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.305"

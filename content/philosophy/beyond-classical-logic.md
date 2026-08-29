@@ -16,7 +16,6 @@ relationships:
   related:
     - logic-from-zero
     - propositional-logic
-related: []
 sources:
   - label: "L. E. J. Brouwer - The Unreliability of the Logical Principles"
     url: "https://arxiv.org/abs/1511.01113"

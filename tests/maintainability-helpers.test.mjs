@@ -6,8 +6,8 @@ test("relationship helper preserves curated and inverse relationship semantics",
   const entries = [
     entry("a", { deeper: ["b"], related: ["c"] }),
     entry("b", { parent: ["a"] }),
-    entry("c", { related: ["a"] }, ["d"]),
-    entry("d", {}, ["a"]),
+    entry("c", { related: ["a", "d"] }),
+    entry("d", { related: ["a"] }),
   ];
 
   assert.deepEqual(relatedEntrySlugs(entries, entries[0]), ["a", "b", "c", "d"]);
@@ -67,11 +67,10 @@ test("grade feedback truncates long explanations at a readable boundary", async 
   assert.ok(feedback.lead.length <= 104);
 });
 
-function entry(slug, relationships = {}, related = []) {
+function entry(slug, relationships = {}) {
   return {
     slug,
     title: slug.toUpperCase(),
-    related,
     relationships: {
       parent: relationships.parent ?? [],
       deeper: relationships.deeper ?? [],

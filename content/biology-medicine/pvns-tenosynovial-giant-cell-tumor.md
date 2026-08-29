@@ -9,7 +9,6 @@ tags:
   - orthopedics
 date_added: 2026-08-11
 date_updated: 2026-08-12
-related: []
 sources:
   - label: AAOS OrthoInfo, PVNS / TGCT
     url: https://www.orthoinfo.org/diseases--conditions/pigmented-villonodular-synovitis

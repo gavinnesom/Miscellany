@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "SEC filings describing Washington Mutual / Great Western transaction"
     url: "https://www.sec.gov/Archives/edgar/data/933136/"

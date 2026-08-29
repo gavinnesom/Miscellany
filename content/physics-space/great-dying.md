@@ -10,13 +10,11 @@ tags:
 date_added: "2026-08-11"
 date_updated: "2026-08-12"
 relationships:
-  parent: 
+  parent:
     - geological-time-overview
   deeper: []
-  related: 
+  related:
     - end-cretaceous-extinction
-related:
-  - end-cretaceous-extinction
 sources:
   - label: "Encyclopaedia Britannica — Permian extinction"
     url: "https://www.britannica.com/science/Permian-extinction"

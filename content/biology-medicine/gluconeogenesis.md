@@ -15,10 +15,7 @@ relationships:
   related:
     - blood-glucose-regulation
     - metabolic-fuel-use
-related:
-  - fasting-metabolism
-  - blood-glucose-regulation
-  - metabolic-fuel-use
+    - fasting-metabolism
 sources:
   - label: NCBI Bookshelf, Physiology, Gluconeogenesis
     url: https://www.ncbi.nlm.nih.gov/books/NBK541119/

@@ -20,7 +20,6 @@ relationships:
     - end-cretaceous-extinction
     - pangaea-continental-drift
   related: []
-related: []
 sources:
   - label: "International Commission on Stratigraphy — International Chronostratigraphic Chart"
     url: "https://stratigraphy.org/chart"

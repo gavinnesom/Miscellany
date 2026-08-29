@@ -14,7 +14,6 @@ relationships:
   deeper: 
     - time-dilation
   related: []
-related: []
 sources:
   - label: "Einstein Online — Special Relativity"
     url: "https://www.einstein-online.info/en/spotlights/"

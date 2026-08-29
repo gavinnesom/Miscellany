@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "U.S. House Clerk — July 14, 2026 vote on H.R. 139"
     url: "https://clerk.house.gov/"

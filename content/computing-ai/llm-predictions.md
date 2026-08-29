@@ -15,7 +15,6 @@ relationships:
     - tokens-and-embeddings
     - transformer-attention
   related: []
-related: []
 sources:
   - label: "OpenAI — Tokenizer / token orientation"
     url: "https://platform.openai.com/tokenizer"

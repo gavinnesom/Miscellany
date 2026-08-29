@@ -16,10 +16,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - llm-predictions
-related:
-  - llm-predictions
 sources:
   - label: "Penguin Random House — *Nexus*"
     url: "https://www.penguinrandomhouse.com/books/762444/nexus-by-yuval-noah-harari/9780593734247/"

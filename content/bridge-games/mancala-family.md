@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "British Museum — Top 10 historical board games"
     url: "https://www.britishmuseum.org/blog/top-10-historical-board-games"

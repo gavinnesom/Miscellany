@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "International Go Federation — History of Go"
     url: "https://intergofed.org/history-of-go/"

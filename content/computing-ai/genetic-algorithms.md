@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "John Holland, *Adaptation in Natural and Artificial Systems* (1975/1992)"
   - label: "Mitchell, *An Introduction to Genetic Algorithms* (MIT Press)"

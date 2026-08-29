@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "Fondation Napoléon — Napoleon's height"
     url: "https://www.napoleon.org/en/history-of-the-two-empires/articles/was-napoleon-small/"

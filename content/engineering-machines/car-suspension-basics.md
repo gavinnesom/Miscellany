@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "ZF Aftermarket — shock absorbers / suspension function"
     url: "https://aftermarket.zf.com/"

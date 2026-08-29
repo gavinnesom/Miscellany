@@ -14,7 +14,6 @@ relationships:
   deeper: []
   related:
     - kinship-relationship-map
-related: []
 sources:
   - label: "Ancestry — Cousin chart"
     url: "https://www.ancestry.com/c/dna/cousins-dna-match"

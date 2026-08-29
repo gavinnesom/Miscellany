@@ -16,10 +16,6 @@ relationships:
     - fasting-metabolism
     - diabetes-types
     - metabolic-fuel-use
-related:
-  - diabetes-types
-  - metabolic-fuel-use
-  - fasting-metabolism
 sources:
   - label: NIDDK, Diabetes Tests & Diagnosis
     url: https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis

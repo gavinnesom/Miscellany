@@ -12,10 +12,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - scientific-method
-related:
-  - scientific-method
 sources:
   - label: "Richard Feynman — Nobel lecture, including his emphasis on working through understanding rather than formal packaging"
     url: "https://www.nobelprize.org/prizes/physics/1965/feynman/lecture/"

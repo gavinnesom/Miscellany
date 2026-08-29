@@ -12,10 +12,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - first-party-third-party-tracking
-related:
-  - first-party-third-party-tracking
 sources:
   - label: "FTC — VPN apps and privacy"
     url: "https://consumer.ftc.gov/consumer-alerts/2018/02/shopping-vpn-app-read-fine-print"

@@ -12,8 +12,6 @@ date_updated: 2026-08-22
 relationships:
   related:
     - puncturevine-goatheads
-related:
-  - puncturevine-goatheads
 sources:
   - label: UC Master Gardeners Contra Costa, Drought-Tolerant Native Groundcovers
     url: https://ucanr.edu/site/uc-master-gardener-program-contra-costa-county/article/drought-tolerant-native-groundcovers

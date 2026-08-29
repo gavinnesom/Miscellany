@@ -10,13 +10,11 @@ tags:
 date_added: "2026-08-11"
 date_updated: "2026-08-12"
 relationships:
-  parent: 
+  parent:
     - geological-time-overview
   deeper: []
-  related: 
+  related:
     - cambrian-explosion
-related:
-  - cambrian-explosion
 sources:
   - label: "NASA Astrobiology — oxygen rose and fell before the GOE"
     url: "https://astrobiology.nasa.gov/news/oxygen-levels-on-early-earth-rose-and-fell-several-times-before-the-successful-great-oxidation-event/"

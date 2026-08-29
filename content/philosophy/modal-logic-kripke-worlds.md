@@ -16,7 +16,6 @@ relationships:
     - logic-time-knowledge-obligation
   related:
     - predicate-logic
-related: []
 sources:
   - label: "Saul Kripke - A Completeness Theorem in Modal Logic"
     url: "https://doi.org/10.2307/2964568"

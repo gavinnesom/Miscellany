@@ -14,7 +14,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "Monrovia — Festival™ Raspberry Cordyline"
     url: "https://www.monrovia.com/festival-raspberry-cordyline.html"

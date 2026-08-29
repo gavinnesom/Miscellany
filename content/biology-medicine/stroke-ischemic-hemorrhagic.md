@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "American Stroke Association — Types of Stroke and Treatment"
     url: "https://www.stroke.org/en/about-stroke/types-of-stroke"

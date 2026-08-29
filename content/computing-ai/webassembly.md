@@ -13,7 +13,6 @@ relationships:
   parent: []
   deeper: []
   related: []
-related: []
 sources:
   - label: "WebAssembly official site/specification"
     url: "https://webassembly.org/"

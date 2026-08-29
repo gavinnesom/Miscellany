@@ -42,8 +42,11 @@ tags:
   - animals
   - extremophiles
 date_added: 2026-08-11
-related:
-  - entropy
+relationships:
+  parent: []
+  deeper: []
+  related:
+    - entropy
 sources: []
 books: []
 image: /images/cryptobiosis-cycle.svg

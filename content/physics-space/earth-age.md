@@ -11,12 +11,10 @@ date_added: "2026-08-11"
 date_updated: "2026-08-14"
 relationships:
   parent: []
-  deeper: 
+  deeper:
     - radiometric-dating
-  related: 
+  related:
     - geological-time-overview
-related:
-  - geological-time-overview
 sources:
   - label: "USGS — Age of the Earth"
     url: "https://pubs.usgs.gov/gip/geotime/age.html"

@@ -12,10 +12,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - llm-predictions
-related:
-  - llm-predictions
 sources:
   - label: "QUIK / 4-bit inference research"
     url: "https://arxiv.org/abs/2310.09259"

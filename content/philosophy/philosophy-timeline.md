@@ -12,10 +12,8 @@ date_updated: "2026-08-12"
 relationships:
   parent: []
   deeper: []
-  related: 
+  related:
     - branches-of-philosophy
-related:
-  - branches-of-philosophy
 sources:
   - label: "Stanford Encyclopedia of Philosophy — Ancient Political Philosophy"
     url: "https://plato.stanford.edu/entries/ancient-political/"

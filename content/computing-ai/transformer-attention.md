@@ -10,13 +10,11 @@ tags:
 date_added: "2026-08-11"
 date_updated: "2026-08-22"
 relationships:
-  parent: 
+  parent:
     - llm-predictions
   deeper: []
-  related: 
+  related:
     - tokens-and-embeddings
-related:
-  - tokens-and-embeddings
 sources:
   - label: "Vaswani et al. (2017), *Attention Is All You Need*"
     url: "https://arxiv.org/abs/1706.03762"
