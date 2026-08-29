@@ -46,7 +46,7 @@ export function CategoryDirectory({ group, topics, entryCount, surpriseSlugs }: 
 
   return (
     <main className="directory-page">
-      <DirectoryHeader eyebrow="Category" title={group.title} description={group.description} entryCount={entryCount} surpriseSlugs={surpriseSlugs} />
+      <DirectoryHeader eyebrow="Category" title={group.label} description={group.description} entryCount={entryCount} surpriseSlugs={surpriseSlugs} />
       <section className="directory-shell">
         <section className="directory-section" aria-labelledby="topics-heading">
           <h2 id="topics-heading">Topics</h2>
@@ -90,7 +90,7 @@ export function TopicDirectory({ topic, entryCount, surpriseSlugs }: { topic: To
       <DirectoryHeader eyebrow="Topic" title={topic.label} description={topic.description} entryCount={entryCount} surpriseSlugs={surpriseSlugs} />
       <section className="directory-shell">
         <nav className="directory-breadcrumb" aria-label="Topic location">
-          <Link href={categoryPath(category.key)}>{category.title}</Link>
+          <Link href={categoryPath(category.key)}>{category.label}</Link>
           <span>/</span>
           <span>{topic.label}</span>
         </nav>
@@ -130,7 +130,7 @@ export function TagDirectory({ tag, entryCount, surpriseSlugs }: { tag: TagGroup
           const [category, topic] = key.split(":");
           return (
             <section className="directory-section entry-topic-group" key={key}>
-              <h2>{categoryFor(category).title}</h2>
+              <h2>{categoryFor(category).label}</h2>
               <h3>{topicFor(topic).label}</h3>
               {entryList(entries)}
             </section>

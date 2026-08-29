@@ -12,8 +12,7 @@
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs tests/review-mode.test.mjs tests/memory-engine.test.mjs tests/grading-api.test.mjs tests/content-schema.test.mjs tests/quiz-selection.test.mjs tests/quiz-coverage.test.mjs tests/auth.test.mjs tests/maintainability-helpers.test.mjs",
     "typecheck": "tsc --noEmit --incremental false",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "taxonomy:migrate": "node scripts/taxonomy-migration.mjs"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.4",

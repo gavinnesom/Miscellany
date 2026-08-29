@@ -1,5 +1,5 @@
 import { categories, categoryFor, categoryKeys } from "./categories";
-import { duplicateTopicKeys, topicFor, topicFromSection, topicKeys, topics } from "./topics";
+import { duplicateTopicKeys, topicFor, topicKeys, topics } from "./topics";
 
 export type Source = {
   label: string;
@@ -40,7 +40,6 @@ export type Entry = {
   slug: string;
   category: string;
   topic: string;
-  section?: string;
   entry_type?: string;
   author?: string;
   year?: string;
@@ -61,8 +60,8 @@ export type Entry = {
 };
 
 export type CategoryGroup = {
-  slug: string;
-  title: string;
+  key: string;
+  label: string;
   note: string;
   description: string;
   entries: Entry[];
@@ -294,8 +293,7 @@ export const entries: Entry[] = Object.entries(files)
     const sources = Array.isArray(meta.sources) ? (meta.sources as Source[]) : [];
     const books = asStringArray(meta.books);
     const quiz = asQuizItems(meta.quiz);
-    const section = asString(meta.section);
-    const topic = asString(meta.topic) || topicFromSection(category, section);
+    const topic = asString(meta.topic);
     const entry_type = asString(meta.entry_type);
     const author = asString(meta.author);
     const year = asString(meta.year);
@@ -306,7 +304,6 @@ export const entries: Entry[] = Object.entries(files)
       slug,
       category,
       topic,
-      section,
       entry_type,
       author,
       year,
@@ -323,7 +320,7 @@ export const entries: Entry[] = Object.entries(files)
       quiz,
       body,
       excerpt: firstSentence(body),
-      searchText: [title, author, year, book_type, body, categoryFor(category).title, topicFor(topic).label, section, entry_type, ...tags]
+      searchText: [title, author, year, book_type, body, categoryFor(category).label, topicFor(topic).label, entry_type, ...tags]
         .join(" ")
         .toLowerCase(),
     };
@@ -334,7 +331,7 @@ export const entryBySlug = new Map(entries.map((entry) => [entry.slug, entry]));
 
 export const categoryGroups: CategoryGroup[] = categories.map((category) => ({
   ...category,
-  entries: entries.filter((entry) => entry.category === category.slug),
+  entries: entries.filter((entry) => entry.category === category.key),
 }));
 
 function orderEntriesForTopic(topic: typeof topics[number], topicEntries: Entry[]) {

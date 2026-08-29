@@ -34,6 +34,16 @@ test("every authored quiz question uses the complete question schema", () => {
   });
 });
 
+test("every entry uses canonical topic metadata and no obsolete section metadata", async () => {
+  const files = await awaitContentFiles();
+
+  for (const file of files) {
+    const markdown = await readFile(file, "utf8");
+    assert.ok(frontMatterValue(markdown, "topic"), `${file} is missing canonical topic metadata`);
+    assert.doesNotMatch(markdown, /^section:\s*/m, `${file} uses obsolete section metadata`);
+  }
+});
+
 test("spring and shock absorber question distinguishes component roles", async () => {
   const markdown = await readFile("content/engineering-machines/car-suspension-basics.md", "utf8");
   const item = quizBlocks(markdown).find((question) =>

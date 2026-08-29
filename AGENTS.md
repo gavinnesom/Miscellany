@@ -4,7 +4,7 @@
 - For any request that creates, researches, expands, rewrites, audits, or reorganizes content, read and follow `docs/editorial-standard.md` first unless Gavin explicitly overrides it in the current request.
 - Inspect relevant existing content before changing it: current entry, category/topic neighbors, tags, relationships, duplication, and missing bridge entries.
 - Keep app code generic; new entries should not require React edits.
-- New entries should use stable `category` and `topic` keys; `section` is only a compatibility alias.
+- New entries should use stable `category` and `topic` keys.
 - Treat Category -> Topic -> Entry as structural browsing, tags as cross-cutting indexes, and relationships as semantic links.
 - Validate content by running `npm test`.
 - Keep entries as short as the idea allows, but use enough space, examples, tables, or diagrams to explain the concept properly.

@@ -26,8 +26,8 @@ export type TopicQuizCoverage = {
 };
 
 export type CategoryQuizCoverage = {
-  slug: string;
-  title: string;
+  key: string;
+  label: string;
   ready: number;
   total: number;
   readyQuestionCount: number;
@@ -93,7 +93,7 @@ export function buildCoverageHierarchy(
   const coverageBySlug = new Map(coverageEntries.map((entry) => [entry.slug, entry]));
   return groups.map((group) => {
     const categoryTopics = topics
-      .filter((topic) => topic.category === group.slug)
+      .filter((topic) => topic.category === group.key)
       .map((topic) => {
         const entries = topic.entries
           .map((entry) => coverageBySlug.get(entry.slug))
@@ -116,8 +116,8 @@ export function buildCoverageHierarchy(
     const counts = coverageCounts(categoryEntries);
 
     return {
-      slug: group.slug,
-      title: group.title,
+      key: group.key,
+      label: group.label,
       ready: counts.ready,
       total: counts.total,
       readyQuestionCount: counts.readyQuestionCount,

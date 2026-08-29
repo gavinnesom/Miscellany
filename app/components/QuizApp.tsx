@@ -60,7 +60,7 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
   const initialEntry = entries.find((entry) => entry.slug === initialSlug) ?? entries[0];
   const initialTopicEntry = entries.find((entry) => entry.topic === initialTopic);
   const [mode, setMode] = useState<QuizMode>(initialSlug ? "related" : initialTopic ? "topic" : "all");
-  const [category, setCategory] = useState(initialTopicEntry?.category ?? initialEntry?.category ?? groups[0]?.slug ?? "");
+  const [category, setCategory] = useState(initialTopicEntry?.category ?? initialEntry?.category ?? groups[0]?.key ?? "");
   const [topicKey, setTopicKey] = useState(initialTopic ?? initialEntry?.topic ?? topics[0]?.key ?? "");
   const [relatedSlug, setRelatedSlug] = useState(initialEntry?.slug ?? entries[0]?.slug ?? "");
   const [quizIndex, setQuizIndex] = useState(0);
@@ -129,7 +129,7 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
     : questionSet[quizIndex % Math.max(questionSet.length, 1)];
   const currentIsEnrolled = isTrackedQuestion(current, registeredIds, mode === "due", Boolean(session));
   const typedMode = Boolean(session && currentIsEnrolled);
-  const currentCategory = current ? categoryFor(current.category).title : "";
+  const currentCategory = current ? categoryFor(current.category).label : "";
   const currentTopic = current ? topicFor(current.topic).label : "";
   const summaryText = !session ? "" : summary
     ? `Due ${summary.due_now} · Reviews ${summary.review_count}`
@@ -363,8 +363,8 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
             Category
             <select value={category} onChange={(event) => updateCategory(event.target.value)}>
               {groups.map((group) => (
-                <option key={group.slug} value={group.slug}>
-                  {group.title}
+                <option key={group.key} value={group.key}>
+                  {group.label}
                 </option>
               ))}
             </select>
@@ -410,7 +410,7 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
 
           <p>
             {questionSet.length} {questionSet.length === 1 ? "question" : "questions"}
-            {mode === "category" ? ` from ${categoryFor(category).title}` : null}
+            {mode === "category" ? ` from ${categoryFor(category).label}` : null}
             {mode === "topic" ? ` from ${topicFor(topicKey).label}` : null}
             {mode === "related" && topicEntry ? ` around ${topicEntry.title}` : null}
           </p>

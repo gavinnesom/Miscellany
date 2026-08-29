@@ -10,6 +10,7 @@ import { questionsForEntry } from "../lib/quiz-questions";
 import { relationshipSections } from "../lib/relationships";
 import type { ReviewSummary } from "../lib/review";
 import { selectedTextWithinElement } from "../lib/review-selection";
+import { randomItem } from "../lib/random";
 import { categoryPath, entryPath, quizTopicPath, tagPath, topicPath } from "../lib/routes";
 import { topicFor } from "../lib/topics";
 import { useAuthSession } from "../lib/use-auth-session";
@@ -249,7 +250,7 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
   }
 
   function surprise() {
-    const next = entries[Math.floor(Math.random() * entries.length)];
+    const next = randomItem(entries);
     if (next) openEntry(next.slug);
   }
 
@@ -400,7 +401,7 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
                 onClick={() => openEntry(entry.slug)}
               >
                 <span>{entry.title}</span>
-                <small>{categoryFor(entry.category).title} / {topicFor(entry.topic).label}</small>
+                <small>{categoryFor(entry.category).label} / {topicFor(entry.topic).label}</small>
               </button>
             ))}
             {searchResults.length === 0 ? <p className="empty-list">No matching entries.</p> : null}
@@ -410,7 +411,7 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
         <>
           <div className="panel-heading tree-heading">
             <div>
-              <h2>{categoryFor(selected.category).title}</h2>
+              <h2>{categoryFor(selected.category).label}</h2>
               <Link href={categoryPath(selected.category)}>Overview</Link>
             </div>
           </div>
@@ -485,12 +486,12 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
       <section className="category-index" aria-label="Categories">
         {groups.map((group) => (
           <button
-            className={selected.category === group.slug ? "category-tile active" : "category-tile"}
-            key={group.slug}
+            className={selected.category === group.key ? "category-tile active" : "category-tile"}
+            key={group.key}
             type="button"
-            onClick={() => openCategory(group.slug)}
+            onClick={() => openCategory(group.key)}
           >
-            <span>{group.title}</span>
+            <span>{group.label}</span>
             <small>{group.entries.length}</small>
           </button>
         ))}
@@ -499,7 +500,7 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
       <details className="mobile-browser-drawer">
         <summary>
           <span>Browse</span>
-          <em>{categoryFor(selected.category).title} / {topicFor(selected.topic).label}</em>
+          <em>{categoryFor(selected.category).label} / {topicFor(selected.topic).label}</em>
         </summary>
         <aside className="library-panel mobile-library-panel" aria-label="Mobile category browser">
           {browserPanelContent}
@@ -513,7 +514,7 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
 
         <article className={selected.entry_type === "book" ? "entry-card book-entry" : "entry-card"} id={selected.slug}>
           <nav className="entry-kicker entry-breadcrumb" aria-label="Entry location">
-            <Link href={categoryPath(selected.category)}>{categoryFor(selected.category).title}</Link>
+            <Link href={categoryPath(selected.category)}>{categoryFor(selected.category).label}</Link>
             <span>/</span>
             <Link href={topicPath(selected.topic)}>{topicFor(selected.topic).label}</Link>
           </nav>

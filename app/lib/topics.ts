@@ -379,57 +379,6 @@ export const duplicateTopicKeys = Array.from(
   .filter(([, count]) => count > 1)
   .map(([key]) => key);
 
-const sectionTopicMap = new Map<string, string>([
-  ["natural-world:Plants", "plants-weeds"],
-  ["natural-world:Animals", "animal-biology"],
-  ["natural-world:Microscopic Life", "microscopic-life"],
-  ["biology-medicine:Metabolism", "metabolism-diabetes"],
-  ["biology-medicine:Diabetes", "metabolism-diabetes"],
-  ["biology-medicine:Metabolism / Diabetes", "metabolism-diabetes"],
-  ["biology-medicine:Physiology", "metabolism-diabetes"],
-  ["biology-medicine:Sleep", "sleep"],
-  ["biology-medicine:Cells & Genetics", "genetics-cell-biology"],
-  ["biology-medicine:Orthopedics", "joints-conditions"],
-  ["physics-space:Relativity", "relativity"],
-  ["physics-space:Earth History", "earth-history-geology"],
-  ["physics-space:Earth Chemistry", "earth-history-geology"],
-  ["physics-space:Geology", "earth-history-geology"],
-  ["physics-space:Cosmology", "cosmology-scale"],
-  ["physics-space:Thermodynamics", "physical-principles"],
-  ["physics-space:Materials", "physical-principles"],
-  ["computing-ai:AI", "ai-language-models"],
-  ["computing-ai:Algorithms", "algorithms-computation"],
-  ["computing-ai:Concepts", "algorithms-computation"],
-  ["computing-ai:Formal Systems", "formal-systems-mind"],
-  ["computing-ai:Web Platform", "web-runtime-technology"],
-  ["engineering-machines:Vehicles", "vehicles-drivetrains"],
-  ["engineering-machines:Drivetrains", "vehicles-drivetrains"],
-  ["engineering-machines:Engines", "vehicles-drivetrains"],
-  ["engineering-machines:Electrical", "electrical-systems"],
-  ["history-society:Business History", "institutions-policy"],
-  ["history-society:Policy", "institutions-policy"],
-  ["history-society:Myths", "historical-myths-memory"],
-  ["history-society:Big History", "big-history-ideas"],
-  ["history-society:Alcohol", "alcohol-history-science"],
-  ["history-society:Alcohol History", "alcohol-history-science"],
-  ["philosophy:Orientation", "philosophy-orientation"],
-  ["philosophy:Philosophers", "philosophers"],
-  ["philosophy:Logic", "logic-formal-reasoning"],
-  ["philosophy:Formal Reasoning", "logic-formal-reasoning"],
-  ["books-ideas:Learning", "learning-reasoning"],
-  ["books-ideas:Reasoning", "learning-reasoning"],
-  ["books-ideas:Mental Models", "learning-reasoning"],
-  ["bridge-games:Bridge", "bridge"],
-  ["bridge-games:History of Games", "history-of-games"],
-  ["bridge-games:Probability Games", "probability-games"],
-  ["arts-culture:Film", "film-television"],
-  ["arts-culture:Television", "film-television"],
-  ["arts-culture:Literature", "literature"],
-  ["practical-world:Privacy", "privacy-tracking"],
-  ["practical-world:Kinship", "kinship-family-tree"],
-  ["practical-world:Family Trees", "kinship-family-tree"],
-]);
-
 export function topicFor(key: string) {
   return topics.find((topic) => topic.key === key) ?? {
     key,
@@ -441,8 +390,4 @@ export function topicFor(key: string) {
     description: "Unmapped topic.",
     order: 999,
   };
-}
-
-export function topicFromSection(category: string, section: string) {
-  return sectionTopicMap.get(`${category}:${section}`) ?? "";
 }

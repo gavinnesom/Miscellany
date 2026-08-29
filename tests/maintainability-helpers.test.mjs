@@ -20,6 +20,13 @@ test("relationship helper preserves curated and inverse relationship semantics",
   );
 });
 
+test("random item selection uses the supplied random source", async () => {
+  const { randomItem } = await importFreshRandom();
+  assert.equal(randomItem(["first", "middle", "last"], () => 0), "first");
+  assert.equal(randomItem(["first", "middle", "last"], () => 0.9), "last");
+  assert.equal(randomItem([], () => 0), undefined);
+});
+
 test("grade feedback formatting is generic and does not special-case individual answers", async () => {
   const { gradeFeedback } = await importFreshQuizFeedback();
 
@@ -80,5 +87,10 @@ async function importFreshRelationships() {
 
 async function importFreshQuizFeedback() {
   const moduleUrl = new URL(`../app/lib/quiz-feedback.ts?test=${Date.now()}-${Math.random()}`, import.meta.url);
+  return import(moduleUrl.href);
+}
+
+async function importFreshRandom() {
+  const moduleUrl = new URL(`../app/lib/random.ts?test=${Date.now()}-${Math.random()}`, import.meta.url);
   return import(moduleUrl.href);
 }

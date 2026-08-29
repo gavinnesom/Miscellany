@@ -4,6 +4,7 @@ import type { MouseEvent, ReactNode } from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { fetchWithSessionRefresh } from "../lib/auth";
+import { randomItem } from "../lib/random";
 import { entryPath } from "../lib/routes";
 import { useAuthState } from "../lib/use-auth-session";
 import { AuthControl } from "./AuthControl";
@@ -81,7 +82,8 @@ export function SiteHeader({ entryCount, onHome, onSurprise, review, search, sup
     }
 
     if (surpriseSlugs.length === 0) return;
-    const slug = surpriseSlugs[Math.floor(Math.random() * surpriseSlugs.length)];
+    const slug = randomItem(surpriseSlugs);
+    if (!slug) return;
     window.location.href = entryPath(slug);
   }
 

@@ -7,7 +7,7 @@ import { readyQuestionIds } from "../app/lib/quiz-readiness.ts";
 const spring = entry("spring", "Spring", [question("spring:q1"), question("spring:q2")]);
 const retired = entry("retired", "Retired", [{ ...question("retired:q1"), status: "retired" }]);
 const logic = entry("logic", "Logic", [question("logic:q1")]);
-const groups = [{ slug: "engineering", title: "Engineering", entries: [spring] }, { slug: "philosophy", title: "Philosophy", entries: [logic, retired] }];
+const groups = [{ key: "engineering", label: "Engineering", entries: [spring] }, { key: "philosophy", label: "Philosophy", entries: [logic, retired] }];
 const topics = [{ key: "vehicles", label: "Vehicles", category: "engineering", entries: [spring] }, { key: "formal", label: "Formal", category: "philosophy", entries: [logic, retired] }];
 
 test("saved entry readiness, not MemoryEngine registration, drives coverage", () => {

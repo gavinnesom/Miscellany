@@ -52,7 +52,7 @@ export function QuizCoveragePanel({ groups, topics, loadState, readyEntrySlugs, 
   const counts = useMemo(() => coverageCounts(coverageEntries), [coverageEntries]);
   const hierarchy = useMemo(() => buildCoverageHierarchy(groups, topics, coverageEntries), [coverageEntries, groups, topics]);
   const filteredHierarchy = useMemo(() => filterCoverageHierarchy(hierarchy, { filter, query }), [filter, hierarchy, query]);
-  const fullCategoryCounts = useMemo(() => new Map(hierarchy.map((category) => [category.slug, category])), [hierarchy]);
+  const fullCategoryCounts = useMemo(() => new Map(hierarchy.map((category) => [category.key, category])), [hierarchy]);
   const fullTopicCounts = useMemo(() => {
     const countMap = new Map<string, TopicQuizCoverage>();
     for (const category of hierarchy) for (const topic of category.topics) countMap.set(topic.key, topic);
@@ -67,8 +67,8 @@ export function QuizCoveragePanel({ groups, topics, loadState, readyEntrySlugs, 
     if (searchActive) return;
     setExpandedCategories((current) => {
       const next = new Set(current);
-      if (open) next.add(category.slug);
-      else next.delete(category.slug);
+      if (open) next.add(category.key);
+      else next.delete(category.key);
       return next;
     });
   }
@@ -128,10 +128,10 @@ export function QuizCoveragePanel({ groups, topics, loadState, readyEntrySlugs, 
             {syncMessage ? <p>{syncMessage}</p> : null}
           </div>
           {filteredHierarchy.length ? <div className="quiz-coverage-tree">{filteredHierarchy.map((category) => {
-            const fullCategory = fullCategoryCounts.get(category.slug) ?? category;
-            const categoryOpen = searchActive || expandedCategories.has(category.slug);
-            return <details key={category.slug} className="coverage-category" open={categoryOpen} onToggle={(event) => toggleCategory(category, event.currentTarget.open)}>
-              <summary><span>{category.title}</span><em>{countLabel(fullCategory.ready, fullCategory.total, fullCategory.readyQuestionCount, fullCategory.questionCount)}</em></summary>
+            const fullCategory = fullCategoryCounts.get(category.key) ?? category;
+            const categoryOpen = searchActive || expandedCategories.has(category.key);
+            return <details key={category.key} className="coverage-category" open={categoryOpen} onToggle={(event) => toggleCategory(category, event.currentTarget.open)}>
+              <summary><span>{category.label}</span><em>{countLabel(fullCategory.ready, fullCategory.total, fullCategory.readyQuestionCount, fullCategory.questionCount)}</em></summary>
               {category.topics.map((topic) => {
                 const fullTopic = fullTopicCounts.get(topic.key) ?? topic;
                 const topicOpen = searchActive || expandedTopics.has(topic.key);

@@ -12,12 +12,12 @@ type Props = {
 export const dynamic = "force-static";
 
 export function generateStaticParams() {
-  return categoryGroups.map((group) => ({ key: group.slug }));
+  return categoryGroups.map((group) => ({ key: group.key }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { key } = await params;
-  const group = categoryGroups.find((item) => item.slug === key);
+  const group = categoryGroups.find((item) => item.key === key);
 
   if (!group) {
     return {
@@ -26,10 +26,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${group.title} | Gavin's Miscellany`,
+    title: `${group.label} | Gavin's Miscellany`,
     description: group.description,
     alternates: {
-      canonical: `/category/${group.slug}`,
+      canonical: `/category/${group.key}`,
     },
   };
 }
@@ -40,9 +40,9 @@ export default async function CategoryPage({ params }: Props) {
   }
 
   const { key } = await params;
-  const group = categoryGroups.find((item) => item.slug === key);
+  const group = categoryGroups.find((item) => item.key === key);
 
   if (!group) notFound();
 
-  return <CategoryDirectory group={group} topics={topicGroups.filter((topic) => topic.category === group.slug)} entryCount={entries.length} surpriseSlugs={entries.map((entry) => entry.slug)} />;
+  return <CategoryDirectory group={group} topics={topicGroups.filter((topic) => topic.category === group.key)} entryCount={entries.length} surpriseSlugs={entries.map((entry) => entry.slug)} />;
 }
