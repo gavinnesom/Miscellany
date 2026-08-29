@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Tokens and Embeddings</title>
+  <desc id="desc">Token IDs are row lookups into an embedding table, producing one vector per token position.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2e9eff"/>
+    </marker>
+    <style>
+      text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+      .title{font-size:30px;font-weight:750;fill:#1d252d}
+      .h{font-size:18px;font-weight:750;fill:#1d252d}
+      .s{font-size:15px;fill:#33414f}
+      .m{font-size:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;fill:#1d252d}
+      .eq{font-size:17px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;fill:#005fb8}
+      .panel{fill:#fff;stroke:#d6e0e8;stroke-width:2}
+      .soft{fill:#f7fafc;stroke:#d6e0e8;stroke-width:1.5}
+      .blue{fill:#e7f3ff;stroke:#9ecff5;stroke-width:1.5}
+      .teal{fill:#e1f7f4;stroke:#8ed8cf;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1120" height="620" fill="transparent"/>
+  <text class="title" x="48" y="56">Tokens become embedding vectors by table lookup</text>
+
+  <rect class="panel" x="56" y="92" width="270" height="196" rx="10"/>
+  <text class="h" x="86" y="130">Tokenizer output</text>
+  <rect class="soft" x="86" y="154" width="210" height="38" rx="7"/>
+  <text class="m" x="105" y="179">"The dog ran."</text>
+  <text class="eq" x="86" y="230">token IDs = [1, 2, 3, 4]</text>
+  <text class="s" x="86" y="260">discrete symbols, no geometry yet</text>
+
+  <line x1="336" y1="190" x2="405" y2="190" stroke="#2e9eff" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect class="panel" x="420" y="92" width="644" height="300" rx="10"/>
+  <text class="h" x="452" y="130">Embedding matrix E, shape 5 x 3</text>
+  <text class="s" x="452" y="155">Rows are learned vectors; lookup means "take the row for this token ID."</text>
+
+  <g transform="translate(452 182)">
+    <rect class="soft" x="0" y="0" width="570" height="34" rx="6"/>
+    <text class="h" x="28" y="23">ID</text>
+    <text class="h" x="112" y="23">token</text>
+    <text class="h" x="248" y="23">dim 1</text>
+    <text class="h" x="358" y="23">dim 2</text>
+    <text class="h" x="468" y="23">dim 3</text>
+
+    <rect class="blue" x="0" y="44" width="570" height="34" rx="6"/>
+    <text class="m" x="30" y="67">1</text><text class="m" x="112" y="67">The</text><text class="m" x="248" y="67">0.21</text><text class="m" x="358" y="67">-0.15</text><text class="m" x="468" y="67">0.72</text>
+    <rect class="blue" x="0" y="86" width="570" height="34" rx="6"/>
+    <text class="m" x="30" y="109">2</text><text class="m" x="112" y="109">dog</text><text class="m" x="248" y="109">-0.44</text><text class="m" x="358" y="109">0.80</text><text class="m" x="468" y="109">0.18</text>
+    <rect class="blue" x="0" y="128" width="570" height="34" rx="6"/>
+    <text class="m" x="30" y="151">3</text><text class="m" x="112" y="151">ran</text><text class="m" x="248" y="151">0.33</text><text class="m" x="358" y="151">0.09</text><text class="m" x="468" y="151">-0.51</text>
+    <rect class="blue" x="0" y="170" width="570" height="34" rx="6"/>
+    <text class="m" x="30" y="193">4</text><text class="m" x="112" y="193">.</text><text class="m" x="248" y="193">-0.10</text><text class="m" x="358" y="193">0.27</text><text class="m" x="468" y="193">0.05</text>
+  </g>
+
+  <line x1="742" y1="404" x2="742" y2="462" stroke="#2e9eff" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect class="panel" x="208" y="474" width="704" height="96" rx="10"/>
+  <text class="h" x="240" y="510">Transformer input matrix, shape 4 x 3</text>
+  <text class="m" x="240" y="542">[E[1]; E[2]; E[3]; E[4]] = one 3-number vector for each of 4 token positions</text>
+  <rect class="teal" x="764" y="502" width="104" height="42" rx="7"/>
+  <text class="eq" x="816" y="529" text-anchor="middle">4 x 3</text>
+</svg>

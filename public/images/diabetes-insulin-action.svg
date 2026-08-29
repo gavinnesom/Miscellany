@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" role="img" aria-labelledby="title desc">
+  <title id="title">Normal insulin action, insulin deficiency, and insulin resistance</title>
+  <desc id="desc">Three columns comparing normal insulin signaling, Type 1 insulin deficiency, and Type 2 insulin resistance.</desc>
+  <rect width="980" height="520" fill="transparent"/>
+  <style>.h{font:700 24px Georgia,serif;fill:#1d252d}.t{font:600 17px system-ui,sans-serif;fill:#1d252d}.s{font:15px system-ui,sans-serif;fill:#596774}.card{fill:#edf4fa;stroke:#d6e0e8;stroke-width:2}.ok{fill:#dff0ff;stroke:#247a8a;stroke-width:2}.warn{fill:#eaf4fc;stroke:#2e9eff;stroke-width:2}.bad{fill:#edf1f7;stroke:#005fb8;stroke-width:2}.arrow{stroke:#004f99;stroke-width:3;fill:none;marker-end:url(#a)}</style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#004f99"/></marker></defs>
+  <rect class="ok" x="36" y="48" width="280" height="400" rx="16"/><text class="h" x="70" y="92">normal insulin action</text>
+  <rect class="card" x="76" y="136" width="200" height="62" rx="12"/><text class="t" x="111" y="173">beta cell signal</text>
+  <rect class="card" x="76" y="250" width="200" height="62" rx="12"/><text class="t" x="111" y="287">tissues respond</text>
+  <path class="arrow" d="M176 200 V246"/><text class="s" x="72" y="354">Glucose uptake and liver storage</text><text class="s" x="72" y="374">keep blood glucose regulated.</text>
+  <rect class="bad" x="350" y="48" width="280" height="400" rx="16"/><text class="h" x="398" y="92">insulin deficiency</text>
+  <rect class="card" x="390" y="136" width="200" height="62" rx="12"/><text class="t" x="432" y="173">signal missing</text>
+  <rect class="card" x="390" y="250" width="200" height="62" rx="12"/><text class="t" x="415" y="287">catabolic state</text>
+  <path class="arrow" d="M490 200 V246"/><text class="s" x="386" y="344">Type 1: without insulin, glucose rises</text><text class="s" x="386" y="364">and ketone production can run away.</text>
+  <rect class="warn" x="664" y="48" width="280" height="400" rx="16"/><text class="h" x="714" y="92">insulin resistance</text>
+  <rect class="card" x="704" y="136" width="200" height="62" rx="12"/><text class="t" x="734" y="173">signal present</text>
+  <rect class="card" x="704" y="250" width="200" height="62" rx="12"/><text class="t" x="725" y="287">weak response</text>
+  <path class="arrow" d="M804 200 V246"/><text class="s" x="700" y="344">Type 2: tissues respond poorly</text><text class="s" x="700" y="364">and beta cells may fail to compensate.</text>
+</svg>

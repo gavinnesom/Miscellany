@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Household Electrical Junction Boxes</title>
+  <desc id="desc">Explanatory visual for Household Electrical Junction Boxes.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e9eff"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" text-anchor="start" font-size="28" font-weight="700" fill="#1d252d"><tspan x="48" dy="0">Household Electrical Junction Boxes</tspan></text>
+  <rect x="250" y="120" width="460" height="300" rx="10" fill="#fff" stroke="#1d252d" stroke-width="4"/>
+<rect x="285" y="155" width="390" height="230" rx="10" fill="transparent" stroke="#d6e0e8" stroke-width="2"/>
+<line x1="95" y1="250" x2="250" y2="250" stroke="#1d252d" stroke-width="16" stroke-linecap="round"/>
+<line x1="710" y1="250" x2="865" y2="250" stroke="#1d252d" stroke-width="16" stroke-linecap="round"/>
+<circle cx="330" cy="250" r="30" fill="#edf1f7" stroke="#004f99" stroke-width="2"/>
+<circle cx="480" cy="250" r="30" fill="#dff0ff" stroke="#247a8a" stroke-width="2"/>
+<circle cx="630" cy="250" r="30" fill="#e7f3ff" stroke="#005fb8" stroke-width="2"/>
+<text x="330" y="322" text-anchor="middle" font-size="16" font-weight="500" fill="#1d252d"><tspan x="330" dy="0">hot splice</tspan></text>
+<text x="480" y="322" text-anchor="middle" font-size="16" font-weight="500" fill="#1d252d"><tspan x="480" dy="0">ground bond</tspan></text>
+<text x="630" y="322" text-anchor="middle" font-size="16" font-weight="500" fill="#1d252d"><tspan x="630" dy="0">neutral splice</tspan></text>
+<text x="480" y="455" text-anchor="middle" font-size="18" font-weight="500" fill="#596774"><tspan x="480" dy="0">enclosure + clamps + cover keep splices protected</tspan><tspan x="480" dy="20.7">and accessible</tspan></text>
+</svg>

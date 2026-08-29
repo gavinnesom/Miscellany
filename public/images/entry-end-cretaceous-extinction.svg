@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">End-Cretaceous Extinction</title>
+  <desc id="desc">Explanatory visual for End-Cretaceous Extinction.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e9eff"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" text-anchor="start" font-size="28" font-weight="700" fill="#1d252d"><tspan x="48" dy="0">End-Cretaceous Extinction</tspan></text>
+  <circle cx="115" cy="300" r="52" fill="#edf1f7" stroke="#d6e0e8" stroke-width="2"/>
+<text x="115" y="292" text-anchor="middle" font-size="17" font-weight="700" fill="#1d252d"><tspan x="115" dy="0">Chicxulub
+impact</tspan></text>
+<line x1="177" y1="300" x2="296.33333333333337" y2="300" stroke="#2e9eff" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="358.33333333333337" cy="300" r="52" fill="#d6e0e8" stroke="#d6e0e8" stroke-width="2"/>
+<text x="358.33333333333337" y="292" text-anchor="middle" font-size="17" font-weight="700" fill="#1d252d"><tspan x="358.33333333333337" dy="0">ejecta</tspan><tspan x="358.33333333333337" dy="19.549999999999997">+
+soot</tspan></text>
+<line x1="420.33333333333337" y1="300" x2="539.6666666666667" y2="300" stroke="#2e9eff" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="601.6666666666667" cy="300" r="52" fill="#e7f3ff" stroke="#d6e0e8" stroke-width="2"/>
+<text x="601.6666666666667" y="292" text-anchor="middle" font-size="17" font-weight="700" fill="#1d252d"><tspan x="601.6666666666667" dy="0">darkened
+skies</tspan></text>
+<line x1="663.6666666666667" y1="300" x2="783.0000000000001" y2="300" stroke="#2e9eff" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="845" cy="300" r="52" fill="#dff0ff" stroke="#d6e0e8" stroke-width="2"/>
+<text x="845" y="292" text-anchor="middle" font-size="17" font-weight="700" fill="#1d252d"><tspan x="845" dy="0">food-web
+collapse</tspan></text>
+</svg>

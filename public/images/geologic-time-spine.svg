@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 720" role="img" aria-labelledby="title desc">
+  <title id="title">Earth History and Geology topic spine</title>
+  <desc id="desc">Two-level timeline showing Earth history anchors, an expanded Phanerozoic strip, and method entries used to date the timeline. Event labels are placed in separate lanes to avoid collisions.</desc>
+  <rect width="1040" height="720" fill="transparent"/>
+  <style>
+    .title{font:700 30px Georgia,serif;fill:#1d252d}
+    .label{font:700 17px system-ui,sans-serif;fill:#1d252d}
+    .small{font:600 13px system-ui,sans-serif;fill:#596774}
+    .tiny{font:600 12px system-ui,sans-serif;fill:#596774}
+    .axis{stroke:#1d252d;stroke-width:3;stroke-linecap:round}
+    .tick{stroke:#1d252d;stroke-width:2}
+    .band{stroke:#1d252d;stroke-width:1.5}
+    .leader{stroke:#596774;stroke-width:1.5;stroke-dasharray:4 4}
+    .marker{fill:#004f99;stroke:#ffffff;stroke-width:4}
+    .method{fill:#ffffff;stroke:#005fb8;stroke-width:2}
+  </style>
+  <text class="title" x="48" y="54">Earth History &amp; Geology topic spine</text>
+  <text class="small" x="48" y="84">band = interval/process · marker = event/boundary · method entries are not fake dates</text>
+
+  <g transform="translate(48 150)">
+    <text class="label" x="0" y="-26">A. Full Earth-history scale</text>
+    <line class="axis" x1="0" y1="92" x2="944" y2="92"/>
+    <text class="tiny" x="0" y="130" text-anchor="middle">4.54 Ga</text>
+    <text class="tiny" x="944" y="130" text-anchor="middle">present</text>
+
+    <circle class="marker" cx="0" cy="92" r="12"/>
+    <line class="leader" x1="0" y1="78" x2="0" y2="48"/>
+    <text class="label" x="0" y="34" text-anchor="start">Earth forms</text>
+
+    <circle class="marker" cx="445" cy="92" r="12" fill="#247a8a"/>
+    <line class="leader" x1="445" y1="78" x2="445" y2="48"/>
+    <text class="label" x="445" y="34" text-anchor="middle">Great Oxidation</text>
+    <text class="tiny" x="445" y="144" text-anchor="middle">~2.4 Ga</text>
+
+    <rect class="band" x="812" y="76" width="20" height="32" rx="4" fill="#2e9eff" opacity=".62"/>
+    <line class="leader" x1="822" y1="76" x2="800" y2="36"/>
+    <text class="tiny" x="780" y="22" text-anchor="middle">Ediacaran</text>
+    <text class="tiny" x="780" y="40" text-anchor="middle">635-538.8 Ma</text>
+
+    <circle class="marker" cx="832" cy="92" r="10" fill="#005fb8"/>
+    <line class="leader" x1="832" y1="76" x2="890" y2="40"/>
+    <text class="label" x="908" y="24" text-anchor="middle">Cambrian</text>
+    <text class="label" x="908" y="45" text-anchor="middle">boundary</text>
+    <text class="tiny" x="832" y="144" text-anchor="middle">538.8 Ma</text>
+  </g>
+
+  <g transform="translate(48 380)">
+    <text class="label" x="0" y="-34">B. Expanded Phanerozoic strip</text>
+    <line class="axis" x1="0" y1="96" x2="944" y2="96"/>
+    <text class="tiny" x="0" y="140" text-anchor="middle">538.8 Ma</text>
+    <text class="tiny" x="944" y="140" text-anchor="middle">present</text>
+
+    <rect class="band" x="0" y="69" width="96" height="54" rx="8" fill="#005fb8" opacity=".22"/>
+    <line class="leader" x1="48" y1="69" x2="48" y2="30"/>
+    <text class="label" x="140" y="18" text-anchor="middle">Cambrian diversification</text>
+    <text class="tiny" x="140" y="38" text-anchor="middle">interval/band, not one instant</text>
+
+    <rect class="band" x="418" y="80" width="246" height="32" rx="8" fill="#247a8a" opacity=".35"/>
+    <line class="leader" x1="572" y1="112" x2="572" y2="170"/>
+    <text class="label" x="572" y="190" text-anchor="middle">Pangaea assembly to breakup</text>
+    <text class="tiny" x="572" y="210" text-anchor="middle">late Paleozoic; breakup begins ~200 Ma</text>
+
+    <circle class="marker" cx="503" cy="96" r="12" fill="#004f99"/>
+    <line class="leader" x1="503" y1="82" x2="454" y2="38"/>
+    <text class="label" x="416" y="18" text-anchor="middle">Great Dying</text>
+    <text class="tiny" x="416" y="38" text-anchor="middle">251.9 Ma</text>
+
+    <circle class="marker" cx="829" cy="96" r="12" fill="#004f99"/>
+    <line class="leader" x1="829" y1="82" x2="829" y2="38"/>
+    <text class="label" x="829" y="18" text-anchor="middle">End-Cretaceous</text>
+    <text class="tiny" x="829" y="38" text-anchor="middle">66 Ma</text>
+  </g>
+
+  <g transform="translate(48 636)">
+    <rect class="method" width="944" height="54" rx="10"/>
+    <text class="label" x="24" y="24">How we know the dates:</text>
+    <text class="small" x="248" y="24">Age of Earth</text>
+    <text class="small" x="248" y="44">Radiometric Dating</text>
+    <text class="small" x="492" y="24">Method entries support the timescale.</text>
+    <text class="small" x="492" y="44">They are not plotted at invented dates.</text>
+  </g>
+</svg>

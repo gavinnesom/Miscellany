@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Modal logic with Kripke worlds</title>
+  <desc id="desc">An evaluation world w0 accesses three alternatives. R is true in one accessible world while D is true in all accessible worlds, explaining possibility and necessity at w0.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#005fb8"/>
+    </marker>
+    <style>
+      .title{font:700 31px Georgia,serif;fill:#1d252d}
+      .subtitle{font:600 15px system-ui,sans-serif;fill:#596774}
+      .label{font:800 20px system-ui,sans-serif;fill:#1d252d}
+      .small{font:600 14px system-ui,sans-serif;fill:#596774}
+      .mono{font:800 18px ui-monospace,Menlo,monospace;fill:#005fb8}
+      .fact{font:800 15px ui-monospace,Menlo,monospace;fill:#005fb8}
+      .panel{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+      .world{fill:#e7f3ff;stroke:#005fb8;stroke-width:3}
+      .actual{fill:#dff0ff;stroke:#247a8a;stroke-width:4}
+      .arrow{fill:none;stroke:#005fb8;stroke-width:3.5;stroke-linecap:round;marker-end:url(#arrow)}
+      .soft{fill:#edf4fa;stroke:#d6e0e8;stroke-width:1.5}
+      .result{fill:#f7fbff;stroke:#d6e0e8;stroke-width:2}
+      .true{fill:#247a8a}
+      .false{fill:#b44747}
+    </style>
+  </defs>
+  <rect width="1120" height="620" fill="transparent"/>
+  <text class="title" x="54" y="56">Kripke worlds: evaluate from one world</text>
+  <text class="subtitle" x="54" y="84">Arrows decide which alternatives count when testing necessity and possibility.</text>
+
+  <g transform="translate(54 118)">
+    <rect class="panel" width="642" height="404" rx="18"/>
+    <circle class="actual" cx="116" cy="202" r="54"/>
+    <text class="label" x="116" y="196" text-anchor="middle">w0</text>
+    <text class="small" x="116" y="219" text-anchor="middle">evaluate here</text>
+
+    <circle class="world" cx="376" cy="82" r="36"/>
+    <text class="label" x="376" y="89" text-anchor="middle">w1</text>
+    <rect class="soft" x="424" y="46" width="118" height="70" rx="13"/>
+    <text class="fact true" x="483" y="76" text-anchor="middle">R=true</text>
+    <text class="fact true" x="483" y="99" text-anchor="middle">D=true</text>
+
+    <circle class="world" cx="420" cy="202" r="36"/>
+    <text class="label" x="420" y="209" text-anchor="middle">w2</text>
+    <rect class="soft" x="468" y="166" width="126" height="70" rx="13"/>
+    <text class="fact false" x="531" y="196" text-anchor="middle">R=false</text>
+    <text class="fact true" x="531" y="219" text-anchor="middle">D=true</text>
+
+    <circle class="world" cx="376" cy="322" r="36"/>
+    <text class="label" x="376" y="329" text-anchor="middle">w3</text>
+    <rect class="soft" x="424" y="286" width="126" height="70" rx="13"/>
+    <text class="fact false" x="487" y="316" text-anchor="middle">R=false</text>
+    <text class="fact true" x="487" y="339" text-anchor="middle">D=true</text>
+
+    <path class="arrow" d="M164 178 C226 133 285 98 335 87"/>
+    <path class="arrow" d="M172 202 C252 202 318 202 376 202"/>
+    <path class="arrow" d="M164 226 C226 271 285 306 335 317"/>
+
+    <rect class="soft" x="32" y="334" width="222" height="42" rx="21"/>
+    <text class="small" x="143" y="360" text-anchor="middle">No self-loop on w0 yet</text>
+  </g>
+
+  <g transform="translate(742 118)">
+    <rect class="panel" width="324" height="404" rx="18"/>
+    <text class="label" x="162" y="44" text-anchor="middle">At w0</text>
+    <rect class="result" x="38" y="72" width="248" height="92" rx="14"/>
+    <text class="mono" x="162" y="108" text-anchor="middle">◇R = true</text>
+    <text class="small" x="162" y="134" text-anchor="middle">R appears in at least one</text>
+    <text class="small" x="162" y="154" text-anchor="middle">accessible world.</text>
+
+    <rect class="result" x="38" y="184" width="248" height="92" rx="14"/>
+    <text class="mono" x="162" y="220" text-anchor="middle">□R = false</text>
+    <text class="small" x="162" y="246" text-anchor="middle">R fails in accessible</text>
+    <text class="small" x="162" y="266" text-anchor="middle">worlds w2 and w3.</text>
+
+    <rect class="result" x="38" y="296" width="248" height="70" rx="14"/>
+    <text class="mono" x="162" y="326" text-anchor="middle">◇D = true</text>
+    <text class="mono" x="162" y="352" text-anchor="middle">□D = true</text>
+  </g>
+
+  <g transform="translate(54 548)">
+    <rect class="soft" width="1012" height="42" rx="21"/>
+    <text class="small" x="506" y="27" text-anchor="middle">□P: P holds in every accessible world.  ◇P: P holds in at least one accessible world.  Whether w0 accesses itself is the K vs T question.</text>
+  </g>
+</svg>

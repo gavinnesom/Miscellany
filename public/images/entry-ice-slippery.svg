@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Why Ice Is Slippery</title>
+  <desc id="desc">Explanatory visual for Why Ice Is Slippery.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e9eff"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" text-anchor="start" font-size="28" font-weight="700" fill="#1d252d"><tspan x="48" dy="0">Why Ice Is Slippery</tspan></text>
+  <rect x="150" y="330" width="660" height="55" rx="10" fill="#e7f3ff" stroke="#005fb8" stroke-width="2"/><rect x="150" y="300" width="660" height="30" rx="10" fill="#e7f3ff" stroke="#005fb8" stroke-width="2"/><rect x="370" y="185" width="220" height="70" rx="10" fill="#eaf4fc" stroke="#1d252d" stroke-width="2"/><line x1="590" y1="220" x2="730" y2="220" stroke="#004f99" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/><line x1="480" y1="255" x2="480" y2="295" stroke="#2e9eff" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/><text x="480" y="165" text-anchor="middle" font-size="18" font-weight="500" fill="#1d252d"><tspan x="480" dy="0">slider creates</tspan><tspan x="480" dy="20.7">frictional heat</tspan></text><text x="480" y="430" text-anchor="middle" font-size="18" font-weight="500" fill="#596774"><tspan x="480" dy="0">mobile surface layer</tspan><tspan x="480" dy="20.7">reduces friction</tspan></text>
+</svg>

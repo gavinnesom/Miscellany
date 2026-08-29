@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">The scale of the observable universe</title>
+  <desc id="desc">A simplified nested scale comparison showing the Solar System, Milky Way, and observable universe, emphasizing that the observable universe is a horizon rather than a physical edge.</desc>
+  <rect width="960" height="640" fill="transparent"/>
+  <style>
+    .title{font:700 30px Georgia,serif;fill:#1d252d}
+    .label{font:750 22px system-ui,sans-serif;fill:#1d252d}
+    .small{font:600 17px system-ui,sans-serif;fill:#596774}
+    .tiny{font:600 15px system-ui,sans-serif;fill:#596774}
+    .ring1{fill:#ffffff;stroke:#2e9eff;stroke-width:3}
+    .ring2{fill:none;stroke:#247a8a;stroke-width:4}
+    .ring3{fill:none;stroke:#005fb8;stroke-width:4}
+    .ring4{fill:none;stroke:#004f99;stroke-width:4}
+    .card{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+    .leader{stroke:#596774;stroke-width:1.5;stroke-dasharray:4 4}
+  </style>
+
+  <text class="title" x="48" y="56">The Scale of the Observable Universe</text>
+  <text class="small" x="48" y="88">Not a picture to scale: each ring marks a much larger kind of horizon.</text>
+
+  <g transform="translate(90 130)">
+    <circle class="ring4" cx="260" cy="235" r="220"/>
+    <circle class="ring3" cx="260" cy="235" r="145"/>
+    <circle class="ring2" cx="260" cy="235" r="82"/>
+    <circle class="ring1" cx="260" cy="235" r="34"/>
+    <text class="tiny" x="260" y="240" text-anchor="middle">Solar</text>
+    <text class="tiny" x="260" y="258" text-anchor="middle">System</text>
+
+    <line class="leader" x1="260" y1="153" x2="540" y2="108"/>
+    <line class="leader" x1="260" y1="90" x2="540" y2="206"/>
+    <line class="leader" x1="260" y1="15" x2="540" y2="318"/>
+
+    <rect class="card" x="540" y="56" width="300" height="88" rx="10"/>
+    <text class="label" x="562" y="90">Milky Way</text>
+    <text class="small" x="562" y="118">about 100,000 light-years across</text>
+
+    <rect class="card" x="540" y="170" width="300" height="94" rx="10"/>
+    <text class="label" x="562" y="204">Observable universe</text>
+    <text class="small" x="562" y="232">about 93 billion light-years</text>
+    <text class="small" x="562" y="254">in diameter today</text>
+
+    <rect class="card" x="540" y="292" width="300" height="112" rx="10"/>
+    <text class="label" x="562" y="326">Horizon, not an edge</text>
+    <text class="small" x="562" y="354">It marks what could have</text>
+    <text class="small" x="562" y="376">sent us light since the</text>
+    <text class="small" x="562" y="398">early universe.</text>
+  </g>
+
+</svg>

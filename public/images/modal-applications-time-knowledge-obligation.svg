@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" role="img" aria-labelledby="title desc">
+  <title id="title">Modal machinery for time, knowledge and obligation</title>
+  <desc id="desc">Three panels use similar world and arrow structures but interpret the arrows as temporal development, information compatibility, and normatively acceptable alternatives.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#005fb8"/>
+    </marker>
+    <style>
+      .title{font:700 30px Georgia,serif;fill:#1d252d}
+      .panel-title{font:800 21px system-ui,sans-serif;fill:#1d252d}
+      .small{font:600 14px system-ui,sans-serif;fill:#596774}
+      .mono{font:800 16px ui-monospace,Menlo,monospace;fill:#005fb8}
+      .panel{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+      .node{fill:#e7f3ff;stroke:#005fb8;stroke-width:3}
+      .actual{fill:#dff0ff;stroke:#247a8a;stroke-width:4}
+      .ideal{fill:#f2f9ff;stroke:#247a8a;stroke-width:3}
+      .arrow{fill:none;stroke:#005fb8;stroke-width:3.5;stroke-linecap:round;marker-end:url(#arrow)}
+      .soft{fill:#edf4fa;stroke:#d6e0e8;stroke-width:1.5}
+      .warn{fill:#fff;stroke:#d6e0e8;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1120" height="560" fill="transparent"/>
+  <text class="title" x="54" y="54">Same relational skeleton, different arrow meanings</text>
+  <text class="small" x="54" y="82">The graph shape is only half the model; the application supplies what accessibility means.</text>
+
+  <g transform="translate(54 122)">
+    <rect class="panel" width="318" height="318" rx="16"/>
+    <text class="panel-title" x="159" y="42" text-anchor="middle">TIME</text>
+    <circle class="actual" cx="70" cy="138" r="28"/><text class="mono" x="70" y="144" text-anchor="middle">t0</text>
+    <circle class="node" cx="159" cy="138" r="28"/><text class="mono" x="159" y="144" text-anchor="middle">t1</text>
+    <circle class="node" cx="248" cy="138" r="28"/><text class="mono" x="248" y="144" text-anchor="middle">t2</text>
+    <path class="arrow" d="M100 138 L127 138"/>
+    <path class="arrow" d="M189 138 L216 138"/>
+    <text class="small" x="159" y="218" text-anchor="middle">arrow = possible/later</text>
+    <text class="small" x="159" y="239" text-anchor="middle">temporal development</text>
+    <rect class="soft" x="36" y="264" width="246" height="32" rx="16"/>
+    <text class="small" x="159" y="285" text-anchor="middle">Directional, not S5-style.</text>
+  </g>
+
+  <g transform="translate(401 122)">
+    <rect class="panel" width="318" height="318" rx="16"/>
+    <text class="panel-title" x="159" y="42" text-anchor="middle">KNOWLEDGE</text>
+    <circle class="actual" cx="74" cy="160" r="30"/><text class="mono" x="74" y="166" text-anchor="middle">actual</text>
+    <circle class="node" cx="220" cy="92" r="28"/><text class="mono" x="220" y="98" text-anchor="middle">red</text>
+    <circle class="node" cx="220" cy="160" r="28"/><text class="mono" x="220" y="166" text-anchor="middle">blue</text>
+    <circle class="node" cx="220" cy="228" r="28"/><text class="mono" x="220" y="234" text-anchor="middle">green</text>
+    <path class="arrow" d="M104 148 C136 122 162 105 190 96"/>
+    <path class="arrow" d="M106 160 L181 160"/>
+    <path class="arrow" d="M104 172 C136 198 162 215 190 224"/>
+    <text class="small" x="159" y="278" text-anchor="middle">all alternatives: one ball</text>
+    <text class="small" x="159" y="299" text-anchor="middle">not all alternatives: red ball</text>
+  </g>
+
+  <g transform="translate(748 122)">
+    <rect class="panel" width="318" height="318" rx="16"/>
+    <text class="panel-title" x="159" y="42" text-anchor="middle">OBLIGATION</text>
+    <circle class="actual" cx="76" cy="160" r="32"/><text class="mono" x="76" y="156" text-anchor="middle">actual</text><text class="small" x="76" y="177" text-anchor="middle">not ideal</text>
+    <circle class="ideal" cx="228" cy="116" r="34"/><text class="mono" x="228" y="113" text-anchor="middle">ideal</text><text class="small" x="228" y="134" text-anchor="middle">P holds</text>
+    <circle class="ideal" cx="228" cy="218" r="34"/><text class="mono" x="228" y="215" text-anchor="middle">ideal</text><text class="small" x="228" y="236" text-anchor="middle">P holds</text>
+    <path class="arrow" d="M108 150 C146 132 172 122 190 118"/>
+    <path class="arrow" d="M108 170 C146 188 172 208 190 214"/>
+    <rect class="warn" x="40" y="262" width="238" height="34" rx="17"/>
+    <text class="small" x="159" y="284" text-anchor="middle">Obligation can be violated.</text>
+  </g>
+
+  <rect class="soft" x="188" y="482" width="744" height="42" rx="21"/>
+  <text class="small" x="560" y="508" text-anchor="middle">Same relational machinery. Different meaning of the arrows.</text>
+</svg>

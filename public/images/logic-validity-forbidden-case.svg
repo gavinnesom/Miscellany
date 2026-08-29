@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 560" role="img" aria-labelledby="title desc">
+  <title id="title">Validity forbids the all-premises-true and conclusion-false case</title>
+  <desc id="desc">Four state cards show possible premise and conclusion truth combinations. The card where all premises are true and the conclusion is false is crossed out as the invalidating case.</desc>
+  <defs>
+    <style>
+      .title{font:700 30px Georgia,serif;fill:#1d252d}
+      .subtitle{font:600 15px system-ui,sans-serif;fill:#596774}
+      .card-title{font:800 20px system-ui,sans-serif;fill:#1d252d}
+      .label{font:700 16px system-ui,sans-serif;fill:#1d252d}
+      .small{font:600 14px system-ui,sans-serif;fill:#596774}
+      .card{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+      .allowed{fill:#e7f3ff;stroke:#d6e0e8;stroke-width:2}
+      .forbidden{fill:#edf1f7;stroke:#005fb8;stroke-width:3}
+      .pill{fill:#edf4fa;stroke:#d6e0e8;stroke-width:1.5}
+      .ok{fill:#247a8a}
+      .bad{fill:#004f99}
+      .cross{stroke:#004f99;stroke-width:8;stroke-linecap:round;opacity:.22}
+      .rail{fill:#f2f9ff;stroke:#005fb8;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1040" height="560" fill="transparent"/>
+  <text class="title" x="48" y="54">Validity forbids exactly one kind of counterexample</text>
+  <text class="subtitle" x="48" y="84">A valid argument leaves no possible case where all premises are true while the conclusion is false.</text>
+
+  <g transform="translate(48 126)">
+    <rect class="card allowed" x="0" y="0" width="220" height="190" rx="14"/>
+    <text class="card-title" x="110" y="38" text-anchor="middle">Allowed</text>
+    <rect class="pill" x="30" y="62" width="160" height="38" rx="19"/>
+    <circle class="ok" cx="54" cy="81" r="7"/>
+    <text class="label" x="76" y="87">premises true</text>
+    <rect class="pill" x="30" y="112" width="160" height="38" rx="19"/>
+    <circle class="ok" cx="54" cy="131" r="7"/>
+    <text class="label" x="76" y="137">conclusion true</text>
+  </g>
+
+  <g transform="translate(292 126)">
+    <rect class="card allowed" x="0" y="0" width="220" height="190" rx="14"/>
+    <text class="card-title" x="110" y="38" text-anchor="middle">Allowed</text>
+    <rect class="pill" x="30" y="62" width="160" height="38" rx="19"/>
+    <circle class="bad" cx="54" cy="81" r="7"/>
+    <text class="label" x="76" y="87">premises false</text>
+    <rect class="pill" x="30" y="112" width="160" height="38" rx="19"/>
+    <circle class="bad" cx="54" cy="131" r="7"/>
+    <text class="label" x="76" y="137">conclusion false</text>
+  </g>
+
+  <g transform="translate(536 126)">
+    <rect class="card allowed" x="0" y="0" width="220" height="190" rx="14"/>
+    <text class="card-title" x="110" y="38" text-anchor="middle">Allowed</text>
+    <rect class="pill" x="30" y="62" width="160" height="38" rx="19"/>
+    <circle class="bad" cx="54" cy="81" r="7"/>
+    <text class="label" x="76" y="87">premises false</text>
+    <rect class="pill" x="30" y="112" width="160" height="38" rx="19"/>
+    <circle class="ok" cx="54" cy="131" r="7"/>
+    <text class="label" x="76" y="137">conclusion true</text>
+  </g>
+
+  <g transform="translate(780 126)">
+    <rect class="card forbidden" x="0" y="0" width="220" height="190" rx="14"/>
+    <line class="cross" x1="24" y1="24" x2="196" y2="166"/>
+    <line class="cross" x1="196" y1="24" x2="24" y2="166"/>
+    <text class="card-title" x="110" y="38" text-anchor="middle">Invalidating case</text>
+    <rect class="pill" x="30" y="62" width="160" height="38" rx="19"/>
+    <circle class="ok" cx="54" cy="81" r="7"/>
+    <text class="label" x="76" y="87">premises true</text>
+    <rect class="pill" x="30" y="112" width="160" height="38" rx="19"/>
+    <circle class="bad" cx="54" cy="131" r="7"/>
+    <text class="label" x="76" y="137">conclusion false</text>
+  </g>
+
+  <g transform="translate(120 396)">
+    <rect class="rail" width="800" height="82" rx="16"/>
+    <text class="card-title" x="400" y="34" text-anchor="middle">A valid argument is one for which this case is impossible.</text>
+    <text class="small" x="400" y="60" text-anchor="middle">False premises may still appear; validity only rules out true premises leading to a false conclusion.</text>
+  </g>
+</svg>

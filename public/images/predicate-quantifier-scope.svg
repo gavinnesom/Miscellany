@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 560" role="img" aria-labelledby="title desc">
+  <title id="title">Quantifier order changes meaning</title>
+  <desc id="desc">Two panels compare everyone loves someone, where arrows may point to different people, with someone is loved by everyone, where all arrows point to one common target.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#005fb8"/>
+    </marker>
+    <style>
+      .title{font:700 30px Georgia,serif;fill:#1d252d}
+      .panel-title{font:800 21px system-ui,sans-serif;fill:#1d252d}
+      .formula{font:700 20px ui-monospace,Menlo,monospace;fill:#005fb8}
+      .small{font:600 14px system-ui,sans-serif;fill:#596774}
+      .panel{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+      .node{fill:#e7f3ff;stroke:#005fb8;stroke-width:3}
+      .target{fill:#dff0ff;stroke:#247a8a;stroke-width:4}
+      .arrow{fill:none;stroke:#005fb8;stroke-width:3;stroke-linecap:round;marker-end:url(#arrow)}
+      .soft{fill:#f2f9ff;stroke:#d6e0e8;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1040" height="560" fill="transparent"/>
+  <text class="title" x="48" y="54">Quantifier order changes the picture</text>
+  <text class="small" x="48" y="82">Schematic model only: the people are placeholders for logical positions.</text>
+
+  <g transform="translate(48 116)">
+    <rect class="panel" width="444" height="370" rx="16"/>
+    <text class="panel-title" x="222" y="42" text-anchor="middle">Everyone loves someone</text>
+    <text class="formula" x="222" y="72" text-anchor="middle">∀x∃y Loves(x,y)</text>
+
+    <circle class="node" cx="92" cy="144" r="28"/><text class="panel-title" x="92" y="152" text-anchor="middle">A</text>
+    <circle class="node" cx="222" cy="126" r="28"/><text class="panel-title" x="222" y="134" text-anchor="middle">B</text>
+    <circle class="node" cx="352" cy="160" r="28"/><text class="panel-title" x="352" y="168" text-anchor="middle">C</text>
+    <circle class="node" cx="222" cy="270" r="28"/><text class="panel-title" x="222" y="278" text-anchor="middle">D</text>
+
+    <path class="arrow" d="M116 156 C154 184 178 214 202 248"/>
+    <path class="arrow" d="M246 138 C286 146 312 150 326 154"/>
+    <path class="arrow" d="M342 184 C314 224 286 250 252 264"/>
+    <path class="arrow" d="M218 242 C214 204 216 172 220 156"/>
+
+    <rect class="soft" x="62" y="318" width="320" height="34" rx="17"/>
+    <text class="small" x="222" y="340" text-anchor="middle">Each person has an outgoing arrow; targets may differ.</text>
+  </g>
+
+  <g transform="translate(548 116)">
+    <rect class="panel" width="444" height="370" rx="16"/>
+    <text class="panel-title" x="222" y="42" text-anchor="middle">Someone is loved by everyone</text>
+    <text class="formula" x="222" y="72" text-anchor="middle">∃y∀x Loves(x,y)</text>
+
+    <circle class="node" cx="92" cy="138" r="28"/><text class="panel-title" x="92" y="146" text-anchor="middle">A</text>
+    <circle class="target" cx="222" cy="202" r="34"/><text class="panel-title" x="222" y="210" text-anchor="middle">B</text>
+    <circle class="node" cx="352" cy="138" r="28"/><text class="panel-title" x="352" y="146" text-anchor="middle">C</text>
+    <circle class="node" cx="222" cy="304" r="28"/><text class="panel-title" x="222" y="312" text-anchor="middle">D</text>
+
+    <path class="arrow" d="M118 150 C154 164 178 176 194 188"/>
+    <path class="arrow" d="M326 150 C290 164 266 176 250 188"/>
+    <path class="arrow" d="M222 276 C222 258 222 248 222 240"/>
+
+    <rect class="soft" x="62" y="336" width="320" height="34" rx="17"/>
+    <text class="small" x="222" y="358" text-anchor="middle">All arrows converge on one shared target.</text>
+  </g>
+</svg>

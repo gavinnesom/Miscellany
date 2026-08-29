@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Time Dilation</title>
+  <desc id="desc">Explanatory visual for Time Dilation.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e9eff"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" text-anchor="start" font-size="28" font-weight="700" fill="#1d252d"><tspan x="48" dy="0">Time Dilation</tspan></text>
+  <rect x="160" y="150" width="180" height="250" rx="10" fill="#fff" stroke="#d6e0e8" stroke-width="2"/>
+<line x1="250" y1="350" x2="250" y2="195" stroke="#005fb8" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="250" y1="195" x2="250" y2="350" stroke="#005fb8" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="250" y="430" text-anchor="middle" font-size="17" font-weight="500" fill="#1d252d"><tspan x="250" dy="0">rest frame
+vertical</tspan><tspan x="250" dy="19.549999999999997">light path</tspan></text>
+<rect x="560" y="150" width="180" height="250" rx="10" fill="#fff" stroke="#d6e0e8" stroke-width="2"/>
+<path d="M610 350 L690 195 L720 350" fill="none" stroke="#005fb8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="540" y1="420" x2="765" y2="420" stroke="#004f99" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="650" y="430" text-anchor="middle" font-size="17" font-weight="500" fill="#1d252d"><tspan x="650" dy="0">moving frame
+longer</tspan><tspan x="650" dy="19.549999999999997">diagonal path</tspan></text>
+<text x="480" y="105" text-anchor="middle" font-size="18" font-weight="500" fill="#596774"><tspan x="480" dy="0">same light speed, longer path means more coordinate</tspan><tspan x="480" dy="20.7">time</tspan></text>
+</svg>

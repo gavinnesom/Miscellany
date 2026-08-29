@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">New Minor Forcing bidding tree</title>
+  <desc id="desc">Branching bridge bidding diagram for New Minor Forcing after one minor, one major, one notrump.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#005fb8"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" font-size="28" font-weight="700" fill="#1d252d">New Minor Forcing</text>
+  <text x="48" y="86" font-size="16" fill="#596774">A bidding tree, not a universal rebid law; partnership methods vary.</text>
+  <rect x="330" y="105" width="300" height="76" rx="10" fill="#fff" stroke="#d6e0e8" stroke-width="2"/>
+  <text x="480" y="137" text-anchor="middle" font-size="22" font-weight="700" fill="#1d252d">1m - 1M</text>
+  <text x="480" y="164" text-anchor="middle" font-size="18" fill="#596774">1NT - new minor*</text>
+  <line x1="480" y1="181" x2="480" y2="230" stroke="#005fb8" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="330" y="230" width="300" height="62" rx="10" fill="#dff0ff" stroke="#247a8a" stroke-width="2"/>
+  <text x="480" y="266" text-anchor="middle" font-size="20" font-weight="700" fill="#1d252d">opener describes hidden shape</text>
+  <path d="M480 292 V326 H150" fill="none" stroke="#005fb8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M480 326 H370" fill="none" stroke="#005fb8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M480 326 H590" fill="none" stroke="#005fb8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M480 326 H810" fill="none" stroke="#005fb8" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="60" y="338" width="180" height="104" rx="10" fill="#e7f3ff" stroke="#68c4ff" stroke-width="2"/>
+  <text x="150" y="374" text-anchor="middle" font-size="18" font-weight="700" fill="#1d252d">3-card support</text>
+  <text x="150" y="404" text-anchor="middle" font-size="15" fill="#596774">find 5-3</text>
+  <text x="150" y="426" text-anchor="middle" font-size="15" fill="#596774">major fit</text>
+  <rect x="280" y="338" width="180" height="104" rx="10" fill="#eaf4fc" stroke="#d6e0e8" stroke-width="2"/>
+  <text x="370" y="374" text-anchor="middle" font-size="18" font-weight="700" fill="#1d252d">4-card other major</text>
+  <text x="370" y="404" text-anchor="middle" font-size="15" fill="#596774">show hidden</text>
+  <text x="370" y="426" text-anchor="middle" font-size="15" fill="#596774">major length</text>
+  <rect x="500" y="338" width="180" height="104" rx="10" fill="#e8ecff" stroke="#6b7fd7" stroke-width="2"/>
+  <text x="590" y="374" text-anchor="middle" font-size="18" font-weight="700" fill="#1d252d">notrump info</text>
+  <text x="590" y="404" text-anchor="middle" font-size="15" fill="#596774">stoppers /</text>
+  <text x="590" y="426" text-anchor="middle" font-size="15" fill="#596774">shape limits</text>
+  <rect x="720" y="338" width="180" height="104" rx="10" fill="#edf1f7" stroke="#004f99" stroke-width="2"/>
+  <text x="810" y="374" text-anchor="middle" font-size="18" font-weight="700" fill="#1d252d">strength</text>
+  <text x="810" y="404" text-anchor="middle" font-size="15" fill="#596774">minimum /</text>
+  <text x="810" y="426" text-anchor="middle" font-size="15" fill="#596774">maximum style</text>
+  <text x="480" y="495" text-anchor="middle" font-size="17" fill="#596774">Responder uses the branch result to choose major, notrump, game, or further inquiry.</text>
+</svg>

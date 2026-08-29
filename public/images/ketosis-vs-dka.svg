@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" role="img" aria-labelledby="title desc">
+  <title id="title">Nutritional ketosis versus diabetic ketoacidosis</title>
+  <desc id="desc">Two columns contrast regulated fasting ketosis with runaway diabetic ketoacidosis.</desc>
+  <rect width="980" height="520" fill="transparent"/>
+  <style>.h{font:700 26px Georgia,serif;fill:#1d252d}.t{font:600 18px system-ui,sans-serif;fill:#1d252d}.s{font:15px system-ui,sans-serif;fill:#596774}.ok{fill:#dff0ff;stroke:#247a8a;stroke-width:2}.bad{fill:#edf1f7;stroke:#005fb8;stroke-width:2}.box{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}.arrow{stroke:#004f99;stroke-width:3;fill:none;marker-end:url(#a)}</style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#004f99"/></marker></defs>
+  <rect class="ok" x="44" y="54" width="410" height="390" rx="18"/><text class="h" x="96" y="100">regulated fasting ketosis</text>
+  <rect class="box" x="92" y="142" width="314" height="58" rx="12"/><text class="t" x="148" y="178">insulin lower but present</text>
+  <rect class="box" x="92" y="238" width="314" height="58" rx="12"/><text class="t" x="142" y="274">controlled lipolysis</text>
+  <rect class="box" x="92" y="334" width="314" height="58" rx="12"/><text class="t" x="132" y="370">moderate ketones, normal pH</text>
+  <path class="arrow" d="M249 202 V234"/><path class="arrow" d="M249 298 V330"/>
+  <rect class="bad" x="526" y="54" width="410" height="390" rx="18"/><text class="h" x="590" y="100">diabetic ketoacidosis</text>
+  <rect class="box" x="574" y="142" width="314" height="58" rx="12"/><text class="t" x="622" y="178">insulin brake missing</text>
+  <rect class="box" x="574" y="232" width="314" height="70" rx="12"/><text class="t" x="620" y="262">unrestrained lipolysis</text><text class="t" x="628" y="284">+ glucose output</text>
+  <rect class="box" x="574" y="334" width="314" height="70" rx="12"/><text class="t" x="612" y="362">high ketones + dehydration</text><text class="t" x="672" y="384">+ acidosis</text>
+  <path class="arrow" d="M731 202 V228"/><path class="arrow" d="M731 304 V330"/>
+  <text class="s" x="54" y="488">The distinction is regulatory state: ketones alone are not the same as ketoacidosis.</text>
+</svg>

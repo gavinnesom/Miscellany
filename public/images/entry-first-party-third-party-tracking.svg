@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">First-Party vs Third-Party Tracking</title>
+  <desc id="desc">Explanatory visual for First-Party vs Third-Party Tracking.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e9eff"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" text-anchor="start" font-size="28" font-weight="700" fill="#1d252d"><tspan x="48" dy="0">First-Party vs Third-Party Tracking</tspan></text>
+  <rect x="80" y="150" width="210" height="95" rx="10" fill="#e7f3ff" stroke="#d6e0e8" stroke-width="2"/><text x="185" y="205" text-anchor="middle" font-size="22" font-weight="700" fill="#1d252d"><tspan x="185" dy="0">Site A</tspan></text><rect x="80" y="315" width="210" height="95" rx="10" fill="#e7f3ff" stroke="#d6e0e8" stroke-width="2"/><text x="185" y="370" text-anchor="middle" font-size="22" font-weight="700" fill="#1d252d"><tspan x="185" dy="0">Site B</tspan></text><rect x="650" y="230" width="220" height="110" rx="10" fill="#edf1f7" stroke="#004f99" stroke-width="2"/><text x="760" y="280" text-anchor="middle" font-size="22" font-weight="700" fill="#1d252d"><tspan x="760" dy="0">Tracker X</tspan></text><line x1="290" y1="198" x2="650" y2="250" stroke="#004f99" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/><line x1="290" y1="363" x2="650" y2="310" stroke="#004f99" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/><circle cx="480" cy="280" r="38" fill="#fff" stroke="#d6e0e8" stroke-width="2"/><text x="480" y="286" text-anchor="middle" font-size="15" font-weight="500" fill="#1d252d"><tspan x="480" dy="0">browser</tspan></text><text x="480" y="455" text-anchor="middle" font-size="18" font-weight="500" fill="#596774"><tspan x="480" dy="0">third party appears across sites; partitioning limits</tspan><tspan x="480" dy="20.7">shared state</tspan></text>
+</svg>

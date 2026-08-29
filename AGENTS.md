@@ -1,0 +1,23 @@
+# Gavin's Miscellany Agent Notes
+
+- Treat `content/**/*.md` as the canonical knowledge source.
+- For any request that creates, researches, expands, rewrites, audits, or reorganizes content, read and follow `docs/editorial-standard.md` first unless Gavin explicitly overrides it in the current request.
+- Inspect relevant existing content before changing it: current entry, category/topic neighbors, tags, relationships, duplication, and missing bridge entries.
+- Keep app code generic; new entries should not require React edits.
+- New entries should use stable `category` and `topic` keys; `section` is only a compatibility alias.
+- Treat Category -> Topic -> Entry as structural browsing, tags as cross-cutting indexes, and relationships as semantic links.
+- Validate content by running `npm test`.
+- Keep entries as short as the idea allows, but use enough space, examples, tables, or diagrams to explain the concept properly.
+- Write for understanding and long-term recall. Do not stop at a definition, one-sentence answer, or bare fact when the next obvious follow-up is what makes the idea useful.
+- Err slightly toward extra depth when it helps: mechanism, why it happens, evidence, misconceptions, limitations, numbers, comparisons, and examples are all welcome when they make the entry easier to remember.
+- Use real Markdown bullets for short parallel statements. Use paragraphs when an idea needs development; do not make several tiny standalone paragraphs that are really a list.
+- Give numbers useful context. A count, range, speed, age, size, or diagnostic threshold should usually include a comparison, boundary condition, or plain-language interpretation.
+- Treat relationships as AI-curated semantic navigation, not tag/category expansion. Keep only a few links that would genuinely help Gavin understand or continue the topic.
+- Treat tags as loose search/index metadata. Do not over-normalize them during ordinary entry work.
+- Prefer images or explanatory diagrams when they help. Mark image provenance as `external`, `local`, `collaborative`, or `user`.
+- Visuals must earn their space, and no visual is better than a bad visual. Prefer real/reference-grounded images, maps, timelines, mechanisms, scale comparisons, anatomy, or structure over invented shapes, generic silhouettes, or prose boxes with arrows. Use `docs/editorial-standard.md` as the canonical visual-quality rule.
+- Prefer stronger sources for medical, controversial, or consequential entries; sources are for verification and further reading, not decoration.
+- Editorial Review is authenticated Gavin state backed by Supabase/Postgres table `public.miscellany_editorial_reviews`, with one active row per `(user_id, entry_slug)`. Logged-out/public state must hide Review, typed answers, Due, memory stats, and MemoryEngine writes. Review never edits canonical content and never belongs to MemoryEngine; canonical entries remain Markdown/Git. Do not restore the old localhost Markdown-write bridge or file-backed active review queue.
+- `CHATGPT_HANDOFF.md` is a rolling current-state handoff. Rewrite it after material work; do not append an indefinitely growing chronological history. Git history is the archive.
+- If an agreed implementation approach hits a fundamental runtime or architectural limitation, stop and report the limitation and reasonable alternatives before materially changing the architecture. Do not silently substitute a new architecture merely because it can be made to work.
+- Do not add CMS features or ingestion automation for Version 0.1 without a fresh project decision.

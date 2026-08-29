@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Survivorship Bias</title>
+  <desc id="desc">Explanatory visual for Survivorship Bias.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e9eff"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" text-anchor="start" font-size="28" font-weight="700" fill="#1d252d"><tspan x="48" dy="0">Survivorship Bias</tspan></text>
+  <path d="M160 285 L375 210 L795 270 L375 345 Z" fill="#edf4fa" stroke="#1d252d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="345" cy="250" r="8" fill="#004f99" stroke="#004f99" stroke-width="2"/><circle cx="410" cy="300" r="8" fill="#004f99" stroke="#004f99" stroke-width="2"/><circle cx="520" cy="250" r="8" fill="#004f99" stroke="#004f99" stroke-width="2"/><circle cx="620" cy="315" r="8" fill="#004f99" stroke="#004f99" stroke-width="2"/><path d="M210 390 L330 350 L430 370" fill="none" stroke="#596774" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="300" y="425" text-anchor="middle" font-size="17" font-weight="500" fill="#596774"><tspan x="300" dy="0">missing non-survivors</tspan></text><text x="480" y="115" text-anchor="middle" font-size="19" font-weight="500" fill="#596774"><tspan x="480" dy="0">visible damage is not the whole sample</tspan></text>
+</svg>

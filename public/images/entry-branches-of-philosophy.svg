@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Main Branches of Philosophy</title>
+  <desc id="desc">Explanatory visual for Main Branches of Philosophy.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e9eff"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" text-anchor="start" font-size="28" font-weight="700" fill="#1d252d"><tspan x="48" dy="0">Main Branches of Philosophy</tspan></text>
+  <line x1="480" y1="150" x2="700" y2="255" stroke="#d6e0e8" stroke-width="3" stroke-linecap="round"/>
+<line x1="700" y1="255" x2="610" y2="420" stroke="#d6e0e8" stroke-width="3" stroke-linecap="round"/>
+<line x1="610" y1="420" x2="350" y2="420" stroke="#d6e0e8" stroke-width="3" stroke-linecap="round"/>
+<line x1="350" y1="420" x2="260" y2="255" stroke="#d6e0e8" stroke-width="3" stroke-linecap="round"/>
+<line x1="260" y1="255" x2="480" y2="150" stroke="#d6e0e8" stroke-width="3" stroke-linecap="round"/>
+<circle cx="480" cy="150" r="58" fill="#fff" stroke="#d6e0e8" stroke-width="2"/>
+<text x="480" y="144" text-anchor="middle" font-size="17" font-weight="700" fill="#1d252d"><tspan x="480" dy="0">reality</tspan></text>
+<circle cx="700" cy="255" r="58" fill="#e7f3ff" stroke="#d6e0e8" stroke-width="2"/>
+<text x="700" y="249" text-anchor="middle" font-size="17" font-weight="700" fill="#1d252d"><tspan x="700" dy="0">knowledge</tspan></text>
+<circle cx="610" cy="420" r="58" fill="#dff0ff" stroke="#d6e0e8" stroke-width="2"/>
+<text x="610" y="414" text-anchor="middle" font-size="17" font-weight="700" fill="#1d252d"><tspan x="610" dy="0">value</tspan></text>
+<circle cx="350" cy="420" r="58" fill="#eaf4fc" stroke="#d6e0e8" stroke-width="2"/>
+<text x="350" y="414" text-anchor="middle" font-size="17" font-weight="700" fill="#1d252d"><tspan x="350" dy="0">reason</tspan></text>
+<circle cx="260" cy="255" r="58" fill="#edf1f7" stroke="#d6e0e8" stroke-width="2"/>
+<text x="260" y="249" text-anchor="middle" font-size="17" font-weight="700" fill="#1d252d"><tspan x="260" dy="0">society</tspan></text>
+</svg>

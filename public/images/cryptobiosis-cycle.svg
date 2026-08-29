@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Tardigrade anhydrobiosis cycle</title>
+  <desc id="desc">A clear dehydration and rehydration cycle from active hydrated tardigrade to tun anhydrobiosis and back, with a separate note that cryobiosis is freezing or cooling.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#247a8a"/>
+    </marker>
+    <style>
+      .title{font:700 28px Georgia,serif;fill:#1d252d}
+      .label{font:800 24px system-ui,sans-serif;fill:#1d252d}
+      .small{font:600 16px system-ui,sans-serif;fill:#596774}
+      .node{fill:#ffffff;stroke:#004f99;stroke-width:3}
+      .note{fill:#eaf4fc;stroke:#d6e0e8;stroke-width:2}
+      .arrow{fill:none;stroke:#247a8a;stroke-width:5;stroke-linecap:round;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="960" height="520" fill="transparent"/>
+  <text class="title" x="48" y="54">Anhydrobiosis is a dehydration cycle</text>
+
+  <g transform="translate(78 112)">
+    <rect class="node" x="0" y="0" width="238" height="118" rx="14"/>
+    <text class="label" x="119" y="45" text-anchor="middle">ACTIVE</text>
+    <text class="small" x="119" y="76" text-anchor="middle">hydrated, feeding</text>
+
+    <rect class="node" x="430" y="0" width="250" height="118" rx="14"/>
+    <text class="label" x="555" y="40" text-anchor="middle">TUN</text>
+    <text class="small" x="555" y="70" text-anchor="middle">anhydrobiosis</text>
+    <text class="small" x="555" y="96" text-anchor="middle">metabolism extremely low</text>
+
+    <path class="arrow" d="M240 59 H406"/>
+    <text class="small" x="323" y="36" text-anchor="middle">drying</text>
+    <text class="small" x="323" y="58" text-anchor="middle">dehydration</text>
+
+    <path class="arrow" d="M555 124 C555 232 119 232 119 134"/>
+    <text class="small" x="337" y="284" text-anchor="middle">water returns / rehydration</text>
+  </g>
+
+  <g transform="translate(210 408)">
+    <rect class="note" width="540" height="72" rx="12"/>
+    <text class="label" x="32" y="31">Other cryptobiosis</text>
+    <text class="small" x="32" y="56">Cryobiosis = freezing/cooling, not the drying-to-tun loop shown above.</text>
+  </g>
+</svg>

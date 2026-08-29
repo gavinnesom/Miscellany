@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 560" role="img" aria-labelledby="title desc">
+  <title id="title">Material implication states</title>
+  <desc id="desc">A two by two grid of P and Q truth values. The only violating state for P implies Q is P true and Q false.</desc>
+  <defs>
+    <style>
+      .title{font:700 30px Georgia,serif;fill:#1d252d}
+      .subtitle{font:600 15px system-ui,sans-serif;fill:#596774}
+      .axis{font:800 18px system-ui,sans-serif;fill:#1d252d}
+      .cell-title{font:800 22px system-ui,sans-serif;fill:#1d252d}
+      .small{font:600 15px system-ui,sans-serif;fill:#596774}
+      .allowed{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+      .violate{fill:#edf1f7;stroke:#005fb8;stroke-width:3}
+      .badge{fill:#e7f3ff;stroke:#d6e0e8;stroke-width:1.5}
+      .false-badge{fill:#edf4fa;stroke:#d6e0e8;stroke-width:1.5}
+      .rule{fill:#f2f9ff;stroke:#005fb8;stroke-width:2}
+      .cross{stroke:#004f99;stroke-width:7;stroke-linecap:round;opacity:.22}
+    </style>
+  </defs>
+  <rect width="1040" height="560" fill="transparent"/>
+  <text class="title" x="48" y="54">P → Q makes one promise</text>
+  <text class="subtitle" x="48" y="84">P never occurs without Q. Only one of the four possible states breaks that promise.</text>
+
+  <text class="axis" x="240" y="132" text-anchor="middle">P is true</text>
+  <text class="axis" x="500" y="132" text-anchor="middle">P is false</text>
+  <text class="axis" x="96" y="230" text-anchor="middle" transform="rotate(-90 96 230)">Q is true</text>
+  <text class="axis" x="96" y="410" text-anchor="middle" transform="rotate(-90 96 410)">Q is false</text>
+
+  <g transform="translate(132 150)">
+    <rect class="allowed" x="0" y="0" width="220" height="150" rx="14"/>
+    <text class="cell-title" x="110" y="48" text-anchor="middle">P true, Q true</text>
+    <rect class="badge" x="54" y="78" width="112" height="34" rx="17"/>
+    <text class="small" x="110" y="101" text-anchor="middle">promise kept</text>
+  </g>
+
+  <g transform="translate(392 150)">
+    <rect class="allowed" x="0" y="0" width="220" height="150" rx="14"/>
+    <text class="cell-title" x="110" y="48" text-anchor="middle">P false, Q true</text>
+    <rect class="false-badge" x="38" y="78" width="144" height="34" rx="17"/>
+    <text class="small" x="110" y="101" text-anchor="middle">P did not happen</text>
+  </g>
+
+  <g transform="translate(132 330)">
+    <rect class="violate" x="0" y="0" width="220" height="150" rx="14"/>
+    <line class="cross" x1="25" y1="22" x2="195" y2="128"/>
+    <line class="cross" x1="195" y1="22" x2="25" y2="128"/>
+    <text class="cell-title" x="110" y="48" text-anchor="middle">P true, Q false</text>
+    <rect class="false-badge" x="30" y="78" width="160" height="34" rx="17"/>
+    <text class="small" x="110" y="101" text-anchor="middle">the only violation</text>
+  </g>
+
+  <g transform="translate(392 330)">
+    <rect class="allowed" x="0" y="0" width="220" height="150" rx="14"/>
+    <text class="cell-title" x="110" y="48" text-anchor="middle">P false, Q false</text>
+    <rect class="false-badge" x="38" y="78" width="144" height="34" rx="17"/>
+    <text class="small" x="110" y="101" text-anchor="middle">P did not happen</text>
+  </g>
+
+  <g transform="translate(690 172)">
+    <rect class="rule" width="286" height="238" rx="18"/>
+    <text class="cell-title" x="143" y="54" text-anchor="middle">Read P → Q as:</text>
+    <text class="title" x="143" y="112" text-anchor="middle" font-size="27">no P</text>
+    <text class="title" x="143" y="150" text-anchor="middle" font-size="27">without Q</text>
+    <text class="small" x="143" y="196" text-anchor="middle">Rain without umbrella</text>
+    <text class="small" x="143" y="218" text-anchor="middle">is what breaks the promise.</text>
+  </g>
+</svg>
