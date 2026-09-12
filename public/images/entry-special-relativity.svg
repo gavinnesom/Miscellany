@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Special Relativity</title>
+  <desc id="desc">Explanatory visual for Special Relativity.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e9eff"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" text-anchor="start" font-size="28" font-weight="700" fill="#1d252d"><tspan x="48" dy="0">Special Relativity</tspan></text>
+  <line x1="480" y1="455" x2="480" y2="125" stroke="#1d252d" stroke-width="3" stroke-linecap="round"/><line x1="185" y1="420" x2="775" y2="160" stroke="#1d252d" stroke-width="3" stroke-linecap="round"/><path d="M480 455 L330 125 M480 455 L630 125" fill="none" stroke="#2e9eff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M480 455 L390 150 M480 455 L710 220" fill="none" stroke="#005fb8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="480" y="110" text-anchor="middle" font-size="20" font-weight="700" fill="#1d252d"><tspan x="480" dy="0">light cone</tspan></text><text x="700" y="250" text-anchor="middle" font-size="17" font-weight="500" fill="#005fb8"><tspan x="700" dy="0">moving time axis</tspan></text><text x="260" y="435" text-anchor="middle" font-size="17" font-weight="500" fill="#1d252d"><tspan x="260" dy="0">space</tspan></text><text x="510" y="150" text-anchor="middle" font-size="17" font-weight="500" fill="#1d252d"><tspan x="510" dy="0">time</tspan></text>
+</svg>

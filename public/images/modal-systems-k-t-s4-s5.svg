@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 650" role="img" aria-labelledby="title desc">
+  <title id="title">K, T, S4 and S5 modal frame conditions</title>
+  <desc id="desc">Four panels compare arbitrary accessibility, reflexivity, reflexivity plus transitivity, and equivalence-style mutual accessibility.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#005fb8"/>
+    </marker>
+    <style>
+      .title{font:700 30px Georgia,serif;fill:#1d252d}
+      .panel-title{font:800 21px system-ui,sans-serif;fill:#1d252d}
+      .small{font:600 14px system-ui,sans-serif;fill:#596774}
+      .mono{font:800 17px ui-monospace,Menlo,monospace;fill:#005fb8}
+      .panel{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+      .node{fill:#e7f3ff;stroke:#005fb8;stroke-width:3}
+      .node2{fill:#dff0ff;stroke:#247a8a;stroke-width:3}
+      .arrow{fill:none;stroke:#005fb8;stroke-width:3;stroke-linecap:round;marker-end:url(#arrow)}
+      .loop{fill:none;stroke:#247a8a;stroke-width:3;marker-end:url(#arrow)}
+      .required{fill:none;stroke:#2e9eff;stroke-width:4;stroke-linecap:round;marker-end:url(#arrow)}
+      .soft{fill:#edf4fa;stroke:#d6e0e8;stroke-width:1.5}
+      .cluster{fill:#f2f9ff;stroke:#247a8a;stroke-width:2;stroke-dasharray:8 7}
+    </style>
+  </defs>
+  <rect width="1120" height="650" fill="transparent"/>
+  <text class="title" x="54" y="54">Change the arrows, change the logic</text>
+  <text class="small" x="54" y="82">Each panel uses A, B and C so only the accessibility rule changes.</text>
+
+  <g transform="translate(54 112)">
+    <rect class="panel" width="486" height="210" rx="16"/>
+    <text class="panel-title" x="28" y="38">K</text>
+    <text class="small" x="72" y="38">No special frame condition</text>
+    <circle class="node" cx="122" cy="116" r="25"/><text class="panel-title" x="122" y="124" text-anchor="middle">A</text>
+    <circle class="node" cx="264" cy="82" r="25"/><text class="panel-title" x="264" y="90" text-anchor="middle">B</text>
+    <circle class="node" cx="352" cy="148" r="25"/><text class="panel-title" x="352" y="156" text-anchor="middle">C</text>
+    <path class="arrow" d="M148 110 C186 102 218 94 238 88"/>
+    <path class="arrow" d="M282 103 C302 122 320 134 330 140"/>
+    <path class="arrow" d="M333 160 C262 184 185 166 142 132"/>
+    <text class="small" x="244" y="190" text-anchor="middle">Irregular arrows are allowed.</text>
+  </g>
+
+  <g transform="translate(580 112)">
+    <rect class="panel" width="486" height="210" rx="16"/>
+    <text class="panel-title" x="28" y="38">T</text>
+    <text class="small" x="72" y="38">Reflexive: every world sees itself</text>
+    <circle class="node" cx="122" cy="116" r="25"/><text class="panel-title" x="122" y="124" text-anchor="middle">A</text>
+    <circle class="node" cx="264" cy="82" r="25"/><text class="panel-title" x="264" y="90" text-anchor="middle">B</text>
+    <circle class="node" cx="352" cy="148" r="25"/><text class="panel-title" x="352" y="156" text-anchor="middle">C</text>
+    <path class="arrow" d="M148 110 C186 102 218 94 238 88"/>
+    <path class="arrow" d="M282 103 C302 122 320 134 330 140"/>
+    <path class="loop" d="M113 92 C90 68 139 53 134 91"/>
+    <path class="loop" d="M255 58 C232 34 281 19 276 57"/>
+    <path class="loop" d="M343 124 C320 100 369 85 364 123"/>
+    <text class="mono" x="244" y="190" text-anchor="middle">□P → P</text>
+  </g>
+
+  <g transform="translate(54 352)">
+    <rect class="panel" width="486" height="210" rx="16"/>
+    <text class="panel-title" x="28" y="38">S4</text>
+    <text class="small" x="78" y="38">Reflexive + transitive</text>
+    <circle class="node" cx="110" cy="128" r="25"/><text class="panel-title" x="110" y="136" text-anchor="middle">A</text>
+    <circle class="node" cx="244" cy="82" r="25"/><text class="panel-title" x="244" y="90" text-anchor="middle">B</text>
+    <circle class="node2" cx="378" cy="128" r="25"/><text class="panel-title" x="378" y="136" text-anchor="middle">C</text>
+    <path class="arrow" d="M135 119 C170 105 198 94 219 87"/>
+    <path class="arrow" d="M269 88 C304 98 334 109 354 119"/>
+    <path class="required" d="M137 136 C212 174 292 174 352 136"/>
+    <path class="loop" d="M101 104 C78 80 127 65 122 103"/>
+    <path class="loop" d="M235 58 C212 34 261 19 256 57"/>
+    <path class="loop" d="M369 104 C346 80 395 65 390 103"/>
+    <text class="small" x="244" y="184" text-anchor="middle">A→B and B→C require A→C.</text>
+  </g>
+
+  <g transform="translate(580 352)">
+    <rect class="panel" width="486" height="210" rx="16"/>
+    <text class="panel-title" x="28" y="38">S5</text>
+    <text class="small" x="78" y="38">Reflexive + symmetric + transitive</text>
+    <ellipse class="cluster" cx="244" cy="122" rx="174" ry="72"/>
+    <circle class="node" cx="138" cy="122" r="25"/><text class="panel-title" x="138" y="130" text-anchor="middle">A</text>
+    <circle class="node" cx="244" cy="78" r="25"/><text class="panel-title" x="244" y="86" text-anchor="middle">B</text>
+    <circle class="node" cx="350" cy="122" r="25"/><text class="panel-title" x="350" y="130" text-anchor="middle">C</text>
+    <path class="arrow" d="M164 116 C188 102 208 91 220 84"/>
+    <path class="arrow" d="M220 91 C196 105 176 116 164 122"/>
+    <path class="arrow" d="M269 84 C293 96 318 108 326 116"/>
+    <path class="arrow" d="M326 128 C302 116 278 103 266 95"/>
+    <path class="arrow" d="M164 132 C216 160 278 160 324 132"/>
+    <path class="arrow" d="M324 113 C272 85 210 85 164 113"/>
+    <text class="mono" x="244" y="190" text-anchor="middle">◇P → □◇P</text>
+  </g>
+
+  <rect class="soft" x="100" y="590" width="920" height="40" rx="20"/>
+  <text class="small" x="560" y="615" text-anchor="middle">More constraints on arrows → fewer allowed frames → more valid modal formulas</text>
+</svg>

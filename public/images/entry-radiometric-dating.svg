@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Radiometric Dating</title>
+  <desc id="desc">Explanatory visual for Radiometric Dating.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e9eff"/></marker>
+  </defs>
+  <rect width="960" height="540" fill="transparent"/>
+  <text x="48" y="54" text-anchor="start" font-size="28" font-weight="700" fill="#1d252d"><tspan x="48" dy="0">Radiometric Dating</tspan></text>
+  <line x1="140" y1="420" x2="820" y2="420" stroke="#1d252d" stroke-width="3" stroke-linecap="round"/><line x1="140" y1="420" x2="140" y2="130" stroke="#1d252d" stroke-width="3" stroke-linecap="round"/><path d="M140 150 C260 210 330 275 430 330 C540 380 650 405 820 420" fill="none" stroke="#247a8a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M140 420 C260 360 330 295 430 240 C540 190 650 165 820 145" fill="none" stroke="#005fb8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="230" y="160" text-anchor="middle" font-size="18" font-weight="500" fill="#247a8a"><tspan x="230" dy="0">parent isotope falls</tspan></text><text x="705" y="126" text-anchor="middle" font-size="18" font-weight="500" fill="#005fb8"><tspan x="705" dy="0">daughter product rises</tspan></text><text x="480" y="465" text-anchor="middle" font-size="18" font-weight="500" fill="#596774"><tspan x="480" dy="0">half-lives provide the</tspan><tspan x="480" dy="20.7">clock</tspan></text>
+</svg>

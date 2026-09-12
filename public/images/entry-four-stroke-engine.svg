@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 560" role="img" aria-labelledby="title desc">
+  <title id="title">Four-stroke engine piston directions</title>
+  <desc id="desc">Four panels showing intake down, compression up, power down, and exhaust up over 720 degrees of crankshaft rotation.</desc>
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#005fb8"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#004f99"/>
+    </marker>
+    <style>
+      .title{font:700 30px Georgia,serif;fill:#1d252d}
+      .label{font:700 20px system-ui,sans-serif;fill:#1d252d}
+      .small{font:600 13px system-ui,sans-serif;fill:#596774}
+      .big{font:800 22px system-ui,sans-serif;fill:#1d252d}
+      .panel{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+      .cyl{fill:#e7f3ff;stroke:#005fb8;stroke-width:3}
+      .piston{fill:#cfe8ff;stroke:#1d252d;stroke-width:2}
+      .crank{fill:#eaf4fc;stroke:#2e9eff;stroke-width:2}
+      .rod{stroke:#1d252d;stroke-width:4;stroke-linecap:round}
+      .valve-open{stroke:#247a8a;stroke-width:5;stroke-linecap:round}
+      .valve-closed{stroke:#004f99;stroke-width:5;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect width="1040" height="560" fill="transparent"/>
+  <text class="title" x="52" y="54">Four-stroke engine cycle: piston direction</text>
+  <text class="small" x="52" y="84">720° crankshaft rotation = one complete intake-compression-power-exhaust cycle</text>
+
+  <g transform="translate(48 122)">
+    <g transform="translate(0 0)">
+      <rect class="panel" width="220" height="330" rx="8"/>
+      <text class="label" x="110" y="36" text-anchor="middle">1. Intake</text>
+      <text class="big" x="110" y="65" text-anchor="middle">piston DOWN</text>
+      <rect class="cyl" x="75" y="98" width="70" height="148" rx="8"/>
+      <line class="valve-open" x1="86" y1="90" x2="112" y2="104"/>
+      <line class="valve-closed" x1="131" y1="92" x2="151" y2="92"/>
+      <text class="small" x="68" y="84">intake open</text>
+      <rect class="piston" x="67" y="176" width="86" height="34" rx="8"/>
+      <line class="rod" x1="110" y1="210" x2="110" y2="262"/>
+      <circle class="crank" cx="110" cy="280" r="23"/>
+      <line x1="170" y1="110" x2="170" y2="218" stroke="#005fb8" stroke-width="9" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+      <text class="small" x="110" y="312" text-anchor="middle">fresh charge enters</text>
+    </g>
+
+    <g transform="translate(240 0)">
+      <rect class="panel" width="220" height="330" rx="8"/>
+      <text class="label" x="110" y="36" text-anchor="middle">2. Compression</text>
+      <text class="big" x="110" y="65" text-anchor="middle">piston UP</text>
+      <rect class="cyl" x="75" y="98" width="70" height="148" rx="8"/>
+      <line class="valve-closed" x1="72" y1="92" x2="95" y2="92"/>
+      <line class="valve-closed" x1="125" y1="92" x2="148" y2="92"/>
+      <text class="small" x="110" y="84" text-anchor="middle">valves closed</text>
+      <rect class="piston" x="67" y="146" width="86" height="34" rx="8"/>
+      <line class="rod" x1="110" y1="180" x2="110" y2="262"/>
+      <circle class="crank" cx="110" cy="280" r="23"/>
+      <line x1="170" y1="222" x2="170" y2="116" stroke="#005fb8" stroke-width="9" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+      <text class="small" x="110" y="312" text-anchor="middle">charge compressed</text>
+    </g>
+
+    <g transform="translate(480 0)">
+      <rect class="panel" width="220" height="330" rx="8"/>
+      <text class="label" x="110" y="36" text-anchor="middle">3. Power</text>
+      <text class="big" x="110" y="65" text-anchor="middle">piston DOWN</text>
+      <rect class="cyl" x="75" y="98" width="70" height="148" rx="8"/>
+      <line class="valve-closed" x1="72" y1="92" x2="95" y2="92"/>
+      <line class="valve-closed" x1="125" y1="92" x2="148" y2="92"/>
+      <path d="M93 112 L108 93 L123 112 L138 100" fill="none" stroke="#2e9eff" stroke-width="4" stroke-linecap="round"/>
+      <rect class="piston" x="67" y="118" width="86" height="34" rx="8"/>
+      <line class="rod" x1="110" y1="152" x2="110" y2="262"/>
+      <circle class="crank" cx="110" cy="280" r="23"/>
+      <line x1="170" y1="112" x2="170" y2="230" stroke="#004f99" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow-red)"/>
+      <text class="small" x="110" y="306" text-anchor="middle">combustion / high</text>
+      <text class="small" x="110" y="324" text-anchor="middle">pressure drives down</text>
+    </g>
+
+    <g transform="translate(720 0)">
+      <rect class="panel" width="220" height="330" rx="8"/>
+      <text class="label" x="110" y="36" text-anchor="middle">4. Exhaust</text>
+      <text class="big" x="110" y="65" text-anchor="middle">piston UP</text>
+      <rect class="cyl" x="75" y="98" width="70" height="148" rx="8"/>
+      <line class="valve-closed" x1="72" y1="92" x2="95" y2="92"/>
+      <line class="valve-open" x1="126" y1="104" x2="152" y2="90"/>
+      <text class="small" x="146" y="84">exhaust open</text>
+      <rect class="piston" x="67" y="150" width="86" height="34" rx="8"/>
+      <line class="rod" x1="110" y1="184" x2="110" y2="262"/>
+      <circle class="crank" cx="110" cy="280" r="23"/>
+      <line x1="170" y1="224" x2="170" y2="116" stroke="#005fb8" stroke-width="9" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+      <text class="small" x="110" y="312" text-anchor="middle">spent gases leave</text>
+    </g>
+  </g>
+
+  <g transform="translate(52 506)">
+    <circle cx="0" cy="-4" r="7" fill="#005fb8"/>
+    <text class="small" x="16" y="0">blue arrows = mechanically driven piston motion</text>
+    <circle cx="342" cy="-4" r="7" fill="#004f99"/>
+    <text class="small" x="358" y="0">large dark arrow = power stroke driven by combustion pressure</text>
+  </g>
+</svg>

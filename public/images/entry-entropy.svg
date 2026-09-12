@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 560" role="img" aria-labelledby="title desc">
+  <title id="title">Entropy as multiplicity</title>
+  <desc id="desc">A toy model comparing one concentrated particle macrostate with one balanced macrostate that has 70 compatible microstates.</desc>
+  <rect width="1040" height="560" fill="transparent"/>
+  <style>
+    .title{font:700 30px Georgia,serif;fill:#1d252d}
+    .label{font:800 22px system-ui,sans-serif;fill:#1d252d}
+    .small{font:600 15px system-ui,sans-serif;fill:#596774}
+    .math{font:700 24px Georgia,serif;fill:#1d252d}
+    .box{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+    .wall{stroke:#1d252d;stroke-width:3}
+    .particle{stroke:#ffffff;stroke-width:3}
+  </style>
+  <text class="title" x="52" y="56">Entropy counts compatible microstates</text>
+  <text class="small" x="52" y="88">schematic toy model: 8 distinguishable particles, each on the left or right side of a box</text>
+
+  <g transform="translate(58 130)">
+    <rect class="box" width="420" height="300" rx="10"/>
+    <text class="label" x="210" y="42" text-anchor="middle">Concentrated macrostate</text>
+    <rect x="76" y="76" width="268" height="126" rx="8" fill="#eaf4fc" stroke="#1d252d" stroke-width="3"/>
+    <line class="wall" x1="210" y1="76" x2="210" y2="202"/>
+    <text class="small" x="143" y="224" text-anchor="middle">left</text>
+    <text class="small" x="277" y="224" text-anchor="middle">right</text>
+    <g fill="#005fb8">
+      <circle class="particle" cx="112" cy="112" r="13"/><text x="112" y="117" text-anchor="middle" font-size="12" fill="#ffffff">1</text>
+      <circle class="particle" cx="146" cy="112" r="13"/><text x="146" y="117" text-anchor="middle" font-size="12" fill="#ffffff">2</text>
+      <circle class="particle" cx="180" cy="112" r="13"/><text x="180" y="117" text-anchor="middle" font-size="12" fill="#ffffff">3</text>
+      <circle class="particle" cx="112" cy="150" r="13"/><text x="112" y="155" text-anchor="middle" font-size="12" fill="#ffffff">4</text>
+      <circle class="particle" cx="146" cy="150" r="13"/><text x="146" y="155" text-anchor="middle" font-size="12" fill="#ffffff">5</text>
+      <circle class="particle" cx="180" cy="150" r="13"/><text x="180" y="155" text-anchor="middle" font-size="12" fill="#ffffff">6</text>
+      <circle class="particle" cx="129" cy="184" r="13"/><text x="129" y="189" text-anchor="middle" font-size="12" fill="#ffffff">7</text>
+      <circle class="particle" cx="163" cy="184" r="13"/><text x="163" y="189" text-anchor="middle" font-size="12" fill="#ffffff">8</text>
+    </g>
+    <text class="math" x="210" y="264" text-anchor="middle">8 left / 0 right</text>
+    <text class="math" x="210" y="292" text-anchor="middle">Ω = C(8,8) = 1</text>
+  </g>
+
+  <g transform="translate(562 130)">
+    <rect class="box" width="420" height="300" rx="10"/>
+    <text class="label" x="210" y="42" text-anchor="middle">Balanced macrostate</text>
+    <rect x="76" y="76" width="268" height="126" rx="8" fill="#eaf4fc" stroke="#1d252d" stroke-width="3"/>
+    <line class="wall" x1="210" y1="76" x2="210" y2="202"/>
+    <text class="small" x="143" y="224" text-anchor="middle">left</text>
+    <text class="small" x="277" y="224" text-anchor="middle">right</text>
+    <g fill="#247a8a">
+      <circle class="particle" cx="112" cy="118" r="13"/><text x="112" y="123" text-anchor="middle" font-size="12" fill="#ffffff">1</text>
+      <circle class="particle" cx="158" cy="134" r="13"/><text x="158" y="139" text-anchor="middle" font-size="12" fill="#ffffff">2</text>
+      <circle class="particle" cx="126" cy="172" r="13"/><text x="126" y="177" text-anchor="middle" font-size="12" fill="#ffffff">3</text>
+      <circle class="particle" cx="180" cy="176" r="13"/><text x="180" y="181" text-anchor="middle" font-size="12" fill="#ffffff">4</text>
+      <circle class="particle" cx="238" cy="112" r="13"/><text x="238" y="117" text-anchor="middle" font-size="12" fill="#ffffff">5</text>
+      <circle class="particle" cx="300" cy="132" r="13"/><text x="300" y="137" text-anchor="middle" font-size="12" fill="#ffffff">6</text>
+      <circle class="particle" cx="254" cy="174" r="13"/><text x="254" y="179" text-anchor="middle" font-size="12" fill="#ffffff">7</text>
+      <circle class="particle" cx="316" cy="178" r="13"/><text x="316" y="183" text-anchor="middle" font-size="12" fill="#ffffff">8</text>
+    </g>
+    <text class="math" x="210" y="264" text-anchor="middle">4 left / 4 right</text>
+    <text class="math" x="210" y="292" text-anchor="middle">Ω = C(8,4) = 70</text>
+  </g>
+
+  <text class="math" x="520" y="472" text-anchor="middle">S = k<tspan baseline-shift="sub" font-size="16">B</tspan> ln Ω</text>
+  <text class="small" x="520" y="508" text-anchor="middle">more compatible microstates → larger entropy; no extra “dispersing force” is required</text>
+</svg>

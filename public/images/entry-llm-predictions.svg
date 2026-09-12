@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">What an LLM Actually Predicts</title>
+  <desc id="desc">A small matrix example showing token vectors multiplied by learned weights and mapped to next-token scores.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2e9eff"/>
+    </marker>
+    <style>
+      text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+      .title{font-size:30px;font-weight:750;fill:#1d252d}
+      .h{font-size:18px;font-weight:750;fill:#1d252d}
+      .s{font-size:15px;fill:#33414f}
+      .m{font-size:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;fill:#1d252d}
+      .eq{font-size:17px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;fill:#005fb8}
+      .panel{fill:#fff;stroke:#d6e0e8;stroke-width:2}
+      .soft{fill:#f7fafc;stroke:#d6e0e8;stroke-width:1.5}
+      .blue{fill:#e7f3ff;stroke:#9ecff5;stroke-width:1.5}
+      .teal{fill:#e1f7f4;stroke:#8ed8cf;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1120" height="620" fill="transparent"/>
+  <text class="title" x="48" y="56">Next-token prediction still uses matrix computation</text>
+
+  <rect class="panel" x="56" y="106" width="310" height="286" rx="10"/>
+  <text class="h" x="86" y="144">Context matrix X</text>
+  <text class="s" x="86" y="169">3 token rows x 4 features</text>
+  <g transform="translate(86 204)">
+    <rect class="blue" x="0" y="0" width="232" height="34" rx="6"/><text class="m" x="18" y="23">t1</text><text class="m" x="60" y="23">0.2</text><text class="m" x="106" y="23">-0.1</text><text class="m" x="156" y="23">0.7</text><text class="m" x="202" y="23">0.0</text>
+    <rect class="blue" x="0" y="44" width="232" height="34" rx="6"/><text class="m" x="18" y="67">t2</text><text class="m" x="60" y="67">0.0</text><text class="m" x="106" y="67">0.5</text><text class="m" x="156" y="67">-0.4</text><text class="m" x="202" y="67">0.3</text>
+    <rect class="blue" x="0" y="88" width="232" height="34" rx="6"/><text class="m" x="18" y="111">t3</text><text class="m" x="60" y="111">0.6</text><text class="m" x="106" y="111">0.1</text><text class="m" x="156" y="111">0.2</text><text class="m" x="202" y="111">-0.2</text>
+  </g>
+  <text class="eq" x="86" y="357">shape: 3 x 4</text>
+
+  <line x1="378" y1="250" x2="446" y2="250" stroke="#2e9eff" stroke-width="3" marker-end="url(#arrow)"/>
+  <text class="eq" x="412" y="232" text-anchor="middle">x W</text>
+
+  <rect class="panel" x="462" y="106" width="250" height="286" rx="10"/>
+  <text class="h" x="492" y="144">Learned weights W</text>
+  <text class="s" x="492" y="169">4 features x 2 outputs</text>
+  <g transform="translate(492 204)">
+    <rect class="soft" x="0" y="0" width="174" height="34" rx="6"/><text class="m" x="22" y="23">f1</text><text class="m" x="76" y="23">1.0</text><text class="m" x="130" y="23">0.2</text>
+    <rect class="soft" x="0" y="44" width="174" height="34" rx="6"/><text class="m" x="22" y="67">f2</text><text class="m" x="76" y="67">-0.5</text><text class="m" x="130" y="67">0.4</text>
+    <rect class="soft" x="0" y="88" width="174" height="34" rx="6"/><text class="m" x="22" y="111">f3</text><text class="m" x="76" y="111">0.3</text><text class="m" x="130" y="111">0.8</text>
+    <rect class="soft" x="0" y="132" width="174" height="34" rx="6"/><text class="m" x="22" y="155">f4</text><text class="m" x="76" y="155">0.1</text><text class="m" x="130" y="155">-0.6</text>
+  </g>
+  <text class="eq" x="492" y="357">shape: 4 x 2</text>
+
+  <line x1="724" y1="250" x2="792" y2="250" stroke="#2e9eff" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect class="panel" x="808" y="106" width="256" height="286" rx="10"/>
+  <text class="h" x="838" y="144">Mapped vectors XW</text>
+  <text class="s" x="838" y="169">same token rows, new features</text>
+  <g transform="translate(838 214)">
+    <rect class="teal" x="0" y="0" width="176" height="34" rx="6"/><text class="m" x="22" y="23">t1</text><text class="m" x="78" y="23">0.46</text><text class="m" x="132" y="23">0.56</text>
+    <rect class="teal" x="0" y="44" width="176" height="34" rx="6"/><text class="m" x="22" y="67">t2</text><text class="m" x="78" y="67">-0.34</text><text class="m" x="132" y="67">0.34</text>
+    <rect class="teal" x="0" y="88" width="176" height="34" rx="6"/><text class="m" x="22" y="111">t3</text><text class="m" x="78" y="111">0.59</text><text class="m" x="132" y="111">0.34</text>
+  </g>
+  <text class="eq" x="838" y="357">shape: 3 x 2</text>
+
+  <line x1="936" y1="404" x2="936" y2="458" stroke="#2e9eff" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect class="panel" x="240" y="470" width="640" height="98" rx="10"/>
+  <text class="h" x="272" y="506">Final position maps to vocabulary scores</text>
+  <text class="m" x="272" y="538">hidden vector -> logits for ["the", "dog", "ran", ".", ...] -> softmax probabilities</text>
+  <text class="eq" x="748" y="506">next token</text>
+</svg>

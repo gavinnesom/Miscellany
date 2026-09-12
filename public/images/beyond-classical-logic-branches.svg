@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Different ways to go beyond classical logic</title>
+  <desc id="desc">A branching diagram separates intuitionistic, fuzzy and paraconsistent logic as distinct departures from classical assumptions.</desc>
+  <defs>
+    <linearGradient id="fuzzy" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#edf4fa"/>
+      <stop offset=".5" stop-color="#8ed1ff"/>
+      <stop offset="1" stop-color="#005fb8"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#005fb8"/>
+    </marker>
+    <style>
+      .title{font:700 30px Georgia,serif;fill:#1d252d}
+      .panel-title{font:800 20px system-ui,sans-serif;fill:#1d252d}
+      .small{font:600 14px system-ui,sans-serif;fill:#596774}
+      .mono{font:800 18px ui-monospace,Menlo,monospace;fill:#005fb8}
+      .center{fill:#dff0ff;stroke:#247a8a;stroke-width:4}
+      .panel{fill:#ffffff;stroke:#d6e0e8;stroke-width:2}
+      .soft{fill:#edf4fa;stroke:#d6e0e8;stroke-width:1.5}
+      .arrow{fill:none;stroke:#005fb8;stroke-width:3;stroke-linecap:round;marker-end:url(#arrow)}
+      .blocked{fill:none;stroke:#b44747;stroke-width:5;stroke-linecap:round}
+      .input{fill:#e7f3ff;stroke:#005fb8;stroke-width:2.5}
+      .danger{fill:#fff;stroke:#b44747;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1120" height="620" fill="transparent"/>
+  <text class="title" x="54" y="54">Beyond classical logic: three different departures</text>
+  <text class="small" x="54" y="82">These are not three versions of “partly true.” Each changes a different assumption.</text>
+
+  <rect class="center" x="420" y="116" width="280" height="76" rx="20"/>
+  <text class="panel-title" x="560" y="148" text-anchor="middle">CLASSICAL LOGIC</text>
+  <text class="small" x="560" y="171" text-anchor="middle">crisp truth, familiar consequence rules</text>
+
+  <path class="arrow" d="M458 192 C344 232 248 258 188 290"/>
+  <path class="arrow" d="M560 192 C560 238 560 263 560 292"/>
+  <path class="arrow" d="M662 192 C776 232 872 258 932 290"/>
+
+  <g transform="translate(54 292)">
+    <rect class="panel" width="314" height="226" rx="16"/>
+    <text class="panel-title" x="157" y="38" text-anchor="middle">INTUITIONISTIC</text>
+    <text class="mono" x="157" y="78" text-anchor="middle">P ∨ ¬P</text>
+    <text class="small" x="157" y="108" text-anchor="middle">not accepted as an</text>
+    <text class="small" x="157" y="129" text-anchor="middle">unrestricted proof principle</text>
+    <rect class="soft" x="44" y="158" width="226" height="36" rx="18"/>
+    <text class="small" x="157" y="181" text-anchor="middle">constructive justification</text>
+  </g>
+
+  <g transform="translate(403 292)">
+    <rect class="panel" width="314" height="226" rx="16"/>
+    <text class="panel-title" x="157" y="38" text-anchor="middle">FUZZY</text>
+    <rect x="58" y="76" width="198" height="18" rx="9" fill="url(#fuzzy)"/>
+    <text class="small" x="58" y="120" text-anchor="middle">0</text>
+    <text class="small" x="157" y="120" text-anchor="middle">0.5</text>
+    <text class="small" x="256" y="120" text-anchor="middle">1</text>
+    <text class="small" x="157" y="154" text-anchor="middle">degree of membership / truth</text>
+    <rect class="soft" x="70" y="174" width="174" height="34" rx="17"/>
+    <text class="small" x="157" y="196" text-anchor="middle">not probability</text>
+  </g>
+
+  <g transform="translate(752 292)">
+    <rect class="panel" width="314" height="226" rx="16"/>
+    <text class="panel-title" x="157" y="38" text-anchor="middle">PARACONSISTENT</text>
+    <rect class="input" x="46" y="70" width="72" height="44" rx="12"/>
+    <text class="mono" x="82" y="98" text-anchor="middle">P</text>
+    <rect class="input" x="46" y="126" width="72" height="44" rx="12"/>
+    <text class="mono" x="82" y="154" text-anchor="middle">¬P</text>
+    <rect class="soft" x="150" y="92" width="70" height="56" rx="14"/>
+    <text class="small" x="185" y="115" text-anchor="middle">reason</text>
+    <text class="small" x="185" y="135" text-anchor="middle">system</text>
+    <rect class="danger" x="242" y="100" width="50" height="40" rx="10"/>
+    <text class="mono" x="267" y="126" text-anchor="middle">Q</text>
+    <path class="arrow" d="M118 92 L146 108"/>
+    <path class="arrow" d="M118 148 L146 132"/>
+    <path class="arrow" d="M220 120 L238 120"/>
+    <path class="blocked" d="M230 94 L254 146"/>
+    <text class="small" x="157" y="194" text-anchor="middle">inconsistency ≠ triviality</text>
+  </g>
+
+  <rect class="soft" x="204" y="550" width="712" height="42" rx="21"/>
+  <text class="small" x="560" y="576" text-anchor="middle">Different logics change different assumptions.</text>
+</svg>

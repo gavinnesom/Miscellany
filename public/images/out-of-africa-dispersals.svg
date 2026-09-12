@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+  <title id="title">Out of Africa Schematic Dispersal Map</title>
+  <desc id="desc">A schematic map over a Natural Earth-derived Equal Earth base showing repeated Homo sapiens exits, a later ancestry-forming dispersal, and admixture zones.</desc>
+  <defs>
+    <style>
+      text { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #202124; }
+      .title { font-size: 27px; font-weight: 760; }
+      .subtitle { font-size: 15px; fill: #5f6368; }
+      .label { font-size: 13px; font-weight: 730; }
+      .small { font-size: 12px; fill: #5f6368; }
+      .tiny { font-size: 11px; fill: #5f6368; }
+      .frame { fill: #fffaf0; stroke: #d7d1c1; stroke-width: 1.1; rx: 8; }
+      .origin { fill: #a1422b; stroke: #fff; stroke-width: 3; }
+      .site { fill: #2f6f73; stroke: #fff; stroke-width: 2.2; }
+      .late-band { fill: none; stroke: #c9a227; stroke-width: 24; stroke-linecap: round; stroke-linejoin: round; opacity: .40; }
+      .route { fill: none; stroke: #a1422b; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 8 7; opacity: .82; }
+      .zone-nean { fill: #8268a8; opacity: .18; stroke: #8268a8; stroke-width: 1.4; }
+      .zone-den { fill: #2f6f73; opacity: .16; stroke: #2f6f73; stroke-width: 1.4; }
+      .call { stroke: #5f6368; stroke-width: 1.2; fill: none; }
+      .legend { fill: #ffffff; stroke: #d7d1c1; stroke-width: 1; rx: 8; }
+    </style>
+  </defs>
+
+  <text x="28" y="38" class="title">Out of Africa Was a Process, Not One Arrow</text>
+  <text x="28" y="63" class="subtitle">Schematic / approximate. The base map is Natural Earth-derived Equal Earth geography; routes are broad corridors, not GPS tracks.</text>
+
+  <rect x="26" y="82" width="1068" height="292" class="frame"/>
+  <image href="/images/world-map-equal-earth-blank.svg" x="76" y="88" width="760" height="369" opacity=".72"/>
+
+  <ellipse cx="500" cy="150" rx="112" ry="42" class="zone-nean"/>
+  <ellipse cx="650" cy="214" rx="132" ry="58" class="zone-den"/>
+  <text x="500" y="121" text-anchor="middle" class="small">Neanderthal overlap</text>
+  <text x="700" y="279" text-anchor="middle" class="small">Denisovan-related admixture</text>
+
+  <path d="M425 244 C455 208 494 181 548 167 C622 147 706 190 760 276" class="late-band"/>
+  <path d="M425 244 C455 208 494 181 548 167 C622 147 706 190 760 276" class="route"/>
+  <path d="M427 242 C462 207 490 177 511 160" class="route"/>
+  <path d="M427 245 C470 234 510 231 547 234" class="route"/>
+  <path d="M424 245 C370 212 298 196 212 190" class="route"/>
+
+  <circle cx="420" cy="238" r="10" class="origin"/>
+  <text x="372" y="230" text-anchor="end" class="label">Africa</text>
+  <text x="372" y="246" text-anchor="end" class="small">sapiens by ~300 ka</text>
+
+  <circle cx="394" cy="176" r="7" class="site"/>
+  <line x1="394" y1="176" x2="312" y2="134" class="call"/>
+  <text x="304" y="130" text-anchor="end" class="label">Jebel Irhoud</text>
+  <text x="304" y="146" text-anchor="end" class="small">~315 +/- 34 ka</text>
+
+  <circle cx="482" cy="194" r="7" class="site"/>
+  <line x1="482" y1="194" x2="552" y2="142" class="call"/>
+  <text x="560" y="139" class="label">Misliya / Levant</text>
+  <text x="560" y="155" class="small">early exits ~194-177 ka</text>
+
+  <circle cx="760" cy="276" r="7" class="site"/>
+  <text x="784" y="273" class="label">Sahul</text>
+  <text x="784" y="289" class="small">Madjedbebe ~65 ka</text>
+
+  <circle cx="512" cy="139" r="6" class="site"/>
+  <text x="448" y="105" text-anchor="middle" class="small">Europe ~45 ka</text>
+
+  <circle cx="212" cy="190" r="6" class="site"/>
+  <text x="168" y="159" text-anchor="end" class="label">Americas</text>
+  <text x="168" y="175" text-anchor="end" class="small">later; first arrival debated</text>
+
+  <rect x="848" y="104" width="216" height="204" class="legend"/>
+  <text x="868" y="131" class="label">Read this map as:</text>
+  <circle cx="876" cy="158" r="7" class="origin"/>
+  <text x="894" y="162" class="small">African origin region</text>
+  <line x1="868" y1="190" x2="930" y2="190" class="route"/>
+  <text x="944" y="194" class="small">repeated corridors</text>
+  <line x1="868" y1="222" x2="930" y2="222" class="late-band"/>
+  <text x="944" y="226" class="small">later dominant dispersal</text>
+  <circle cx="876" cy="254" r="7" class="site"/>
+  <text x="894" y="258" class="small">evidence anchor</text>
+  <text x="868" y="288" class="tiny">Not shown: every local movement,</text>
+  <text x="868" y="303" class="tiny">population split, or back-migration.</text>
+  <text x="60" y="354" class="tiny">Base map: World.ie Equal Earth, derived from Natural Earth public-domain outlines.</text>
+</svg>

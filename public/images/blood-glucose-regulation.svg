@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" role="img" aria-labelledby="title desc">
+  <title id="title">Blood glucose regulation</title>
+  <desc id="desc">Two pathways: meal raises glucose and insulin drives uptake and storage; fasting lowers insulin and glucagon supports liver glucose output.</desc>
+  <rect width="980" height="520" fill="transparent"/>
+  <style>
+    .h{font:700 28px Georgia,serif;fill:#1d252d}.t{font:600 18px system-ui,sans-serif;fill:#1d252d}.s{font:15px system-ui,sans-serif;fill:#596774}.box{fill:#edf4fa;stroke:#d6e0e8;stroke-width:2}.green{fill:#dff0ff;stroke:#247a8a;stroke-width:2}.blue{fill:#e7f3ff;stroke:#2e9eff;stroke-width:2}.arrow{stroke:#004f99;stroke-width:3;fill:none;marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#004f99"/></marker></defs>
+  <text class="h" x="48" y="54">meal state</text>
+  <text class="h" x="548" y="54">fasting state</text>
+  <rect class="box" x="44" y="92" width="180" height="82" rx="12"/><text class="t" x="72" y="126">carbohydrate</text><text class="s" x="78" y="150">blood glucose rises</text>
+  <rect class="green" x="300" y="92" width="180" height="82" rx="12"/><text class="t" x="337" y="126">beta cells</text><text class="s" x="335" y="150">insulin increases</text>
+  <rect class="blue" x="556" y="92" width="180" height="82" rx="12"/><text class="t" x="600" y="126">muscle + fat</text><text class="s" x="593" y="150">glucose uptake</text>
+  <rect class="blue" x="300" y="236" width="180" height="82" rx="12"/><text class="t" x="351" y="270">liver</text><text class="s" x="333" y="294">glycogen storage</text>
+  <path class="arrow" d="M224 133 H296"/><path class="arrow" d="M480 133 H552"/><path class="arrow" d="M390 174 V232"/>
+  <rect class="box" x="544" y="236" width="180" height="82" rx="12"/><text class="t" x="584" y="270">glucose falls</text><text class="s" x="585" y="294">toward range</text>
+  <path class="arrow" d="M480 277 H540"/>
+  <rect class="box" x="44" y="374" width="180" height="82" rx="12"/><text class="t" x="89" y="408">fasting</text><text class="s" x="72" y="432">insulin falls</text>
+  <rect class="green" x="300" y="374" width="180" height="82" rx="12"/><text class="t" x="337" y="408">alpha cells</text><text class="s" x="327" y="432">glucagon rises</text>
+  <rect class="blue" x="556" y="374" width="250" height="82" rx="12"/><text class="t" x="627" y="406">liver output</text><text class="s" x="617" y="430">glycogenolysis</text><text class="s" x="608" y="448">+ gluconeogenesis</text>
+  <path class="arrow" d="M224 415 H296"/><path class="arrow" d="M480 415 H552"/>
+  <text class="s" x="48" y="498">The liver buffers blood glucose: storing after meals, releasing between meals.</text>
+</svg>
