@@ -21,10 +21,13 @@ test("relationship helper preserves curated and inverse relationship semantics",
 });
 
 test("random item selection uses the supplied random source", async () => {
-  const { randomItem } = await importFreshRandom();
+  const { randomItem, randomItemExcept } = await importFreshRandom();
   assert.equal(randomItem(["first", "middle", "last"], () => 0), "first");
   assert.equal(randomItem(["first", "middle", "last"], () => 0.9), "last");
   assert.equal(randomItem([], () => 0), undefined);
+  assert.equal(randomItemExcept(["first", "middle", "last"], "first", () => 0), "middle");
+  assert.equal(randomItemExcept(["first"], "first", () => 0), "first");
+  assert.equal(randomItemExcept([], "first", () => 0), undefined);
 });
 
 test("grade feedback formatting is generic and does not special-case individual answers", async () => {

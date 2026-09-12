@@ -10,7 +10,7 @@ import { questionsForEntry } from "../lib/quiz-questions";
 import { relationshipSections } from "../lib/relationships";
 import type { ReviewSummary } from "../lib/review";
 import { selectedTextWithinElement } from "../lib/review-selection";
-import { randomItem } from "../lib/random";
+import { randomItemExcept } from "../lib/random";
 import { categoryPath, entryPath, quizTopicPath, tagPath, topicPath } from "../lib/routes";
 import { topicFor } from "../lib/topics";
 import { useAuthSession } from "../lib/use-auth-session";
@@ -24,6 +24,8 @@ type Props = {
   topics: TopicGroup[];
   initialSlug?: string;
 };
+
+const lastHomeSurpriseKey = "miscellany:last-home-surprise";
 
 function formatEntryDate(date: string) {
   const parsed = new Date(`${date}T00:00:00Z`);
@@ -140,7 +142,7 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
     };
   }, [session]);
 
-  const openEntry = useCallback((slug: string) => {
+  const openEntry = useCallback((slug: string, historyMode: "push" | "replace" = "push") => {
     const entry = entries.find((candidate) => candidate.slug === slug);
     resetReviewPanel();
     setMemoryStatus("");
@@ -149,8 +151,16 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
       setExpandedTopics((current) => new Set([...current, entry.topic]));
     }
     setQuery("");
-    window.history.pushState(null, "", entryPath(slug));
+    if (historyMode === "replace") window.history.replaceState(null, "", entryPath(slug));
+    else window.history.pushState(null, "", entryPath(slug));
   }, [entries, resetReviewPanel]);
+
+  const openRandomEntry = useCallback((historyMode: "push" | "replace" = "push", excludedSlug = selected.slug) => {
+    const slug = randomItemExcept(entries.map((entry) => entry.slug), excludedSlug);
+    if (!slug) return;
+    openEntry(slug, historyMode);
+    return slug;
+  }, [entries, openEntry, selected.slug]);
 
   useEffect(() => {
     const slugs = new Set(entries.map((entry) => entry.slug));
@@ -176,6 +186,26 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
       window.removeEventListener("popstate", syncFromLocation);
     };
   }, [entries, resetReviewPanel]);
+
+  useEffect(() => {
+    if (window.location.pathname !== "/") return;
+
+    let lastHomeSurprise = "";
+    try {
+      lastHomeSurprise = window.localStorage.getItem(lastHomeSurpriseKey) ?? "";
+    } catch {
+      lastHomeSurprise = "";
+    }
+
+    const slug = openRandomEntry("replace", lastHomeSurprise || selected.slug);
+    if (!slug) return;
+
+    try {
+      window.localStorage.setItem(lastHomeSurpriseKey, slug);
+    } catch {
+      // Ignore storage failures; the fresh client-side choice still works.
+    }
+  }, [openRandomEntry, selected.slug]);
 
   useEffect(() => {
     document.title = window.location.pathname.startsWith("/entry/")
@@ -244,8 +274,7 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
   }
 
   function surprise() {
-    const next = randomItem(entries);
-    if (next) openEntry(next.slug);
+    openRandomEntry();
   }
 
   function captureEntrySelection() {
@@ -373,8 +402,14 @@ export function MiscellanyApp({ entries, groups, topics, initialSlug }: Props) {
   function goHome(event: MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();
     setQuery("");
-    window.history.pushState(null, "", "/");
-    document.title = "Gavin's Miscellany";
+    const slug = openRandomEntry("push");
+    if (slug) {
+      try {
+        window.localStorage.setItem(lastHomeSurpriseKey, slug);
+      } catch {
+        // Ignore storage failures; navigation is the important part.
+      }
+    }
     document.getElementById("top")?.scrollIntoView();
   }
 
