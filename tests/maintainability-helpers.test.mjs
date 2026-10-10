@@ -1,6 +1,17 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
+test("entry excerpts preserve hyphens and render inline mathematics as readable text", async () => {
+  const { entryExcerpt } = await import("../app/lib/entry-excerpt.ts");
+  assert.equal(entryExcerpt(String.raw`A **twelve-hour** clock: \(10+5=15\), with \(a-b\) and \(\phi(n)=40\).`),
+    "A twelve-hour clock: 10+5=15, with a-b and phi(n)=40.");
+  assert.equal(entryExcerpt(String.raw`Split equal-length blocks for [public-key encryption](/entry/rsa); \(2^{10}=1024\).`),
+    "Split equal-length blocks for public-key encryption; 2¹⁰=1024.");
+  assert.equal(entryExcerpt("A negative value -12 and x_y remain intact.\n\nA later paragraph."),
+    "A negative value -12 and x_y remain intact.");
+  assert.equal(entryExcerpt("> **A summary.**\n- A later list item."), "A summary.");
+});
+
 test("relationship helper preserves curated and inverse relationship semantics", async () => {
   const { relatedEntrySlugs, relationshipSections } = await importFreshRelationships();
   const entries = [

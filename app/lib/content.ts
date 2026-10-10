@@ -1,3 +1,4 @@
+import { entryExcerpt } from "./entry-excerpt";
 import { categories, categoryFor, categoryKeys } from "./categories";
 import { duplicateTopicKeys, topicFor, topicKeys, topics } from "./topics";
 
@@ -271,15 +272,6 @@ function asRelationships(value: unknown): EntryRelationships {
   };
 }
 
-function firstSentence(markdown: string) {
-  return markdown
-    .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-    .replace(/[#*_`>-]/g, "")
-    .split(/\n\n|\n-/)[0]
-    .trim();
-}
-
 export const entries: Entry[] = Object.entries(files)
   .map(([path, markdown]) => {
     const { meta, body } = parseFrontMatter(markdown);
@@ -316,7 +308,7 @@ export const entries: Entry[] = Object.entries(files)
       video: asVideo(meta.video),
       quiz,
       body,
-      excerpt: firstSentence(body),
+      excerpt: entryExcerpt(body),
       searchText: [title, author, year, book_type, body, categoryFor(category).label, topicFor(topic).label, entry_type, ...tags]
         .join(" ")
         .toLowerCase(),
