@@ -22,6 +22,35 @@ async function render(pathname = "/") {
   );
 }
 
+test("number theory curriculum renders in prerequisite order with working mathematics and provenance", async () => {
+  const slugs = [
+    "primes-factorization", "modular-arithmetic", "gcd-euclidean-algorithm",
+    "modular-inverses", "fast-modular-exponentiation", "euler-totient-theorem",
+    "rsa-first-principles",
+  ];
+  const topic = await render("/topic/number-theory-cryptography");
+  assert.equal(topic.status, 200);
+  const topicHtml = await topic.text();
+  let previous = -1;
+  for (const slug of slugs) {
+    const index = topicHtml.lastIndexOf(`href="/entry/${slug}"`);
+    assert.ok(index > previous, `${slug} is in prerequisite order`);
+    previous = index;
+    const response = await render(`/entry/${slug}`);
+    assert.equal(response.status, 200);
+    const html = await response.text();
+    const article = html.slice(html.indexOf('class="entry-body"'), html.indexOf("</article>"));
+    assert.doesNotMatch(article, /\\(?:gcd|pmod|varphi|equiv|times|Longrightarrow)/);
+  }
+  const rsa = await (await render("/entry/rsa-first-principles")).text();
+  assert.match(rsa, /RSA-OAEP/);
+  assert.match(rsa, /RSA-PSS/);
+  assert.match(rsa, /all 55 toy messages/);
+  const modular = await (await render("/entry/modular-arithmetic")).text();
+  assert.match(modular, /modular-residue-wheel.svg/);
+  assert.match(modular, /Local original arithmetic diagram/);
+});
+
 test("server-renders Gavin's Miscellany", async () => {
   const response = await render();
   assert.equal(response.status, 200);
@@ -30,7 +59,7 @@ test("server-renders Gavin's Miscellany", async () => {
   const html = await response.text();
   assert.match(html, /<title>Gavin&#x27;s Miscellany<\/title>/i);
   assert.match(html, /Personal encyclopedia and learning curriculum/);
-  assert.match(html, /121 entries/);
+  assert.match(html, /128 entries/);
   assert.match(html, /Natural World/);
   assert.match(html, /Tardigrades and Cryptobiosis/);
   assert.match(html, /Surprise Me/);
@@ -271,7 +300,7 @@ test("server-renders dedicated quiz page", async () => {
   const html = await response.text();
   assert.match(html, /<title>Quiz Me \| Gavin&#x27;s Miscellany<\/title>/i);
   assert.match(html, /Gavin&#x27;s Miscellany/);
-  assert.match(html, /121 entries/);
+  assert.match(html, /128 entries/);
   assert.match(html, /<button class="header-action header-action-surprise"[^>]*>Surprise Me<\/button><a href="\/quiz" class="header-action header-action-quiz">Quiz Me<\/a>/);
   assert.doesNotMatch(html, /class="header-action[^"]*"[^>]*>Entries</);
   assert.match(html, /All topics/);
@@ -299,7 +328,7 @@ test("entry pages render shared header and multiple visuals", async () => {
 
   const html = await response.text();
   assert.match(html, /class="site-title-block"/);
-  assert.match(html, /121 entries/);
+  assert.match(html, /128 entries/);
   assert.match(html, /class="entry-image"/);
   assert.match(html, /class="inline-figure"/);
   assert.match(html, /cryptobiosis-cycle\.svg/);

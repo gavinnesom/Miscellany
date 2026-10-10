@@ -7,6 +7,12 @@ export type Category = {
 
 export const categories: Category[] = [
   {
+    key: "mathematics",
+    label: "Mathematics",
+    note: "Numbers, structures, proofs, and their applications.",
+    description: "Mathematical mechanisms and worked examples, beginning with the number theory that makes RSA possible.",
+  },
+  {
     key: "natural-world",
     label: "Natural World",
     note: "Organisms, landscapes, and oddities of life outdoors.",
