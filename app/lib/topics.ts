@@ -10,6 +10,23 @@ export type Topic = {
 
 export const topics: Topic[] = [
   {
+    key: "number-theory-cryptography",
+    label: "Number Theory & Cryptography",
+    category: "mathematics",
+    description: "From prime factors and remainders to coprimality, inverse operations, efficient powers, Euler's theorem, and RSA.",
+    order: 10,
+    startHere: ["primes-factorization"],
+    entryOrder: [
+      "primes-factorization",
+      "modular-arithmetic",
+      "gcd-euclidean-algorithm",
+      "modular-inverses",
+      "fast-modular-exponentiation",
+      "euler-totient-theorem",
+      "rsa-first-principles",
+    ],
+  },
+  {
     key: "plants-weeds",
     label: "Plants & Weeds",
     category: "natural-world",
