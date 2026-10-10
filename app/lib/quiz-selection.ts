@@ -10,6 +10,16 @@ export function shuffleCopy<T>(items: readonly T[], random: () => number = Math.
   return shuffled;
 }
 
+/** A response may publish only while it still owns the current quiz run. */
+export function createQuizRunRequestGuard() {
+  let generation = 0;
+  return {
+    begin: () => ++generation,
+    invalidate: () => { generation += 1; },
+    owns: (request: number) => request === generation,
+  };
+}
+
 export type QuizQuestionBase = QuizItem & {
   slug: string;
   category: string;

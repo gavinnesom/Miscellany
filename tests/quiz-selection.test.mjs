@@ -4,6 +4,7 @@ import test from "node:test";
 import { sanitizeGradeResult } from "../app/lib/grading.ts";
 import {
   isTrackedQuestion,
+  createQuizRunRequestGuard,
   matchesManualQuizSelection,
   moveDueQuestionLater,
   nextManualQuestionIndex,
@@ -28,6 +29,34 @@ const unregisteredQuestion = question({
 });
 
 const registeredIds = new Set([registeredQuestion.question_id]);
+
+test("only the newest Due request may publish when responses finish out of order", async () => {
+  const guard = createQuizRunRequestGuard();
+  const pending = [];
+  const published = [];
+  const load = async (name) => {
+    const request = guard.begin();
+    await new Promise((resolve) => pending.push(resolve));
+    if (guard.owns(request)) published.push(name);
+  };
+  const older = load("older");
+  const newer = load("newer");
+  pending[1]();
+  await newer;
+  pending[0]();
+  await older;
+  assert.deepEqual(published, ["newer"]);
+});
+
+test("switching to manual invalidates Due ownership, including stale errors", () => {
+  const guard = createQuizRunRequestGuard();
+  const older = guard.begin();
+  guard.invalidate();
+  assert.equal(guard.owns(older), false);
+  const latest = guard.begin();
+  assert.equal(guard.owns(older), false);
+  assert.equal(guard.owns(latest), true);
+});
 
 test("shuffle copies empty, single and many-item pools without changing identity or eligibility", () => {
   for (const input of [[], [registeredQuestion], [registeredQuestion, unregisteredQuestion, question({ question_id: "third" })]]) {

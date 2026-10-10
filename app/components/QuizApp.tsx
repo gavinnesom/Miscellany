@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
+import { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type { CategoryGroup, Entry, QuizItem, TopicGroup } from "../lib/content";
 import { categoryFor } from "../lib/categories";
@@ -24,6 +24,7 @@ import { useQuizReadiness } from "../lib/quiz-readiness-client";
 import { questionMap, questionsFromQuiz } from "../lib/quiz-questions";
 import {
   isTrackedQuestion,
+  createQuizRunRequestGuard,
   matchesManualQuizSelection,
   moveDueQuestionLater,
   nextManualQuestionIndex,
@@ -45,7 +46,7 @@ type QuizCard = QuizItem & {
 };
 
 type QuizMode = "all" | "category" | "topic" | "related" | "due";
-type DueLoadState = "idle" | "loaded" | "error";
+type DueLoadState = "idle" | "loading" | "loaded" | "error";
 
 type Props = {
   entries: Entry[];
@@ -75,6 +76,7 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
   const [dueQuestions, setDueQuestions] = useState<QuizCard[]>([]);
   const [dueIndex, setDueIndex] = useState(0);
   const [dueLoadState, setDueLoadState] = useState<DueLoadState>("idle");
+  const dueRequests = useRef(createQuizRunRequestGuard());
   const [memoryStatus, setMemoryStatus] = useState("");
   const [summary, setSummary] = useState<MemorySummary | null>(null);
   const [workloadOnly, setWorkloadOnly] = useState(true);
@@ -148,6 +150,14 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
   const current = mode === "due"
     ? questionSet[dueIndex]
     : questionSet.find((question) => question.question_id === manualQuestionId) ?? questionSet[0];
+  // Anchor a newly eligible fallback before React commits it. In particular,
+  // an initially empty run must keep its first available card when more entries
+  // become ready. If eligibility removes the old card, clear its answer state.
+  if (mode !== "due" && current && current.question_id !== manualQuestionId) {
+    setManualQuestionId(current.question_id);
+    setShowAnswer(false);
+    resetTypedAnswer();
+  }
   const currentIsEnrolled = isTrackedQuestion(current, registeredIds, mode === "due", Boolean(session));
   const typedMode = Boolean(session && currentIsEnrolled);
   const currentCategory = current ? categoryFor(current.category).label : "";
@@ -158,10 +168,10 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
   const dueButtonLabel = dueLoadState === "loaded" ? `Due (${dueQuestions.length})` : "Due";
   const dueEmptyText = dueLoadState === "error"
     ? "Review schedule unavailable. Try Due again in a moment."
-    : "No questions due.";
+    : dueLoadState === "loading" ? "Preparing your due quiz run." : "No questions due.";
   const dueEmptyHeading = dueLoadState === "error"
     ? "Due reviews"
-    : "You're caught up";
+    : dueLoadState === "loading" ? "Loading due reviews" : "You're caught up";
   const dueEmptyClassName = dueLoadState === "error" ? "quiz-status-error" : "quiz-answer";
   const manualEmptyHeading = workloadStatusUnavailable
     ? "Quiz workload unavailable"
@@ -179,21 +189,30 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
         : "Try all topics, or choose a different category or related-topic seed.";
 
   const loadDue = useCallback(async (activeSession = session) => {
+    const request = dueRequests.current.begin();
+    setDueQuestions([]);
+    setDueIndex(0);
     if (!activeSession) {
       setMemoryStatus("");
       setDueLoadState("idle");
       return;
     }
 
+    setDueLoadState("loading");
     try {
       await flushOutbox(allQuestions, activeSession);
+      if (!dueRequests.current.owns(request)) return;
       const ids = await getDueItemIds(activeSession);
+      if (!dueRequests.current.owns(request)) return;
+      const nextSummary = await getSummary(activeSession);
+      if (!dueRequests.current.owns(request)) return;
       setDueQuestions(shuffleCopy(ids.map((id) => questionById.get(id)).filter((item): item is QuizCard => Boolean(item))));
       setDueIndex(0);
-      setSummary(await getSummary(activeSession));
+      setSummary(nextSummary);
       setDueLoadState("loaded");
       setMemoryStatus(ids.length ? "Review schedule loaded" : "No questions due");
     } catch {
+      if (!dueRequests.current.owns(request)) return;
       setDueQuestions([]);
       setDueIndex(0);
       setSummary(null);
@@ -203,6 +222,7 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
   }, [allQuestions, questionById, session]);
 
   function chooseMode(nextMode: QuizMode) {
+    dueRequests.current.invalidate();
     setMode(nextMode);
     setManualRunNumber((number) => number + 1);
     setDueIndex(0);
@@ -505,7 +525,7 @@ export function QuizApp({ entries, groups, topics, quiz, initialSlug, initialTop
             </>
           ) : (
             <>
-              <p className="entry-kicker">{manualRunLoading || workloadStatusLoading ? "Preparing quiz" : "No questions yet"}</p>
+              <p className="entry-kicker">{manualRunLoading || workloadStatusLoading || (mode === "due" && dueLoadState === "loading") ? "Preparing quiz" : "No questions yet"}</p>
               <h2>{mode === "due" ? dueEmptyHeading : manualEmptyHeading}</h2>
               <p className={mode === "due" ? dueEmptyClassName : "quiz-answer"}>
                 {mode === "due" ? dueEmptyText : manualEmptyText}
