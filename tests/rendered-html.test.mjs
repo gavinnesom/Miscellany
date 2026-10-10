@@ -31,6 +31,12 @@ test("number theory curriculum renders in prerequisite order with working mathem
   const topic = await render("/topic/number-theory-cryptography");
   assert.equal(topic.status, 200);
   const topicHtml = await topic.text();
+  const excerpts = [...topicHtml.matchAll(/<span>(.*?)<\/span>/g)].map((match) => match[1]).join(" ");
+  assert.doesNotMatch(excerpts, /\\[()\[\]]/);
+  assert.match(excerpts, /twelve-hour/);
+  assert.match(excerpts, /equal-length/);
+  assert.match(excerpts, /public-key/);
+  assert.match(excerpts, /10\+5=15/);
   let previous = -1;
   for (const slug of slugs) {
     const index = topicHtml.lastIndexOf(`href="/entry/${slug}"`);
