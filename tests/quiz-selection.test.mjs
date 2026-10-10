@@ -4,9 +4,11 @@ import test from "node:test";
 import { sanitizeGradeResult } from "../app/lib/grading.ts";
 import {
   isTrackedQuestion,
+  createQuizRunRequestGuard,
   matchesManualQuizSelection,
   moveDueQuestionLater,
   nextManualQuestionIndex,
+  shuffleCopy,
 } from "../app/lib/quiz-selection.ts";
 import { selectedTextWithinElement } from "../app/lib/review-selection.ts";
 
@@ -27,6 +29,55 @@ const unregisteredQuestion = question({
 });
 
 const registeredIds = new Set([registeredQuestion.question_id]);
+
+test("only the newest Due request may publish when responses finish out of order", async () => {
+  const guard = createQuizRunRequestGuard();
+  const pending = [];
+  const published = [];
+  const load = async (name) => {
+    const request = guard.begin();
+    await new Promise((resolve) => pending.push(resolve));
+    if (guard.owns(request)) published.push(name);
+  };
+  const older = load("older");
+  const newer = load("newer");
+  pending[1]();
+  await newer;
+  pending[0]();
+  await older;
+  assert.deepEqual(published, ["newer"]);
+});
+
+test("switching to manual invalidates Due ownership, including stale errors", () => {
+  const guard = createQuizRunRequestGuard();
+  const older = guard.begin();
+  guard.invalidate();
+  assert.equal(guard.owns(older), false);
+  const latest = guard.begin();
+  assert.equal(guard.owns(older), false);
+  assert.equal(guard.owns(latest), true);
+});
+
+test("shuffle copies empty, single and many-item pools without changing identity or eligibility", () => {
+  for (const input of [[], [registeredQuestion], [registeredQuestion, unregisteredQuestion, question({ question_id: "third" })]]) {
+    const original = [...input];
+    const result = shuffleCopy(input, () => 0);
+    assert.notEqual(result, input);
+    assert.deepEqual(input, original);
+    assert.deepEqual(new Set(result), new Set(input));
+    assert.equal(result.length, input.length);
+  }
+});
+
+test("fixed due IDs produce shuffled local presentation; Later preserves the remaining queue", () => {
+  const ids = ["a", "missing", "b", "c"];
+  const cards = new Map(["a", "b", "c"].map((question_id) => [question_id, { question_id }]));
+  const eligible = ids.map((id) => cards.get(id)).filter(Boolean);
+  const run = shuffleCopy(eligible, () => 0);
+  assert.deepEqual(run.map((card) => card.question_id), ["b", "c", "a"]);
+  assert.deepEqual(ids, ["a", "missing", "b", "c"]);
+  assert.deepEqual(moveDueQuestionLater(run, 0).items.map((card) => card.question_id), ["c", "a", "b"]);
+});
 
 test("grading feedback truncates at a boundary with an ellipsis", () => {
   const result = sanitizeGradeResult({

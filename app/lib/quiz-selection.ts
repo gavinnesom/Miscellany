@@ -1,5 +1,25 @@
 import type { QuizItem } from "./content";
 
+/** Fisher–Yates on a copy; randomness belongs to run creation, never render. */
+export function shuffleCopy<T>(items: readonly T[], random: () => number = Math.random): T[] {
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled;
+}
+
+/** A response may publish only while it still owns the current quiz run. */
+export function createQuizRunRequestGuard() {
+  let generation = 0;
+  return {
+    begin: () => ++generation,
+    invalidate: () => { generation += 1; },
+    owns: (request: number) => request === generation,
+  };
+}
+
 export type QuizQuestionBase = QuizItem & {
   slug: string;
   category: string;
