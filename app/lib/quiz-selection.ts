@@ -1,5 +1,15 @@
 import type { QuizItem } from "./content";
 
+/** Fisher–Yates on a copy; randomness belongs to run creation, never render. */
+export function shuffleCopy<T>(items: readonly T[], random: () => number = Math.random): T[] {
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled;
+}
+
 export type QuizQuestionBase = QuizItem & {
   slug: string;
   category: string;

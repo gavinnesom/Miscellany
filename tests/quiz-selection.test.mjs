@@ -7,6 +7,7 @@ import {
   matchesManualQuizSelection,
   moveDueQuestionLater,
   nextManualQuestionIndex,
+  shuffleCopy,
 } from "../app/lib/quiz-selection.ts";
 import { selectedTextWithinElement } from "../app/lib/review-selection.ts";
 
@@ -27,6 +28,27 @@ const unregisteredQuestion = question({
 });
 
 const registeredIds = new Set([registeredQuestion.question_id]);
+
+test("shuffle copies empty, single and many-item pools without changing identity or eligibility", () => {
+  for (const input of [[], [registeredQuestion], [registeredQuestion, unregisteredQuestion, question({ question_id: "third" })]]) {
+    const original = [...input];
+    const result = shuffleCopy(input, () => 0);
+    assert.notEqual(result, input);
+    assert.deepEqual(input, original);
+    assert.deepEqual(new Set(result), new Set(input));
+    assert.equal(result.length, input.length);
+  }
+});
+
+test("fixed due IDs produce shuffled local presentation; Later preserves the remaining queue", () => {
+  const ids = ["a", "missing", "b", "c"];
+  const cards = new Map(["a", "b", "c"].map((question_id) => [question_id, { question_id }]));
+  const eligible = ids.map((id) => cards.get(id)).filter(Boolean);
+  const run = shuffleCopy(eligible, () => 0);
+  assert.deepEqual(run.map((card) => card.question_id), ["b", "c", "a"]);
+  assert.deepEqual(ids, ["a", "missing", "b", "c"]);
+  assert.deepEqual(moveDueQuestionLater(run, 0).items.map((card) => card.question_id), ["c", "a", "b"]);
+});
 
 test("grading feedback truncates at a boundary with an ellipsis", () => {
   const result = sanitizeGradeResult({
