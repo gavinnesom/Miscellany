@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="373.893562pt" viewBox="0 0 628.2 373.893562" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<title>Parallel electrical bus</title><desc>Battery, rectified alternator and electrical loads connect in parallel to supply and return conductors. Starter has a switched branch. The battery can supply or absorb current.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 373.893562
+L 628.2 373.893562
+L 628.2 -0
+L 0 -0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 53.235 251.353561
+Q 53.235 197.601838 53.235 143.850115
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 56.435 244.953561
+L 53.235 251.353561
+L 50.035 244.953561
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 50.035 150.250115
+L 53.235 143.850115
+L 56.435 150.250115
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 68.58 100.581562
+L 559.62 100.581562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #bd493d; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 68.58 300.165562
+L 559.62 300.165562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #165c89; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 86.994 100.581562
+L 86.994 175.425562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #566675; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 86.994 225.321562
+L 86.994 300.165562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #566675; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <defs>
+     <path id="mc2669a867e" d="M 0 2
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214
+C 1.789267 1.03916 2 0.530406 2 0
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214
+C 1.03916 -1.789267 0.530406 -2 0 -2
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214
+C -1.789267 -1.03916 -2 -0.530406 -2 0
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214
+C -1.03916 1.789267 -0.530406 2 0 2
+z
+" style="stroke: #566675"/>
+    </defs>
+    <g clip-path="url(#pd891afbda1)">
+     <use xlink:href="#mc2669a867e" x="86.994" y="300.165562" style="fill: #566675; stroke: #566675"/>
+    </g>
+   </g>
+   <g id="line2d_6">
+    <g clip-path="url(#pd891afbda1)">
+     <use xlink:href="#mc2669a867e" x="86.994" y="100.581562" style="fill: #566675; stroke: #566675"/>
+    </g>
+   </g>
+   <g id="line2d_7">
+    <path d="M 240.444 100.581562
+L 240.444 175.425562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #566675; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 240.444 225.321562
+L 240.444 300.165562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #566675; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <g clip-path="url(#pd891afbda1)">
+     <use xlink:href="#mc2669a867e" x="240.444" y="300.165562" style="fill: #566675; stroke: #566675"/>
+    </g>
+   </g>
+   <g id="line2d_10">
+    <g clip-path="url(#pd891afbda1)">
+     <use xlink:href="#mc2669a867e" x="240.444" y="100.581562" style="fill: #566675; stroke: #566675"/>
+    </g>
+   </g>
+   <g id="line2d_11">
+    <path d="M 393.894 100.581562
+L 393.894 175.425562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #566675; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 393.894 225.321562
+L 393.894 300.165562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #566675; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_13">
+    <g clip-path="url(#pd891afbda1)">
+     <use xlink:href="#mc2669a867e" x="393.894" y="300.165562" style="fill: #566675; stroke: #566675"/>
+    </g>
+   </g>
+   <g id="line2d_14">
+    <g clip-path="url(#pd891afbda1)">
+     <use xlink:href="#mc2669a867e" x="393.894" y="100.581562" style="fill: #566675; stroke: #566675"/>
+    </g>
+   </g>
+   <g id="line2d_15">
+    <path d="M 547.344 100.581562
+L 547.344 175.425562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #566675; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 547.344 225.321562
+L 547.344 300.165562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #566675; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_17">
+    <g clip-path="url(#pd891afbda1)">
+     <use xlink:href="#mc2669a867e" x="547.344" y="300.165562" style="fill: #566675; stroke: #566675"/>
+    </g>
+   </g>
+   <g id="line2d_18">
+    <g clip-path="url(#pd891afbda1)">
+     <use xlink:href="#mc2669a867e" x="547.344" y="100.581562" style="fill: #566675; stroke: #566675"/>
+    </g>
+   </g>
+   <g id="line2d_19">
+    <path d="M 547.344 153.249562
+L 547.344 131.073562
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #ffffff; stroke-width: 5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 547.344 153.249562
+L 560.8476 134.954362
+" clip-path="url(#pd891afbda1)" style="fill: none; stroke: #566675; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #bd493d" x="37.89" y="75.633562" transform="rotate(-0 37.89 75.633562)">Positive bus</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #165c89" x="37.89" y="330.657562" transform="rotate(-0 37.89 330.657562)">Return to battery negative / chassis bonds</text>
+   </g>
+   <g id="text_3">
+    <g id="patch_3">
+     <path d="M 62.935875 210.564344
+L 111.052125 210.564344
+Q 114.952125 210.564344 114.952125 206.664344
+L 114.952125 194.082781
+Q 114.952125 190.182781 111.052125 190.182781
+L 62.935875 190.182781
+Q 59.035875 190.182781 59.035875 194.082781
+L 59.035875 206.664344
+Q 59.035875 210.564344 62.935875 210.564344
+z
+" style="fill: #ffffff; stroke: #217457; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #217457" x="86.994" y="203.96075" transform="rotate(-0 86.994 203.96075)">Battery</text>
+   </g>
+   <g id="text_4">
+    <g id="patch_4">
+     <path d="M 207.712438 217.842922
+L 273.175563 217.842922
+Q 277.075563 217.842922 277.075563 213.942922
+L 277.075563 186.804203
+Q 277.075563 182.904203 273.175563 182.904203
+L 207.712438 182.904203
+Q 203.812438 182.904203 203.812438 186.804203
+L 203.812438 213.942922
+Q 203.812438 217.842922 207.712438 217.842922
+z
+" style="fill: #ffffff; stroke: #217457; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #217457" transform="translate(207.785563 196.682172)">Alternator</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #217457" transform="translate(207.712438 211.239328)">+ rectifier</text>
+   </g>
+   <g id="text_5">
+    <g id="patch_5">
+     <path d="M 357.232984 217.842922
+L 430.555016 217.842922
+Q 434.455016 217.842922 434.455016 213.942922
+L 434.455016 186.804203
+Q 434.455016 182.904203 430.555016 182.904203
+L 357.232984 182.904203
+Q 353.332984 182.904203 353.332984 186.804203
+L 353.332984 213.942922
+Q 353.332984 217.842922 357.232984 217.842922
+z
+" style="fill: #ffffff; stroke: #165c89; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #165c89" transform="translate(371.575641 196.682172)">Lamp /</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #165c89" transform="translate(357.232984 211.239328)">other loads</text>
+   </g>
+   <g id="text_6">
+    <g id="patch_6">
+     <path d="M 524.794078 217.842922
+L 569.893922 217.842922
+Q 573.793922 217.842922 573.793922 213.942922
+L 573.793922 186.804203
+Q 573.793922 182.904203 569.893922 182.904203
+L 524.794078 182.904203
+Q 520.894078 182.904203 520.894078 186.804203
+L 520.894078 213.942922
+Q 520.894078 217.842922 524.794078 217.842922
+z
+" style="fill: #ffffff; stroke: #165c89; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #165c89" transform="translate(524.794078 196.682172)">Starter</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #165c89" transform="translate(527.837906 211.239328)">motor</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="525.861" y="142.161562" transform="rotate(-0 525.861 142.161562)">contact</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #217457" transform="translate(32.056175 238.907156) rotate(-90)">charge / supply</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="314.1" y="363.921562" transform="rotate(-0 314.1 363.921562)">Functional topology only. Regulation, ignition, fuses, relays, and individual return paths omitted.</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 15.6px; font-family: 'DejaVu Sans'; text-anchor: middle" x="314.1" y="19.053562" transform="rotate(-0 314.1 19.053562)">One bus, multiple branches</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd891afbda1">
+   <rect x="7.2" y="34.053562" width="613.8" height="332.64"/>
+  </clipPath>
+ </defs>
+</svg>
