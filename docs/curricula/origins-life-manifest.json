@@ -1,0 +1,56 @@
+[
+  {
+    "path": "content/physics-space/earliest-life-evidence.md",
+    "bytes": 11293,
+    "sha256": "3df6c496263addd99a359d79ce1d4f0a5233649ba5bee3ad0d22492e482e6189",
+    "git_blob_sha": "aa0d251aef7bacba0cd0208bd8617b322d17cc69"
+  },
+  {
+    "path": "content/physics-space/early-earth-habitability.md",
+    "bytes": 8144,
+    "sha256": "a2273227b6730007028327387e819858662a12abc00798eedd2d386a3325f7a6",
+    "git_blob_sha": "7afbb817784e06fc7fd4fccb9182cebca0e06a97"
+  },
+  {
+    "path": "content/physics-space/prebiotic-chemistry-energy.md",
+    "bytes": 8254,
+    "sha256": "179a6f639f41a2ac9b58ce00b2181c7761ecb1cc5443afac819320cda0364049",
+    "git_blob_sha": "7d9ff061a58e3cd11117ce81fd2d8bd7e0745c70"
+  },
+  {
+    "path": "content/physics-space/protocells-origin-hypotheses.md",
+    "bytes": 10074,
+    "sha256": "a714807ba97c8aaa7226b01e0a6c2ca30069ca051b230a78dc3ed7d0bff17abc",
+    "git_blob_sha": "ecf7338f1e2e730d78e95bf1ac6e212f2fa8652d"
+  },
+  {
+    "path": "content/physics-space/rna-replication-origins.md",
+    "bytes": 9739,
+    "sha256": "28aa970ad965825f5fc04c7043271478cf2350f07c642961fc5e564562ea339f",
+    "git_blob_sha": "11905f40e234a8d9893c3d699d97202709997636"
+  },
+  {
+    "path": "docs/curricula/origins-life-evidence.md",
+    "bytes": 12358,
+    "sha256": "76ceff38b9fb78ab85020094149f71087d8f005b4b3549a6d57bfde6d800a9dd",
+    "git_blob_sha": "4114e8a233f38a00caf790f2ec9f770d91947fa2"
+  },
+  {
+    "path": "public/images/origins-copy-fidelity.svg",
+    "bytes": 30580,
+    "sha256": "c858fb3348ce705535d5070af5fa9068a5d204f9359558e3d07a4fd54e015f81",
+    "git_blob_sha": "b27419bbafa9ad95a19574fbbe68a38cd5109d1a"
+  },
+  {
+    "path": "public/images/origins-dresser-terracettes.jpg",
+    "bytes": 101191,
+    "sha256": "15f29984bca14c184182796250917c5d1908367227ba547ba15655d28f037556",
+    "git_blob_sha": "63651d0f5991758462c214d48f9db0ddbac89644"
+  },
+  {
+    "path": "public/images/origins-isua-graphite.png",
+    "bytes": 3095050,
+    "sha256": "6beaaf327cbee75296cbf8acca5a87b57da96436814f6b8823627c9f640e8296",
+    "git_blob_sha": "4ecd761a07dcf091707d3f87653c2327d2f5bceb"
+  }
+]
