@@ -113,7 +113,7 @@ test("math rendering distinguishes integral from membership and exponent signs f
   const { renderMathText } = await import("../app/lib/math-text.ts");
   assert.equal(renderMathText(String.raw`W=\int P_{ext}\,dV.`), "W=∫ Pext dV.");
   assert.equal(renderMathText(String.raw`x\in A`), "x∈ A");
-  assert.equal(renderMathText(String.raw`\int_A^B F\,dr`), "∫A^B F dr");
+  assert.equal(renderMathText(String.raw`\int_A^B F\,dr`), "∫(A)^B F dr");
   assert.equal(renderMathText(String.raw`V_B-V_A; k_B`), "V(B)-V(A); k(B)");
   assert.equal(renderMathText(String.raw`\vec E\cdot d\vec l`), "vec(E)· dvec(l)");
   assert.equal(renderMathText(String.raw`τ⃗=μ⃗\times\vec B`), "vec(τ)=vec(μ)×vec(B)");
