@@ -1,0 +1,196 @@
+country,region,capital_in_draft,UN_2025_profile_label,source_url,read_status,note
+Morocco,africa,Rabat,Rabat,https://data.un.org/legacy/en/iso/ma.html,read with web open,Diacritics and familiar English spelling may differ
+Algeria,africa,Algiers,Algiers,https://data.un.org/legacy/en/iso/dz.html,read with web open,Diacritics and familiar English spelling may differ
+Tunisia,africa,Tunis,Tunis,https://data.un.org/legacy/en/iso/tn.html,read with web open,Diacritics and familiar English spelling may differ
+Libya,africa,Tripoli,Tripoli,https://data.un.org/legacy/en/iso/ly.html,read with web open,Diacritics and familiar English spelling may differ
+Egypt,africa,Cairo [A1],Cairo,https://data.un.org/legacy/en/iso/eg.html,read with web open,See regional exception note
+Sudan,africa,Khartoum [A2],Khartoum,https://data.un.org/legacy/en/iso/sd.html,read with web open,See regional exception note
+Mauritania,africa,Nouakchott,Nouakchott,https://data.un.org/legacy/en/iso/mr.html,read with web open,Diacritics and familiar English spelling may differ
+Senegal,africa,Dakar,Dakar,https://data.un.org/legacy/en/iso/sn.html,read with web open,Diacritics and familiar English spelling may differ
+Gambia,africa,Banjul,Banjul,https://data.un.org/legacy/en/iso/gm.html,read with web open,Diacritics and familiar English spelling may differ
+Cabo Verde,africa,Praia,Praia,https://data.un.org/legacy/en/iso/cv.html,read with web open,Diacritics and familiar English spelling may differ
+Guinea-Bissau,africa,Bissau,Bissau,https://data.un.org/legacy/en/iso/gw.html,read with web open,Diacritics and familiar English spelling may differ
+Guinea,africa,Conakry,Conakry,https://data.un.org/legacy/en/iso/gn.html,read with web open,Diacritics and familiar English spelling may differ
+Sierra Leone,africa,Freetown,Freetown,https://data.un.org/legacy/en/iso/sl.html,read with web open,Diacritics and familiar English spelling may differ
+Liberia,africa,Monrovia,Monrovia,https://data.un.org/legacy/en/iso/lr.html,read with web open,Diacritics and familiar English spelling may differ
+Côte d’Ivoire,africa,Yamoussoukro [A3],Yamoussoukro,https://data.un.org/legacy/en/iso/ci.html,read with web open,See regional exception note
+Ghana,africa,Accra,Accra,https://data.un.org/legacy/en/iso/gh.html,read with web open,Diacritics and familiar English spelling may differ
+Togo,africa,Lomé,Lomé,https://data.un.org/legacy/en/iso/tg.html,read with web open,Diacritics and familiar English spelling may differ
+Benin,africa,Porto-Novo [A4],Porto-Novo,https://data.un.org/legacy/en/iso/bj.html,read with web open,See regional exception note
+Nigeria,africa,Abuja,Abuja,https://data.un.org/legacy/en/iso/ng.html,read with web open,Diacritics and familiar English spelling may differ
+Mali,africa,Bamako,Bamako,https://data.un.org/legacy/en/iso/ml.html,read with web open,Diacritics and familiar English spelling may differ
+Burkina Faso,africa,Ouagadougou,Ouagadougou,https://data.un.org/legacy/en/iso/bf.html,read with web open,Diacritics and familiar English spelling may differ
+Niger,africa,Niamey,Niamey,https://data.un.org/legacy/en/iso/ne.html,read with web open,Diacritics and familiar English spelling may differ
+Chad,africa,N’Djamena,N'Djamena,https://data.un.org/legacy/en/iso/td.html,read with web open,Diacritics and familiar English spelling may differ
+Cameroon,africa,Yaoundé,Yaoundé,https://data.un.org/legacy/en/iso/cm.html,read with web open,Diacritics and familiar English spelling may differ
+Central African Republic,africa,Bangui,Bangui,https://data.un.org/legacy/en/iso/cf.html,read with web open,Diacritics and familiar English spelling may differ
+Equatorial Guinea,africa,Ciudad de la Paz [A5],Malabo,https://data.un.org/legacy/en/iso/gq.html,read with web open,See regional exception note
+Gabon,africa,Libreville,Libreville,https://data.un.org/legacy/en/iso/ga.html,read with web open,Diacritics and familiar English spelling may differ
+Republic of the Congo,africa,Brazzaville,Brazzaville,https://data.un.org/legacy/en/iso/cg.html,read with web open,Diacritics and familiar English spelling may differ
+Democratic Republic of the Congo,africa,Kinshasa,Kinshasa,https://data.un.org/legacy/en/iso/cd.html,read with web open,Diacritics and familiar English spelling may differ
+São Tomé and Príncipe,africa,São Tomé,Sao Tome,https://data.un.org/legacy/en/iso/st.html,read with web open,Diacritics and familiar English spelling may differ
+Angola,africa,Luanda,Luanda,https://data.un.org/legacy/en/iso/ao.html,read with web open,Diacritics and familiar English spelling may differ
+South Sudan,africa,Juba,Juba,https://data.un.org/legacy/en/iso/ss.html,read with web open,Diacritics and familiar English spelling may differ
+Eritrea,africa,Asmara,Asmara,https://data.un.org/legacy/en/iso/er.html,read with web open,Diacritics and familiar English spelling may differ
+Ethiopia,africa,Addis Ababa,Addis Ababa,https://data.un.org/legacy/en/iso/et.html,read with web open,Diacritics and familiar English spelling may differ
+Djibouti,africa,Djibouti,Djibouti,https://data.un.org/legacy/en/iso/dj.html,read with web open,Diacritics and familiar English spelling may differ
+Somalia,africa,Mogadishu,Mogadishu,https://data.un.org/legacy/en/iso/so.html,read with web open,Diacritics and familiar English spelling may differ
+Kenya,africa,Nairobi,Nairobi,https://data.un.org/legacy/en/iso/ke.html,read with web open,Diacritics and familiar English spelling may differ
+Uganda,africa,Kampala,Kampala,https://data.un.org/legacy/en/iso/ug.html,read with web open,Diacritics and familiar English spelling may differ
+Rwanda,africa,Kigali,Kigali,https://data.un.org/legacy/en/iso/rw.html,read with web open,Diacritics and familiar English spelling may differ
+Burundi,africa,Gitega [A7],Gitega,https://data.un.org/legacy/en/iso/bi.html,read with web open,See regional exception note
+Tanzania,africa,Dodoma [A8],Dodoma,https://data.un.org/legacy/en/iso/tz.html,read with web open,See regional exception note
+Zambia,africa,Lusaka,Lusaka,https://data.un.org/legacy/en/iso/zm.html,read with web open,Diacritics and familiar English spelling may differ
+Malawi,africa,Lilongwe,Lilongwe,https://data.un.org/legacy/en/iso/mw.html,read with web open,Diacritics and familiar English spelling may differ
+Mozambique,africa,Maputo,Maputo,https://data.un.org/legacy/en/iso/mz.html,read with web open,Diacritics and familiar English spelling may differ
+Zimbabwe,africa,Harare,Harare,https://data.un.org/legacy/en/iso/zw.html,read with web open,Diacritics and familiar English spelling may differ
+Botswana,africa,Gaborone,Gaborone,https://data.un.org/legacy/en/iso/bw.html,read with web open,Diacritics and familiar English spelling may differ
+Namibia,africa,Windhoek,Windhoek,https://data.un.org/legacy/en/iso/na.html,read with web open,Diacritics and familiar English spelling may differ
+South Africa,africa,Pretoria; Cape Town; Bloemfontein [A9],Pretoria,https://data.un.org/legacy/en/iso/za.html,read with web open,See regional exception note
+Lesotho,africa,Maseru,Maseru,https://data.un.org/legacy/en/iso/ls.html,read with web open,Diacritics and familiar English spelling may differ
+Eswatini,africa,Mbabane; Lobamba [A10],Mbabane,https://data.un.org/legacy/en/iso/sz.html,read with web open,See regional exception note
+Madagascar,africa,Antananarivo,Antananarivo,https://data.un.org/legacy/en/iso/mg.html,read with web open,Diacritics and familiar English spelling may differ
+Comoros,africa,Moroni,Moroni,https://data.un.org/legacy/en/iso/km.html,read with web open,Diacritics and familiar English spelling may differ
+Mauritius,africa,Port Louis,Port Louis,https://data.un.org/legacy/en/iso/mu.html,read with web open,Diacritics and familiar English spelling may differ
+Seychelles,africa,Victoria,Victoria,https://data.un.org/legacy/en/iso/sc.html,read with web open,Diacritics and familiar English spelling may differ
+Iceland,europe,Reykjavík,Reykjavik,https://data.un.org/legacy/en/iso/is.html,read with web open,Diacritics and familiar English spelling may differ
+Ireland,europe,Dublin,Dublin,https://data.un.org/legacy/en/iso/ie.html,read with web open,Diacritics and familiar English spelling may differ
+United Kingdom,europe,London,London,https://data.un.org/legacy/en/iso/gb.html,read with web open,Diacritics and familiar English spelling may differ
+Norway,europe,Oslo,Oslo,https://data.un.org/legacy/en/iso/no.html,read with web open,Diacritics and familiar English spelling may differ
+Sweden,europe,Stockholm,Stockholm,https://data.un.org/legacy/en/iso/se.html,read with web open,Diacritics and familiar English spelling may differ
+Finland,europe,Helsinki,Helsinki,https://data.un.org/legacy/en/iso/fi.html,read with web open,Diacritics and familiar English spelling may differ
+Denmark,europe,Copenhagen,Copenhagen,https://data.un.org/legacy/en/iso/dk.html,read with web open,Diacritics and familiar English spelling may differ
+Estonia,europe,Tallinn,Tallinn,https://data.un.org/legacy/en/iso/ee.html,read with web open,Diacritics and familiar English spelling may differ
+Latvia,europe,Riga,Riga,https://data.un.org/legacy/en/iso/lv.html,read with web open,Diacritics and familiar English spelling may differ
+Lithuania,europe,Vilnius,Vilnius,https://data.un.org/legacy/en/iso/lt.html,read with web open,Diacritics and familiar English spelling may differ
+Belarus,europe,Minsk,Minsk,https://data.un.org/legacy/en/iso/by.html,read with web open,Diacritics and familiar English spelling may differ
+Ukraine,europe,Kyiv,Kyiv,https://data.un.org/legacy/en/iso/ua.html,read with web open,Diacritics and familiar English spelling may differ
+Russia,europe,Moscow,Moscow,https://data.un.org/legacy/en/iso/ru.html,read with web open,Diacritics and familiar English spelling may differ
+Netherlands,europe,Amsterdam [E4],Amsterdam,https://data.un.org/legacy/en/iso/nl.html,read with web open,See regional exception note
+Belgium,europe,Brussels,Brussels,https://data.un.org/legacy/en/iso/be.html,read with web open,Diacritics and familiar English spelling may differ
+Luxembourg,europe,Luxembourg,Luxembourg,https://data.un.org/legacy/en/iso/lu.html,read with web open,Diacritics and familiar English spelling may differ
+France,europe,Paris,Paris,https://data.un.org/legacy/en/iso/fr.html,read with web open,Diacritics and familiar English spelling may differ
+Germany,europe,Berlin,Berlin,https://data.un.org/legacy/en/iso/de.html,read with web open,Diacritics and familiar English spelling may differ
+Switzerland,europe,Bern [E5],Bern,https://data.un.org/legacy/en/iso/ch.html,read with web open,See regional exception note
+Liechtenstein,europe,Vaduz,Vaduz,https://data.un.org/legacy/en/iso/li.html,read with web open,Diacritics and familiar English spelling may differ
+Austria,europe,Vienna,Vienna,https://data.un.org/legacy/en/iso/at.html,read with web open,Diacritics and familiar English spelling may differ
+Czechia,europe,Prague,Prague,https://data.un.org/legacy/en/iso/cz.html,read with web open,Diacritics and familiar English spelling may differ
+Poland,europe,Warsaw,Warsaw,https://data.un.org/legacy/en/iso/pl.html,read with web open,Diacritics and familiar English spelling may differ
+Slovakia,europe,Bratislava,Bratislava,https://data.un.org/legacy/en/iso/sk.html,read with web open,Diacritics and familiar English spelling may differ
+Hungary,europe,Budapest,Budapest,https://data.un.org/legacy/en/iso/hu.html,read with web open,Diacritics and familiar English spelling may differ
+Portugal,europe,Lisbon,Lisbon,https://data.un.org/legacy/en/iso/pt.html,read with web open,Diacritics and familiar English spelling may differ
+Spain,europe,Madrid,Madrid,https://data.un.org/legacy/en/iso/es.html,read with web open,Diacritics and familiar English spelling may differ
+Andorra,europe,Andorra la Vella,Andorra la Vella,https://data.un.org/legacy/en/iso/ad.html,read with web open,Diacritics and familiar English spelling may differ
+Monaco,europe,Monaco,Monaco,https://data.un.org/legacy/en/iso/mc.html,read with web open,Diacritics and familiar English spelling may differ
+Italy,europe,Rome,Rome,https://data.un.org/legacy/en/iso/it.html,read with web open,Diacritics and familiar English spelling may differ
+San Marino,europe,San Marino,San Marino,https://data.un.org/legacy/en/iso/sm.html,read with web open,Diacritics and familiar English spelling may differ
+Holy See,europe,Vatican City [E6],Vatican City,https://data.un.org/legacy/en/iso/va.html,read with web open,See regional exception note
+Malta,europe,Valletta,Valletta,https://data.un.org/legacy/en/iso/mt.html,read with web open,Diacritics and familiar English spelling may differ
+Slovenia,europe,Ljubljana,Ljubljana,https://data.un.org/legacy/en/iso/si.html,read with web open,Diacritics and familiar English spelling may differ
+Croatia,europe,Zagreb,Zagreb,https://data.un.org/legacy/en/iso/hr.html,read with web open,Diacritics and familiar English spelling may differ
+Bosnia and Herzegovina,europe,Sarajevo,Sarajevo,https://data.un.org/legacy/en/iso/ba.html,read with web open,Diacritics and familiar English spelling may differ
+Serbia,europe,Belgrade,Belgrade,https://data.un.org/legacy/en/iso/rs.html,read with web open,Diacritics and familiar English spelling may differ
+Montenegro,europe,Podgorica,Podgorica,https://data.un.org/legacy/en/iso/me.html,read with web open,Diacritics and familiar English spelling may differ
+Albania,europe,Tirana,Tirana,https://data.un.org/legacy/en/iso/al.html,read with web open,Diacritics and familiar English spelling may differ
+North Macedonia,europe,Skopje,Skopje,https://data.un.org/legacy/en/iso/mk.html,read with web open,Diacritics and familiar English spelling may differ
+Greece,europe,Athens,Athens,https://data.un.org/legacy/en/iso/gr.html,read with web open,Diacritics and familiar English spelling may differ
+Bulgaria,europe,Sofia,Sofia,https://data.un.org/legacy/en/iso/bg.html,read with web open,Diacritics and familiar English spelling may differ
+Romania,europe,Bucharest,Bucharest,https://data.un.org/legacy/en/iso/ro.html,read with web open,Diacritics and familiar English spelling may differ
+Moldova,europe,Chișinău,Chisinau,https://data.un.org/legacy/en/iso/md.html,read with web open,Diacritics and familiar English spelling may differ
+Türkiye,west-central-asia,Ankara,Ankara,https://data.un.org/legacy/en/iso/tr.html,read with web open,Diacritics and familiar English spelling may differ
+Cyprus,west-central-asia,Nicosia [W1],Nicosia,https://data.un.org/legacy/en/iso/cy.html,read with web open,See regional exception note
+Georgia,west-central-asia,Tbilisi,Tbilisi,https://data.un.org/legacy/en/iso/ge.html,read with web open,Diacritics and familiar English spelling may differ
+Armenia,west-central-asia,Yerevan,Yerevan,https://data.un.org/legacy/en/iso/am.html,read with web open,Diacritics and familiar English spelling may differ
+Azerbaijan,west-central-asia,Baku,Baku,https://data.un.org/legacy/en/iso/az.html,read with web open,Diacritics and familiar English spelling may differ
+Syria,west-central-asia,Damascus,Damascus,https://data.un.org/legacy/en/iso/sy.html,read with web open,Diacritics and familiar English spelling may differ
+Lebanon,west-central-asia,Beirut,Beirut,https://data.un.org/legacy/en/iso/lb.html,read with web open,Diacritics and familiar English spelling may differ
+Israel,west-central-asia,Jerusalem [W3],Jerusalem,https://data.un.org/legacy/en/iso/il.html,read with web open,See regional exception note
+State of Palestine,west-central-asia,East Jerusalem claimed; Ramallah administrative center [W3],East Jerusalem,https://data.un.org/legacy/en/iso/ps.html,read with web open,See regional exception note
+Jordan,west-central-asia,Amman,Amman,https://data.un.org/legacy/en/iso/jo.html,read with web open,Diacritics and familiar English spelling may differ
+Iraq,west-central-asia,Baghdad,Baghdad,https://data.un.org/legacy/en/iso/iq.html,read with web open,Diacritics and familiar English spelling may differ
+Saudi Arabia,west-central-asia,Riyadh,Riyadh,https://data.un.org/legacy/en/iso/sa.html,read with web open,Diacritics and familiar English spelling may differ
+Kuwait,west-central-asia,Kuwait City,Kuwait City,https://data.un.org/legacy/en/iso/kw.html,read with web open,Diacritics and familiar English spelling may differ
+Bahrain,west-central-asia,Manama,Manama,https://data.un.org/legacy/en/iso/bh.html,read with web open,Diacritics and familiar English spelling may differ
+Qatar,west-central-asia,Doha,Doha,https://data.un.org/legacy/en/iso/qa.html,read with web open,Diacritics and familiar English spelling may differ
+United Arab Emirates,west-central-asia,Abu Dhabi,Abu Dhabi,https://data.un.org/legacy/en/iso/ae.html,read with web open,Diacritics and familiar English spelling may differ
+Oman,west-central-asia,Muscat,Muscat,https://data.un.org/legacy/en/iso/om.html,read with web open,Diacritics and familiar English spelling may differ
+Yemen,west-central-asia,Sana’a [W4],Sana'a,https://data.un.org/legacy/en/iso/ye.html,read with web open,See regional exception note
+Iran,west-central-asia,Tehran,Tehran,https://data.un.org/legacy/en/iso/ir.html,read with web open,Diacritics and familiar English spelling may differ
+Kazakhstan,west-central-asia,Astana,Astana,https://data.un.org/legacy/en/iso/kz.html,read with web open,Diacritics and familiar English spelling may differ
+Turkmenistan,west-central-asia,Ashgabat,Ashgabat,https://data.un.org/legacy/en/iso/tm.html,read with web open,Diacritics and familiar English spelling may differ
+Uzbekistan,west-central-asia,Tashkent,Tashkent,https://data.un.org/legacy/en/iso/uz.html,read with web open,Diacritics and familiar English spelling may differ
+Kyrgyzstan,west-central-asia,Bishkek,Bishkek,https://data.un.org/legacy/en/iso/kg.html,read with web open,Diacritics and familiar English spelling may differ
+Tajikistan,west-central-asia,Dushanbe,Dushanbe,https://data.un.org/legacy/en/iso/tj.html,read with web open,Diacritics and familiar English spelling may differ
+Afghanistan,south-east-asia,Kabul,Kabul,https://data.un.org/legacy/en/iso/af.html,read with web open,Diacritics and familiar English spelling may differ
+Pakistan,south-east-asia,Islamabad,Islamabad,https://data.un.org/legacy/en/iso/pk.html,read with web open,Diacritics and familiar English spelling may differ
+India,south-east-asia,New Delhi,New Delhi,https://data.un.org/legacy/en/iso/in.html,read with web open,Diacritics and familiar English spelling may differ
+Nepal,south-east-asia,Kathmandu,Kathmandu,https://data.un.org/legacy/en/iso/np.html,read with web open,Diacritics and familiar English spelling may differ
+Bhutan,south-east-asia,Thimphu,Thimphu,https://data.un.org/legacy/en/iso/bt.html,read with web open,Diacritics and familiar English spelling may differ
+Bangladesh,south-east-asia,Dhaka,Dhaka,https://data.un.org/legacy/en/iso/bd.html,read with web open,Diacritics and familiar English spelling may differ
+Sri Lanka,south-east-asia,Sri Jayewardenepura Kotte [S2],Colombo,https://data.un.org/legacy/en/iso/lk.html,read with web open,See regional exception note
+Maldives,south-east-asia,Malé,Male,https://data.un.org/legacy/en/iso/mv.html,read with web open,Diacritics and familiar English spelling may differ
+China,south-east-asia,Beijing [S3],Beijing,https://data.un.org/legacy/en/iso/cn.html,read with web open,See regional exception note
+Mongolia,south-east-asia,Ulaanbaatar,Ulaanbaatar,https://data.un.org/legacy/en/iso/mn.html,read with web open,Diacritics and familiar English spelling may differ
+North Korea,south-east-asia,Pyongyang,Pyongyang,https://data.un.org/legacy/en/iso/kp.html,read with web open,Diacritics and familiar English spelling may differ
+South Korea,south-east-asia,Seoul [S4],Seoul,https://data.un.org/legacy/en/iso/kr.html,read with web open,See regional exception note
+Japan,south-east-asia,Tokyo,Tokyo,https://data.un.org/legacy/en/iso/jp.html,read with web open,Diacritics and familiar English spelling may differ
+Myanmar,south-east-asia,Nay Pyi Taw,Nay Pyi Taw,https://data.un.org/legacy/en/iso/mm.html,read with web open,Diacritics and familiar English spelling may differ
+Thailand,south-east-asia,Bangkok,Bangkok,https://data.un.org/legacy/en/iso/th.html,read with web open,Diacritics and familiar English spelling may differ
+Laos,south-east-asia,Vientiane,Vientiane,https://data.un.org/legacy/en/iso/la.html,read with web open,Diacritics and familiar English spelling may differ
+Cambodia,south-east-asia,Phnom Penh,Phnom Penh,https://data.un.org/legacy/en/iso/kh.html,read with web open,Diacritics and familiar English spelling may differ
+Vietnam,south-east-asia,Hanoi,Hanoi,https://data.un.org/legacy/en/iso/vn.html,read with web open,Diacritics and familiar English spelling may differ
+Malaysia,south-east-asia,Kuala Lumpur [S5],Kuala Lumpur,https://data.un.org/legacy/en/iso/my.html,read with web open,See regional exception note
+Singapore,south-east-asia,Singapore,Singapore,https://data.un.org/legacy/en/iso/sg.html,read with web open,Diacritics and familiar English spelling may differ
+Brunei,south-east-asia,Bandar Seri Begawan,Bandar Seri Begawan,https://data.un.org/legacy/en/iso/bn.html,read with web open,Diacritics and familiar English spelling may differ
+Indonesia,south-east-asia,Jakarta; Nusantara transition [S6],Jakarta,https://data.un.org/legacy/en/iso/id.html,read with web open,See regional exception note
+Philippines,south-east-asia,Manila,Manila,https://data.un.org/legacy/en/iso/ph.html,read with web open,Diacritics and familiar English spelling may differ
+Timor-Leste,south-east-asia,Dili,Dili,https://data.un.org/legacy/en/iso/tl.html,read with web open,Diacritics and familiar English spelling may differ
+Canada,americas,Ottawa,Ottawa,https://data.un.org/legacy/en/iso/ca.html,read with web open,Diacritics and familiar English spelling may differ
+United States,americas,"Washington, D.C.","Washington, D.C.",https://data.un.org/legacy/en/iso/us.html,read with web open,Diacritics and familiar English spelling may differ
+Mexico,americas,Mexico City,Mexico City,https://data.un.org/legacy/en/iso/mx.html,read with web open,Diacritics and familiar English spelling may differ
+Guatemala,americas,Guatemala City,Guatemala City,https://data.un.org/legacy/en/iso/gt.html,read with web open,Diacritics and familiar English spelling may differ
+Belize,americas,Belmopan,Belmopan,https://data.un.org/legacy/en/iso/bz.html,read with web open,Diacritics and familiar English spelling may differ
+Honduras,americas,Tegucigalpa,Tegucigalpa,https://data.un.org/legacy/en/iso/hn.html,read with web open,Diacritics and familiar English spelling may differ
+El Salvador,americas,San Salvador,San Salvador,https://data.un.org/legacy/en/iso/sv.html,read with web open,Diacritics and familiar English spelling may differ
+Nicaragua,americas,Managua,Managua,https://data.un.org/legacy/en/iso/ni.html,read with web open,Diacritics and familiar English spelling may differ
+Costa Rica,americas,San José,San José,https://data.un.org/legacy/en/iso/cr.html,read with web open,Diacritics and familiar English spelling may differ
+Panama,americas,Panama City,Panama City,https://data.un.org/legacy/en/iso/pa.html,read with web open,Diacritics and familiar English spelling may differ
+Bahamas,americas,Nassau,Nassau,https://data.un.org/legacy/en/iso/bs.html,read with web open,Diacritics and familiar English spelling may differ
+Cuba,americas,Havana,Havana,https://data.un.org/legacy/en/iso/cu.html,read with web open,Diacritics and familiar English spelling may differ
+Jamaica,americas,Kingston,Kingston,https://data.un.org/legacy/en/iso/jm.html,read with web open,Diacritics and familiar English spelling may differ
+Haiti,americas,Port-au-Prince,Port-au-Prince,https://data.un.org/legacy/en/iso/ht.html,read with web open,Diacritics and familiar English spelling may differ
+Dominican Republic,americas,Santo Domingo,Santo Domingo,https://data.un.org/legacy/en/iso/do.html,read with web open,Diacritics and familiar English spelling may differ
+Saint Kitts and Nevis,americas,Basseterre,Basseterre,https://data.un.org/legacy/en/iso/kn.html,read with web open,Diacritics and familiar English spelling may differ
+Antigua and Barbuda,americas,St John’s,Saint John's,https://data.un.org/legacy/en/iso/ag.html,read with web open,Diacritics and familiar English spelling may differ
+Dominica,americas,Roseau,Roseau,https://data.un.org/legacy/en/iso/dm.html,read with web open,Diacritics and familiar English spelling may differ
+Saint Lucia,americas,Castries,Castries,https://data.un.org/legacy/en/iso/lc.html,read with web open,Diacritics and familiar English spelling may differ
+Saint Vincent and the Grenadines,americas,Kingstown,Kingstown,https://data.un.org/legacy/en/iso/vc.html,read with web open,Diacritics and familiar English spelling may differ
+Barbados,americas,Bridgetown,Bridgetown,https://data.un.org/legacy/en/iso/bb.html,read with web open,Diacritics and familiar English spelling may differ
+Grenada,americas,St George’s,Saint George's,https://data.un.org/legacy/en/iso/gd.html,read with web open,Diacritics and familiar English spelling may differ
+Trinidad and Tobago,americas,Port of Spain,Port of Spain,https://data.un.org/legacy/en/iso/tt.html,read with web open,Diacritics and familiar English spelling may differ
+Colombia,americas,Bogotá,Bogota,https://data.un.org/legacy/en/iso/co.html,read with web open,Diacritics and familiar English spelling may differ
+Venezuela,americas,Caracas,Caracas,https://data.un.org/legacy/en/iso/ve.html,read with web open,Diacritics and familiar English spelling may differ
+Guyana,americas,Georgetown,Georgetown,https://data.un.org/legacy/en/iso/gy.html,read with web open,Diacritics and familiar English spelling may differ
+Suriname,americas,Paramaribo,Paramaribo,https://data.un.org/legacy/en/iso/sr.html,read with web open,Diacritics and familiar English spelling may differ
+Ecuador,americas,Quito,Quito,https://data.un.org/legacy/en/iso/ec.html,read with web open,Diacritics and familiar English spelling may differ
+Peru,americas,Lima,Lima,https://data.un.org/legacy/en/iso/pe.html,read with web open,Diacritics and familiar English spelling may differ
+Bolivia,americas,Sucre; La Paz [M2],Sucre,https://data.un.org/legacy/en/iso/bo.html,read with web open,See regional exception note
+Brazil,americas,Brasília,Brasilia,https://data.un.org/legacy/en/iso/br.html,read with web open,Diacritics and familiar English spelling may differ
+Paraguay,americas,Asunción,Asunción,https://data.un.org/legacy/en/iso/py.html,read with web open,Diacritics and familiar English spelling may differ
+Chile,americas,Santiago,Santiago,https://data.un.org/legacy/en/iso/cl.html,read with web open,Diacritics and familiar English spelling may differ
+Argentina,americas,Buenos Aires,Buenos Aires,https://data.un.org/legacy/en/iso/ar.html,read with web open,Diacritics and familiar English spelling may differ
+Uruguay,americas,Montevideo,Montevideo,https://data.un.org/legacy/en/iso/uy.html,read with web open,Diacritics and familiar English spelling may differ
+Australia,oceania,Canberra,Canberra,https://data.un.org/legacy/en/iso/au.html,read with web open,Diacritics and familiar English spelling may differ
+New Zealand,oceania,Wellington,Wellington,https://data.un.org/legacy/en/iso/nz.html,read with web open,Diacritics and familiar English spelling may differ
+Papua New Guinea,oceania,Port Moresby,Port Moresby,https://data.un.org/legacy/en/iso/pg.html,read with web open,Diacritics and familiar English spelling may differ
+Solomon Islands,oceania,Honiara,Honiara,https://data.un.org/legacy/en/iso/sb.html,read with web open,Diacritics and familiar English spelling may differ
+Vanuatu,oceania,Port Vila,Port Vila,https://data.un.org/legacy/en/iso/vu.html,read with web open,Diacritics and familiar English spelling may differ
+Fiji,oceania,Suva,Suva,https://data.un.org/legacy/en/iso/fj.html,read with web open,Diacritics and familiar English spelling may differ
+Palau,oceania,Ngerulmud [O3],Melekeok,https://data.un.org/legacy/en/iso/pw.html,read with web open,See regional exception note
+Federated States of Micronesia,oceania,Palikir,Palikir,https://data.un.org/legacy/en/iso/fm.html,read with web open,Diacritics and familiar English spelling may differ
+Marshall Islands,oceania,Majuro,Majuro,https://data.un.org/legacy/en/iso/mh.html,read with web open,Diacritics and familiar English spelling may differ
+Naoero (formerly Nauru),oceania,No official capital; Yaren government district [O1],Yaren,https://data.un.org/legacy/en/iso/nr.html,read with web open,See regional exception note
+Kiribati,oceania,South Tarawa [O2],Bairiki,https://data.un.org/legacy/en/iso/ki.html,read with web open,See regional exception note
+Tuvalu,oceania,Funafuti,Funafuti,https://data.un.org/legacy/en/iso/tv.html,read with web open,Diacritics and familiar English spelling may differ
+Samoa,oceania,Apia,,https://data.un.org/legacy/en/iso/ws.html,UN profile unavailable; alternate official source,Apia verified at https://www.samoa.travel/discover/the-islands-of-samoa/upolu-island/apia/
+Tonga,oceania,Nukuʻalofa,Nuku'alofa,https://data.un.org/legacy/en/iso/to.html,read with web open,Diacritics and familiar English spelling may differ
