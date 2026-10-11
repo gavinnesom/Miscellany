@@ -29,8 +29,8 @@ test("every authored quiz question uses the complete question schema", () => {
       }
     }
 
-    assert.equal(contentFiles.length, 150);
-    assert.equal(questionCount, 244);
+    assert.equal(contentFiles.length, 168);
+    assert.equal(questionCount, 273);
   });
 });
 

@@ -65,7 +65,7 @@ test("server-renders Gavin's Miscellany", async () => {
   const html = await response.text();
   assert.match(html, /<title>Gavin&#x27;s Miscellany<\/title>/i);
   assert.match(html, /Personal encyclopedia and learning curriculum/);
-  assert.match(html, /150 entries/);
+  assert.match(html, /168 entries/);
   assert.match(html, /Natural World/);
   assert.match(html, /Tardigrades and Cryptobiosis/);
   assert.match(html, /Surprise Me/);
@@ -306,7 +306,7 @@ test("server-renders dedicated quiz page", async () => {
   const html = await response.text();
   assert.match(html, /<title>Quiz Me \| Gavin&#x27;s Miscellany<\/title>/i);
   assert.match(html, /Gavin&#x27;s Miscellany/);
-  assert.match(html, /150 entries/);
+  assert.match(html, /168 entries/);
   assert.match(html, /<button class="header-action header-action-surprise"[^>]*>Surprise Me<\/button><a href="\/quiz" class="header-action header-action-quiz">Quiz Me<\/a>/);
   assert.doesNotMatch(html, /class="header-action[^"]*"[^>]*>Entries</);
   assert.match(html, /All topics/);
@@ -334,7 +334,7 @@ test("entry pages render shared header and multiple visuals", async () => {
 
   const html = await response.text();
   assert.match(html, /class="site-title-block"/);
-  assert.match(html, /150 entries/);
+  assert.match(html, /168 entries/);
   assert.match(html, /class="entry-image"/);
   assert.match(html, /class="inline-figure"/);
   assert.match(html, /cryptobiosis-cycle\.svg/);
@@ -442,4 +442,35 @@ test("origins curriculum renders evidence and dated hypotheses without changing 
   const evidence = await (await render("/entry/earliest-life-evidence")).text();
   assert.match(evidence, /CC BY 4.0/);
   assert.match(evidence, /origins-isua-graphite.png/);
+});
+
+
+test("geography and history routes preserve a complete reference and reciprocal curriculum links", async () => {
+  const orders = {"world-geography": ["world-geography-reference", "africa-countries-capitals", "europe-countries-capitals", "west-central-asia-countries-capitals", "south-east-asia-countries-capitals", "americas-countries-capitals", "oceania-countries-capitals", "sovereignty-capitals-territories"], "modern-world-history": ["modern-world-history-map", "empires-languages-and-states", "atlantic-revolutions-american-union", "vienna-nationalism-unification", "first-world-war-peace-settlements", "ottoman-succession-middle-east", "second-world-war-new-order", "south-asia-partition-bangladesh", "african-decolonization-borders", "cold-war-successor-states"]};
+  for (const [topic, slugs] of Object.entries(orders)) {
+    const overview = await render(`/topic/${topic}`);
+    assert.equal(overview.status, 200);
+    const html = await overview.text();
+    let previous = -1;
+    for (const slug of slugs) {
+      const index = html.lastIndexOf(`href="/entry/${slug}"`);
+      assert.ok(index > previous, `${slug} follows curriculum order`);
+      previous = index;
+      const response = await render(`/entry/${slug}`);
+      assert.equal(response.status, 200);
+      const entry = await response.text();
+      assert.doesNotMatch(entry, /entry-review-cluster|typed-answer/);
+    }
+  }
+  const countries = [];
+  for (const slug of orders["world-geography"].slice(1, 7)) {
+    const html = await (await render(`/entry/${slug}`)).text();
+    countries.push(...[...html.matchAll(/href="https:\/\/data.un.org\/legacy\/en\/iso\/([a-z]{2}).html"/g)].map(m => m[1]));
+    assert.match(html, /class="table-wrap"/);
+    assert.match(html, /11 October 2026/);
+  }
+  assert.equal(new Set(countries).size, 195);
+  const ottoman = await (await render("/entry/ottoman-succession-middle-east")).text();
+  assert.match(ottoman, /Sykes_Picot_Agreement_Map/);
+  assert.match(ottoman, /wartime proposals, not modern international borders/);
 });
