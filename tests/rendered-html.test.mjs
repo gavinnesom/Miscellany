@@ -414,7 +414,7 @@ test("physics and vehicle curricula render complete routes in dependency order",
       assert.equal(response.status, 200);
       const entry = await response.text();
       const body = entry.slice(entry.indexOf('class="entry-body"'), entry.indexOf("</article>"));
-      assert.doesNotMatch(body, /\\[A-Za-z]/, `${slug} must not leak TeX commands`);
+      assert.doesNotMatch(body, /\\[A-Za-z]|∈t|²[⁺⁻]|⃗/, `${slug} must not leak TeX commands or consume arithmetic into an exponent`);
       assert.doesNotMatch(entry, /entry-review-cluster|typed-answer/);
     }
   }
@@ -473,4 +473,31 @@ test("geography and history routes preserve a complete reference and reciprocal 
   const ottoman = await (await render("/entry/ottoman-succession-middle-east")).text();
   assert.match(ottoman, /Sykes_Picot_Agreement_Map/);
   assert.match(ottoman, /wartime proposals, not modern international borders/);
+});
+
+
+test("physics articles preserve integral symbols, square-root sums and readable node labels", async () => {
+  const firstLaw = await (await render("/entry/first-law-thermodynamic-processes")).text();
+  assert.match(firstLaw, /W=∫ Pext dV/);
+  assert.doesNotMatch(firstLaw, /∈t/);
+  const fields = await (await render("/entry/electric-fields-superposition")).text();
+  assert.match(fields, /√\(a² \+ y²\)/);
+  assert.doesNotMatch(fields, /a²⁺y²/);
+  const circuits = await (await render("/entry/dc-circuits-kirchhoff")).text();
+  assert.match(circuits, /<code class="entry-inline-code">\(V\(node\) − V\(neighbor\)\)\/R<\/code>/);
+  assert.doesNotMatch(circuits, /Vneᵢghbor/);
+  const heat = await (await render("/entry/entropy-heat-engines")).text();
+  assert.match(heat, /T\(cold\)\/\(T\(hot\) − T\(cold\)\)/);
+  const gas = await (await render("/entry/temperature-heat-ideal-gases")).text();
+  assert.match(gas, /v\(rms\)=√\(3k\(B\)T\/m\)/);
+  assert.match(gas, /Boltzmann/);
+  assert.doesNotMatch(gas, /kᵦ|vrms/);
+  const potential = await (await render("/entry/electric-potential-energy")).text();
+  assert.match(potential, /vec\(E\)· dvec\(l\)/);
+  assert.doesNotMatch(potential.slice(potential.indexOf('class="entry-body"'), potential.indexOf("</article>")), /⃗/);
+  for (const slug of ["entropy-heat-engines", "electromagnetic-induction"]) {
+    const html = await (await render(`/entry/${slug}`)).text();
+    assert.match(html, /∫/);
+    assert.doesNotMatch(html, /∈t/);
+  }
 });

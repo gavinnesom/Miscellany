@@ -89,6 +89,6 @@ Now disconnect the \(3\ \Omega\) branch. Current becomes 12/(1+2+6)=1.33  A, and
 
 ## Networks that do not collapse into series and parallel
 
-Use a reference node and assign unknown node voltages. At each other node, express every outgoing resistor current as (Vnode-Vneᵢghbor)/R, and set their sum to zero, including source currents as appropriate. Alternatively assign independent loop currents and write signed voltage equations. Solve the simultaneous linear equations, then check junctions and total power.
+Use a reference node and assign unknown node voltages. At each other node, express every outgoing resistor current as `(V(node) − V(neighbor))/R`, and set their sum to zero, including source currents as appropriate. Alternatively assign independent loop currents and write signed voltage equations. Solve the simultaneous linear equations, then check junctions and total power.
 
 An ideal voltmeter draws no current and reads across two nodes; an ideal ammeter has zero resistance and goes in series. Real instruments perturb the circuit. Putting a low-resistance current meter directly across a source is effectively creating a short, not measuring its ordinary operating current.

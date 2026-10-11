@@ -107,3 +107,16 @@ async function importFreshRandom() {
   const moduleUrl = new URL(`../app/lib/random.ts?test=${Date.now()}-${Math.random()}`, import.meta.url);
   return import(moduleUrl.href);
 }
+
+
+test("math rendering distinguishes integral from membership and exponent signs from following arithmetic", async () => {
+  const { renderMathText } = await import("../app/lib/math-text.ts");
+  assert.equal(renderMathText(String.raw`W=\int P_{ext}\,dV.`), "W=∫ Pext dV.");
+  assert.equal(renderMathText(String.raw`x\in A`), "x∈ A");
+  assert.equal(renderMathText(String.raw`\int_A^B F\,dr`), "∫(A)^B F dr");
+  assert.equal(renderMathText(String.raw`V_B-V_A; k_B`), "V(B)-V(A); k(B)");
+  assert.equal(renderMathText(String.raw`\vec E\cdot d\vec l`), "vec(E)· dvec(l)");
+  assert.equal(renderMathText(String.raw`τ⃗=μ⃗\times\vec B`), "vec(τ)=vec(μ)×vec(B)");
+  assert.equal(renderMathText("√(a^2+y^2)"), "√(a²+y²)");
+  assert.equal(renderMathText("x^2-y^2+x^-2+x^+3"), "x²-y²+x⁻²+x⁺³");
+});

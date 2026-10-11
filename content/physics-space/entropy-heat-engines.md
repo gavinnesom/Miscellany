@@ -97,6 +97,6 @@ Rejected heat is not necessarily evidence of sloppy engineering. Some rejection 
 
 A car's combustion gas changes temperature continuously, exchanges matter, and loses energy through exhaust, cooling, and friction. It is misleading to insert one peak flame temperature and ambient temperature into Carnot's equation and call the result its actual efficiency. The equation provides a bounding idealization, not an engine-performance specification.
 
-A refrigerator uses work to move heat from cold to hot. Its coefficient of performance is \(COP=Q_C/W\), which can exceed one because it moves thermal energy rather than converting work into an equal amount of cooling energy. The reversible bound is T꜀/(TH-T꜀). This is not efficiency above 100%.
+A refrigerator uses work to move heat from cold to hot. Its coefficient of performance is \(COP=Q_C/W\), which can exceed one because it moves thermal energy rather than converting work into an equal amount of cooling energy. The reversible bound is T(cold)/(T(hot) − T(cold)). Here T(cold) and T(hot) are the absolute temperatures of the two reservoirs. This is not efficiency above 100%.
 
 **Takeaway:** The first law tracks how much energy exists; the second law constrains which transfers can occur and how much work a thermal gradient can yield. Energy is conserved while its capacity to produce useful work can diminish.

@@ -26,7 +26,8 @@ const subscripts: Record<string, string> = {
   "8": "₈",
   "9": "₉",
   k: "ₖ",
-  B: "ᵦ",
+  A: "(A)",
+  B: "(B)",
   C: "꜀",
   i: "ᵢ",
 };
@@ -39,7 +40,8 @@ export function renderMathText(value: string) {
   return value
     .replace(/\\operatorname\{([^}]+)\}/g, "$1")
     .replace(/\\text\{([^}]+)\}/g, "$1")
-    .replace(/\\vec\s*\{?([A-Za-z])\}?/g, "$1⃗")
+    .replace(/\\vec\s*\{?([A-Za-z])\}?/g, "vec($1)")
+    .replace(/([\p{L}])\u20d7/gu, "vec($1)")
     .replace(/\\sqrt\{\\frac\{([^{}]+)\}\{([^{}]+)\}\}/g, "√($1/$2)")
     .replace(/\\frac\{([^{}]+)\}\{\\sqrt\{([^{}]+)\}\}/g, "$1/√($2)")
     .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, "$1/$2")
@@ -69,7 +71,7 @@ export function renderMathText(value: string) {
     .replace(/\\Box/g, "□")
     .replace(/\\Diamond/g, "◇")
     .replace(/\\vdash/g, "⊢")
-    .replace(/\\in/g, "∈")
+    .replace(/\\in\b/g, "∈")
     .replace(/\\equiv/g, "≡")
     .replace(/\\neq/g, "≠")
     .replace(/\\propto/g, "∝")
@@ -95,7 +97,7 @@ export function renderMathText(value: string) {
     .replace(/\\ /g, " ")
     .replace(/_\{([^{}]+)\}/g, (_, script: string) => scriptText(script, subscripts))
     .replace(/\^\{([^{}]+)\}/g, (_, script: string) => scriptText(script, superscripts))
-    .replace(/\^([0-9T+-]+)/g, (_, script: string) => scriptText(script, superscripts))
+    .replace(/\^([+-]?[0-9]+|T)/g, (_, script: string) => scriptText(script, superscripts))
     .replace(/_([0-9A-Za-z])/g, (_, script: string) => scriptText(script, subscripts))
     .replace(/Δ\s+([A-Za-zτ])/g, "Δ$1")
     .replace(/\\([A-Za-z]+)/g, "$1");

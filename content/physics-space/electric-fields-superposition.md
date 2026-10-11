@@ -78,7 +78,7 @@ Both point right. The total is approximately \(3.60\times10^3\ N/C\) rightward, 
 
 ## Cancellation has a geometry
 
-For two equal positive charges at \(x=± a\), consider a point on the perpendicular bisector (0,y). The horizontal components cancel and vertical components add. Each distance is √(a²⁺y²), and the vertical projection contributes a factor y/√(a²⁺y²):
+For two equal positive charges at \(x=± a\), consider a point on the perpendicular bisector (0,y). The horizontal components cancel and vertical components add. Each distance is √(a² + y²), and the vertical projection contributes a factor y/√(a² + y²):
 
 $$
 E_y=(2kQy)/((a^2+y^2)^(3/2)).
