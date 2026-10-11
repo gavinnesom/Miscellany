@@ -8,7 +8,7 @@ tags:
   - isotopes
   - time
 date_added: "2026-08-11"
-date_updated: "2026-08-12"
+date_updated: "2026-10-11"
 relationships:
   parent:
     - earth-age
@@ -28,10 +28,10 @@ image:
   provenance: "local"
 quiz:
   - question_id: "radiometric-dating:carbon-14-useful-archaeology-but-useless-dating"
-    version: 1
+    version: 2
     question: "Why is carbon-14 useful for archaeology but useless for dating Earth itself?"
-    answer: "Radiometric ages are strongest when different isotope systems and samples converge, not when one magical measurement produces a date."
-    rubric: Correct if the answer conveys the canonical idea that Radiometric ages are strongest when different isotope systems and samples converge, not when one magical measurement produces a date.. Equivalent wording is acceptable; do not pass answers that omit the essential cause, contrast, condition, or distinction.
+    answer: "Carbon-14 has a half-life of about 5,730 years. Enough remains in relatively recent once-living material to measure its decay, but over billions of years essentially all original carbon-14 disappears, far below useful detection. Earth's age therefore requires much longer-lived isotope systems and appropriate minerals or meteorites."
+    rubric: "Require the short half-life compared with billions of years, measurable remaining carbon-14 for relatively recent organic material, and essentially no original carbon-14 left over Earth's age. Exact recall of 5,730 years is optional if the timescale explanation is correct. Do not pass an answer that merely says multiple clocks should agree."
 ---
 
 Radiometric dating turns radioactive decay into a clock. If a parent isotope decays with constant decay constant \(\lambda\), then

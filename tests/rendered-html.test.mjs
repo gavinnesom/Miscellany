@@ -65,7 +65,7 @@ test("server-renders Gavin's Miscellany", async () => {
   const html = await response.text();
   assert.match(html, /<title>Gavin&#x27;s Miscellany<\/title>/i);
   assert.match(html, /Personal encyclopedia and learning curriculum/);
-  assert.match(html, /145 entries/);
+  assert.match(html, /150 entries/);
   assert.match(html, /Natural World/);
   assert.match(html, /Tardigrades and Cryptobiosis/);
   assert.match(html, /Surprise Me/);
@@ -306,7 +306,7 @@ test("server-renders dedicated quiz page", async () => {
   const html = await response.text();
   assert.match(html, /<title>Quiz Me \| Gavin&#x27;s Miscellany<\/title>/i);
   assert.match(html, /Gavin&#x27;s Miscellany/);
-  assert.match(html, /145 entries/);
+  assert.match(html, /150 entries/);
   assert.match(html, /<button class="header-action header-action-surprise"[^>]*>Surprise Me<\/button><a href="\/quiz" class="header-action header-action-quiz">Quiz Me<\/a>/);
   assert.doesNotMatch(html, /class="header-action[^"]*"[^>]*>Entries</);
   assert.match(html, /All topics/);
@@ -334,7 +334,7 @@ test("entry pages render shared header and multiple visuals", async () => {
 
   const html = await response.text();
   assert.match(html, /class="site-title-block"/);
-  assert.match(html, /145 entries/);
+  assert.match(html, /150 entries/);
   assert.match(html, /class="entry-image"/);
   assert.match(html, /class="inline-figure"/);
   assert.match(html, /cryptobiosis-cycle\.svg/);
@@ -418,4 +418,28 @@ test("physics and vehicle curricula render complete routes in dependency order",
       assert.doesNotMatch(entry, /entry-review-cluster|typed-answer/);
     }
   }
+});
+
+
+test("origins curriculum renders evidence and dated hypotheses without changing public review access", async () => {
+  const slugs = ["early-earth-habitability", "prebiotic-chemistry-energy", "rna-replication-origins", "protocells-origin-hypotheses", "earliest-life-evidence"];
+  const overview = await (await render("/topic/earth-history-geology")).text();
+  let previous = overview.lastIndexOf('href="/entry/radiometric-dating"');
+  for (const slug of slugs) {
+    const index = overview.lastIndexOf(`href="/entry/${slug}"`);
+    assert.ok(index > previous, `${slug} follows prerequisite order`);
+    previous = index;
+    const response = await render(`/entry/${slug}`);
+    assert.equal(response.status, 200);
+    const html = await response.text();
+    const body = html.slice(html.indexOf('class="entry-body"'), html.indexOf("</article>"));
+    assert.doesNotMatch(body, /\\[A-Za-z]/);
+    assert.doesNotMatch(html, /entry-review-cluster|typed-answer/);
+  }
+  const rna = await (await render("/entry/rna-replication-origins")).text();
+  assert.match(rna, /separate experiments, not a continuous self-replication cycle/);
+  assert.match(rna, /origins-copy-fidelity.svg/);
+  const evidence = await (await render("/entry/earliest-life-evidence")).text();
+  assert.match(evidence, /CC BY 4.0/);
+  assert.match(evidence, /origins-isua-graphite.png/);
 });
