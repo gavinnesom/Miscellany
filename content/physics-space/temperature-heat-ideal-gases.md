@@ -63,13 +63,13 @@ $$
 PV=1/3Nm⟨ v^2⟩.
 $$
 
-The ideal-gas equation of state is \(PV=Nk_BT=nRT\), where \(N\) counts particles and \(n\) counts moles. Combining the two gives
+The ideal-gas equation of state is `PV=Nk(B)T=nRT`, where \(N\) counts particles, \(n\) counts moles, and `k(B)` is Boltzmann’s constant. Combining the two gives
 
 $$
-\left⟨(1/2)mv^2\right⟩=(3/2)k_BT.
+\left⟨(1/2)mv^2\right⟩=(3/2)k(B)T.
 $$
 
-Thus temperature measures mean translational kinetic energy for this model. It is not universally a synonym for “all particle motion”: solids, molecular rotations and vibrations, and interaction energies require a richer description. At equal temperature, lighter gas particles have greater root-mean-square speeds because vrms=√(3kᵦT/m).
+Thus temperature measures mean translational kinetic energy for this model. It is not universally a synonym for “all particle motion”: solids, molecular rotations and vibrations, and interaction energies require a richer description. At equal temperature, lighter gas particles have greater root-mean-square speeds because v(rms)=√(3k(B)T/m).
 
 A monatomic ideal gas has U=(3/2)nRT, up to a reference constant. Diatomic molecules can store rotational and, at sufficiently high temperatures, vibrational energy. Their heat capacities depend on which modes are thermally accessible.
 
