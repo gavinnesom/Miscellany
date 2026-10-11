@@ -46,7 +46,7 @@ export const categories: Category[] = [
     key: "history-society",
     label: "History & Society",
     note: "Institutions, myths, arguments, and social memory.",
-    description: "Institutions, public-policy arguments, historical myths, financial memory, and big-history interpretations that are easy to misremember without a compact reference.",
+    description: "Global geography, state formation, empires, wars and decolonization, alongside institutions, public policy, historical myths and big-history interpretations.",
   },
   {
     key: "philosophy",
