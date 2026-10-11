@@ -28,7 +28,7 @@ export const categories: Category[] = [
     key: "physics-space",
     label: "Physics & Space",
     note: "Matter, time, planets, stars, and the scale of things.",
-    description: "Physical principles and deep time, currently spanning relativity, Earth history, geologic evidence, thermodynamics, and the scale of the observable universe.",
+    description: "Physical principles and deep time: mechanics, electric and magnetic fields, circuits, thermal physics, relativity, Earth history, and the scale of the observable universe.",
   },
   {
     key: "computing-ai",

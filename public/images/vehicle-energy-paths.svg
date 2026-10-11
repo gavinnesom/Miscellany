@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="388.269219pt" viewBox="0 0 628.2 388.269219" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<title>Vehicle energy paths</title><desc>Fuel energy branches into shaft work and heat. Shaft work supplies drivetrain and electrical loads. Motion can be dissipated at brakes. Battery stores or supplies electrical energy; not all paths operate simultaneously.</desc>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 388.269219
+L 628.2 388.269219
+L 628.2 -0
+L 0 -0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 76.716671 107.125562
+Q 108.474591 107.125562 137.772835 107.125562
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #165c89; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 131.372835 103.925562
+L 137.772835 107.125562
+L 131.372835 110.325562
+z
+" clip-path="url(#p287199ddf6)" style="fill: #165c89; stroke: #165c89; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 217.892544 107.125562
+Q 252.720927 107.125562 285.089635 107.125562
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #165c89; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 278.689635 103.925562
+L 285.089635 107.125562
+L 278.689635 110.325562
+z
+" clip-path="url(#p287199ddf6)" style="fill: #165c89; stroke: #165c89; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 383.618919 107.125562
+Q 424.584243 107.125562 463.089893 107.125562
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #165c89; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 456.689893 103.925562
+L 463.089893 107.125562
+L 456.689893 110.325562
+z
+" clip-path="url(#p287199ddf6)" style="fill: #165c89; stroke: #165c89; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 179.064 131.300367
+Q 179.064 159.793917 179.064 185.827793
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #bd493d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 182.264 179.427793
+L 179.064 185.827793
+L 175.864 179.427793
+z
+" clip-path="url(#p287199ddf6)" style="fill: #bd493d; stroke: #bd493d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 179.064 250.500258
+Q 179.064 274.83253 179.064 296.705128
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #bd493d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 182.264 290.305128
+L 179.064 296.705128
+L 175.864 290.305128
+z
+" clip-path="url(#p287199ddf6)" style="fill: #bd493d; stroke: #bd493d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 223.577519 122.248054
+Q 269.597805 159.79218 313.712201 195.781448
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #165c89; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 310.775978 189.25622
+L 313.712201 195.781448
+L 306.730285 194.21529
+z
+" clip-path="url(#p287199ddf6)" style="fill: #165c89; stroke: #165c89; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 528.93 139.617382
+Q 528.93 165.337752 528.93 188.598447
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #bd493d; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 532.13 182.198447
+L 528.93 188.598447
+L 525.73 182.198447
+z
+" clip-path="url(#p287199ddf6)" style="fill: #bd493d; stroke: #bd493d; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 367.82773 238.673408
+Q 381.618259 249.883773 393.500176 259.542621
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 390.552526 253.022548
+L 393.500176 259.542621
+L 386.515527 257.988697
+z
+" clip-path="url(#p287199ddf6)" style="fill: #217457; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 392.147457 299.366368
+Q 375.48248 308.648581 360.966337 316.733917
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 368.114656 316.415279
+L 360.966337 316.733917
+L 365.000418 310.824078
+z
+" clip-path="url(#p287199ddf6)" style="fill: #217457; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 456.35697 300.025988
+Q 478.29098 308.649758 500.22499 317.273528
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 461.142255 305.34586
+L 456.35697 300.025988
+L 463.484039 299.389683
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 495.439704 311.953656
+L 500.22499 317.273528
+L 493.097921 317.909833
+" clip-path="url(#p287199ddf6)" style="fill: none; stroke: #217457; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <g id="patch_12">
+     <path d="M 36.860297 117.316344
+L 63.471703 117.316344
+Q 67.371703 117.316344 67.371703 113.416344
+L 67.371703 100.834781
+Q 67.371703 96.934781 63.471703 96.934781
+L 36.860297 96.934781
+Q 32.960297 96.934781 32.960297 100.834781
+L 32.960297 113.416344
+Q 32.960297 117.316344 36.860297 117.316344
+z
+" style="fill: #ffffff; stroke: #165c89; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #165c89" x="50.166" y="110.71275" transform="rotate(-0 50.166 110.71275)">Fuel</text>
+   </g>
+   <g id="text_2">
+    <g id="patch_13">
+     <path d="M 156.786266 117.316344
+L 201.341734 117.316344
+Q 205.241734 117.316344 205.241734 113.416344
+L 205.241734 100.834781
+Q 205.241734 96.934781 201.341734 96.934781
+L 156.786266 96.934781
+Q 152.886266 96.934781 152.886266 100.834781
+L 152.886266 113.416344
+Q 152.886266 117.316344 156.786266 117.316344
+z
+" style="fill: #ffffff; stroke: #165c89; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #165c89" x="179.064" y="110.71275" transform="rotate(-0 179.064 110.71275)">Engine</text>
+   </g>
+   <g id="text_3">
+    <g id="patch_14">
+     <path d="M 309.591922 117.316344
+L 367.712078 117.316344
+Q 371.612078 117.316344 371.612078 113.416344
+L 371.612078 100.834781
+Q 371.612078 96.934781 367.712078 96.934781
+L 309.591922 96.934781
+Q 305.691922 96.934781 305.691922 100.834781
+L 305.691922 113.416344
+Q 305.691922 117.316344 309.591922 117.316344
+z
+" style="fill: #ffffff; stroke: #165c89; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #165c89" x="338.652" y="110.71275" transform="rotate(-0 338.652 110.71275)">Driveline</text>
+   </g>
+   <g id="text_4">
+    <g id="patch_15">
+     <path d="M 480.858438 124.594922
+L 577.001563 124.594922
+Q 580.901563 124.594922 580.901563 120.694922
+L 580.901563 93.556203
+Q 580.901563 89.656203 577.001563 89.656203
+L 480.858438 89.656203
+Q 476.958438 89.656203 476.958438 93.556203
+L 476.958438 120.694922
+Q 476.958438 124.594922 480.858438 124.594922
+z
+" style="fill: #ffffff; stroke: #165c89; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #165c89" transform="translate(480.858438 103.434172)">Vehicle motion</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #165c89" transform="translate(491.331563 117.991328)">+ elevation</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="252.72" y="82.177562" transform="rotate(-0 252.72 82.177562)">shaft work</text>
+   </g>
+   <g id="text_6">
+    <g id="patch_16">
+     <path d="M 140.204156 235.474922
+L 217.923844 235.474922
+Q 221.823844 235.474922 221.823844 231.574922
+L 221.823844 204.436203
+Q 221.823844 200.536203 217.923844 200.536203
+L 140.204156 200.536203
+Q 136.304156 200.536203 136.304156 204.436203
+L 136.304156 231.574922
+Q 136.304156 235.474922 140.204156 235.474922
+z
+" style="fill: #ffffff; stroke: #bd493d; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #bd493d" transform="translate(140.204156 214.314172)">Coolant / oil</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #bd493d" transform="translate(145.662125 228.871328)">+ exhaust</text>
+   </g>
+   <g id="text_7">
+    <g id="patch_17">
+     <path d="M 135.953766 330.760344
+L 222.174234 330.760344
+Q 226.074234 330.760344 226.074234 326.860344
+L 226.074234 314.278781
+Q 226.074234 310.378781 222.174234 310.378781
+L 135.953766 310.378781
+Q 132.053766 310.378781 132.053766 314.278781
+L 132.053766 326.860344
+Q 132.053766 330.760344 135.953766 330.760344
+z
+" style="fill: #ffffff; stroke: #bd493d; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd493d" x="179.064" y="324.15675" transform="rotate(-0 179.064 324.15675)">Surroundings</text>
+   </g>
+   <g id="text_8">
+    <g id="patch_18">
+     <path d="M 305.993563 228.196344
+L 371.310438 228.196344
+Q 375.210438 228.196344 375.210438 224.296344
+L 375.210438 211.714781
+Q 375.210438 207.814781 371.310438 207.814781
+L 305.993563 207.814781
+Q 302.093563 207.814781 302.093563 211.714781
+L 302.093563 224.296344
+Q 302.093563 228.196344 305.993563 228.196344
+z
+" style="fill: #ffffff; stroke: #165c89; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #165c89" x="338.652" y="221.59275" transform="rotate(-0 338.652 221.59275)">Alternator</text>
+   </g>
+   <g id="text_9">
+    <g id="patch_19">
+     <path d="M 493.571016 228.196344
+L 564.288984 228.196344
+Q 568.188984 228.196344 568.188984 224.296344
+L 568.188984 211.714781
+Q 568.188984 207.814781 564.288984 207.814781
+L 493.571016 207.814781
+Q 489.671016 207.814781 489.671016 211.714781
+L 489.671016 224.296344
+Q 489.671016 228.196344 493.571016 228.196344
+z
+" style="fill: #ffffff; stroke: #bd493d; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd493d" x="528.93" y="221.59275" transform="rotate(-0 528.93 221.59275)">Brake heat</text>
+   </g>
+   <g id="text_10">
+    <g id="patch_20">
+     <path d="M 289.431766 347.392344
+L 387.872234 347.392344
+Q 391.772234 347.392344 391.772234 343.492344
+L 391.772234 330.910781
+Q 391.772234 327.010781 387.872234 327.010781
+L 289.431766 327.010781
+Q 285.531766 327.010781 285.531766 330.910781
+L 285.531766 343.492344
+Q 285.531766 347.392344 289.431766 347.392344
+z
+" style="fill: #ffffff; stroke: #217457; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #217457" x="338.652" y="340.78875" transform="rotate(-0 338.652 340.78875)">Electrical loads</text>
+   </g>
+   <g id="text_11">
+    <g id="patch_21">
+     <path d="M 401.342438 289.180344
+L 447.825563 289.180344
+Q 451.725563 289.180344 451.725563 285.280344
+L 451.725563 272.698781
+Q 451.725563 268.798781 447.825563 268.798781
+L 401.342438 268.798781
+Q 397.442438 268.798781 397.442438 272.698781
+L 397.442438 285.280344
+Q 397.442438 289.180344 401.342438 289.180344
+z
+" style="fill: #ffffff; stroke: #217457; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #217457" x="424.584" y="282.57675" transform="rotate(-0 424.584 282.57675)">DC bus</text>
+   </g>
+   <g id="text_12">
+    <g id="patch_22">
+     <path d="M 504.871875 347.392344
+L 552.988125 347.392344
+Q 556.888125 347.392344 556.888125 343.492344
+L 556.888125 330.910781
+Q 556.888125 327.010781 552.988125 327.010781
+L 504.871875 327.010781
+Q 500.971875 327.010781 500.971875 330.910781
+L 500.971875 343.492344
+Q 500.971875 347.392344 504.871875 347.392344
+z
+" style="fill: #ffffff; stroke: #217457; stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #217457" x="528.93" y="340.78875" transform="rotate(-0 528.93 340.78875)">Battery</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #217457" x="541.206" y="284.533563" transform="rotate(-0 541.206 284.533563)">store / supply</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd493d" x="528.93" y="165.337562" transform="rotate(-0 528.93 165.337562)">slowing down</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd493d" x="446.067" y="51.685562" transform="rotate(-0 446.067 51.685562)">Tire/air losses also transfer heat</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="314.1" y="378.781563" transform="rotate(-0 314.1 378.781563)">Functional energy network, not component positions. Arrow widths do not encode amounts.</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 15.6px; font-family: 'DejaVu Sans'; text-anchor: middle" x="314.1" y="19.053562" transform="rotate(-0 314.1 19.053562)">Energy paths in a conventional combustion car</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p287199ddf6">
+   <rect x="7.2" y="35.053562" width="613.8" height="332.64"/>
+  </clipPath>
+ </defs>
+</svg>

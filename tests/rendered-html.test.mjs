@@ -65,7 +65,7 @@ test("server-renders Gavin's Miscellany", async () => {
   const html = await response.text();
   assert.match(html, /<title>Gavin&#x27;s Miscellany<\/title>/i);
   assert.match(html, /Personal encyclopedia and learning curriculum/);
-  assert.match(html, /133 entries/);
+  assert.match(html, /150 entries/);
   assert.match(html, /Natural World/);
   assert.match(html, /Tardigrades and Cryptobiosis/);
   assert.match(html, /Surprise Me/);
@@ -306,7 +306,7 @@ test("server-renders dedicated quiz page", async () => {
   const html = await response.text();
   assert.match(html, /<title>Quiz Me \| Gavin&#x27;s Miscellany<\/title>/i);
   assert.match(html, /Gavin&#x27;s Miscellany/);
-  assert.match(html, /133 entries/);
+  assert.match(html, /150 entries/);
   assert.match(html, /<button class="header-action header-action-surprise"[^>]*>Surprise Me<\/button><a href="\/quiz" class="header-action header-action-quiz">Quiz Me<\/a>/);
   assert.doesNotMatch(html, /class="header-action[^"]*"[^>]*>Entries</);
   assert.match(html, /All topics/);
@@ -334,7 +334,7 @@ test("entry pages render shared header and multiple visuals", async () => {
 
   const html = await response.text();
   assert.match(html, /class="site-title-block"/);
-  assert.match(html, /133 entries/);
+  assert.match(html, /150 entries/);
   assert.match(html, /class="entry-image"/);
   assert.match(html, /class="inline-figure"/);
   assert.match(html, /cryptobiosis-cycle\.svg/);
@@ -350,7 +350,7 @@ test("supplementary YouTube video renders only when declared", async () => {
   assert.match(html, /class="entry-video"/);
   assert.match(html, /youtube-nocookie\.com\/embed\/ZQvfHyfgBtA/);
   assert.match(html, /title="How a Car Engine Works"/);
-  assert.match(html, /Supplementary animation from Animagraffs/);
+  assert.match(html, /Supplementary Animagraffs animation/);
   assert.doesNotMatch(html, /autoplay/);
 });
 
@@ -392,6 +392,32 @@ test("public mode gates the review queue behind sign-in", async () => {
   const html = await response.text();
   assert.match(html, /Review Queue/);
   assert.match(html, /Sign in required/);
+});
+
+
+test("physics and vehicle curricula render complete routes in dependency order", async () => {
+  const orders = {
+    "electricity-magnetism": ["electric-fields-superposition", "electric-flux-gauss-law", "electric-potential-energy", "current-resistance-power", "dc-circuits-kirchhoff", "capacitors-rc-circuits", "magnetic-fields-forces", "electromagnetic-induction"],
+    "thermal-physics": ["temperature-heat-ideal-gases", "first-law-thermodynamic-processes", "entropy-heat-engines"],
+    "vehicles-drivetrains": ["vehicle-energy-systems-map", "four-stroke-engine", "transmission-gearing", "differential-gears", "brakes-hydraulics-abs", "steering-geometry", "car-suspension-basics", "engine-cooling-lubrication", "vehicle-starting-charging"],
+  };
+  for (const [topic, slugs] of Object.entries(orders)) {
+    const overview = await render(`/topic/${topic}`);
+    assert.equal(overview.status, 200);
+    const html = await overview.text();
+    let previous = -1;
+    for (const slug of slugs) {
+      const index = html.lastIndexOf(`href="/entry/${slug}"`);
+      assert.ok(index > previous, `${slug} follows curriculum order`);
+      previous = index;
+      const response = await render(`/entry/${slug}`);
+      assert.equal(response.status, 200);
+      const entry = await response.text();
+      const body = entry.slice(entry.indexOf('class="entry-body"'), entry.indexOf("</article>"));
+      assert.doesNotMatch(body, /\\[A-Za-z]/, `${slug} must not leak TeX commands`);
+      assert.doesNotMatch(entry, /entry-review-cluster|typed-answer/);
+    }
+  }
 });
 
 
