@@ -1,3 +1,7 @@
+# Database corrective work — 2026-10-14
+
+Shared instance A now revokes TRUNCATE/REFERENCES/TRIGGER from PUBLIC/anon/authenticated on the four public application tables and corrects the application owner’s future public-table defaults. Existing required CRUD/RLS remains: live owner read/write and other-user isolation checks pass with synthetic changes rolled back. All 58 existing tests pass. Canonical content and shared identity IDs are unchanged. See MemoryEngine docs/database-remediation.md for the shared migration/recovery boundary.
+
 # Project Status
 
 Quiz readiness is live in production. The applied additive migration is `supabase/migrations/202608280001_miscellany_quiz_entry_readiness.sql`; it creates the user-scoped readiness table with a unique `(user_id, entry_slug)` constraint, authenticated grants, and RLS based on `auth.uid()`.
